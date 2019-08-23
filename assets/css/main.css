@@ -1,5 +1,7 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700");
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap');
+
 
 /*
 	Editorial by HTML5 UP
@@ -7,7 +9,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-html, body, div, span, applet, object,
+*, html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
 code, del, dfn, em, img, ins, kbd, q, s, samp,
@@ -114,10 +116,11 @@ input, select, textarea {
 		}
 
 /* Type */
+/* TODO: */
 
 	body, input, select, textarea {
 		color: #7f888f;
-		font-family: "Open Sans", sans-serif;
+		font-family: "Lato", "Open Sans", sans-serif;
 		font-size: 13pt;
 		font-weight: 400;
 		line-height: 1.65;
