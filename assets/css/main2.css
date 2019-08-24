@@ -13,7 +13,15 @@ body {
    font-family: "Lato", sans-serif;
    font-weight: 400;
    line-height: 1.7;
-   display: grid;
+   /* display: grid; */
+}
+
+header {
+   background-color: rgb(241, 241, 241);
+}
+
+header__p {
+   background-color: rgb(44, 44, 44);
 }
 
 h1, h2, h3 {
@@ -21,8 +29,21 @@ h1, h2, h3 {
    text-align: center;
 }
 
-header {
-   background-color: rgb(241, 241, 241);
+/* column1 menu */
+.column1 {
+   background-color: rgb(49, 49, 49);
+   width: 15%;
+}
+
+.column1--menu {
+   /* float: left; */
+   width: 100px;
+}
+
+/* main column */
+.column2 {
+   width: 50%
+   margin: 45%;
 }
 
 .main-content {
@@ -30,15 +51,11 @@ header {
    
 }
 
-.top-content {
-   
-}
-
 .code {
    border-radius: 10px 10px 10px 10px ;
    background-color: rgb(43, 43, 43);
    color: rgb(44, 44, 44);
-   width: 95%;
+   /* width: 95%; */
    
 }
 
@@ -55,7 +72,3 @@ pre {
    text-align: justify;
 }
 
-pre {
-  /* text-align: left;
-   white-space: pre-line; */
- }
