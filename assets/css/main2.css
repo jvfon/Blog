@@ -13,16 +13,11 @@ body {
    font-family: "Lato", sans-serif;
    font-weight: 400;
    line-height: 1.7;
-   width: 60%;
-   margin: 0 10% 0 20%; 
-     
+   display: grid;
 }
 
 h1, h2, h3 {
    text-transform: capitalize;
-}
-
-h1, h2 {
    text-align: center;
 }
 
@@ -32,18 +27,35 @@ header {
 
 .main-content {
    background-color: rgb(224, 224, 224);
-   padding: 2.5%;
+   
 }
 
 .top-content {
-   padding: 2.5%;
+   
 }
 
 .code {
+   border-radius: 10px 10px 10px 10px ;
    background-color: rgb(43, 43, 43);
-   color: rgb(221, 221, 221);
-   width: 85%;
-   margin: 10px 0 0 7%;
-   padding: 0 2% 0  0;
+   color: rgb(44, 44, 44);
+   width: 95%;
+   
 }
 
+.reg-content {
+   background-color: rgb(255, 253, 253);
+   
+}
+
+pre {
+   border-radius: 10px 10px 10px 10px ;
+   background-color: #fff; 
+   white-space: pre-wrap;
+   word-wrap: break-word;
+   text-align: justify;
+}
+
+pre {
+  /* text-align: left;
+   white-space: pre-line; */
+ }
