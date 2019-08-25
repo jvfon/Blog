@@ -23,6 +23,7 @@ body {
    grid-column: 2/3;
    grid-row: 1/2;
    background-color: rgb(255, 255, 255);
+   letter-spacing: 15px;
 }
 
 h1, h2, h3 {
@@ -47,21 +48,21 @@ li {
    grid-column: 2/3;
    grid-row: 2/3;  
    background-color: rgb(177, 177, 177);
+   padding: 1.5%;
 }
 
 .column2--main {
    grid-column: 2/3;
    grid-row: 3/4;
-   background-color: rgb(224, 224, 224);
-   
+   background-color: rgb(224, 224, 224);  
+   padding: 2% 2% 3% 2%;
+   margin: 0 0 3% 0;
 }
 
 .code {
    border-radius: 10px 10px 10px 10px ;
    background-color: rgb(43, 43, 43);
-   color: rgb(44, 44, 44);
-   /* width: 95%; */
-   
+   color: rgb(236, 236, 236); 
 }
 
 .pre {
