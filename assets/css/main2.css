@@ -7,20 +7,23 @@
 }
 
 body {
+   display: grid;
+   grid-template-columns: 20% 60% 20%;
+   grid-template-columns: 1fr 2fr;
    color: rgb(59, 59, 59);
    background-color: rgb(207, 207, 207);
    font-size: 16px;
    font-family: "Lato", sans-serif;
    font-weight: 400;
    line-height: 1.7;
-   /* display: grid; */
+   
 }
 
-header {
+.header {
    background-color: rgb(241, 241, 241);
 }
 
-header__p {
+.header__p {
    background-color: rgb(44, 44, 44);
 }
 
@@ -36,13 +39,13 @@ h1, h2, h3 {
 }
 
 .column1--menu {
-   /* float: left; */
+   
    width: 100px;
 }
 
 /* main column */
 .column2 {
-   width: 50%
+   width: 50%;
    margin: 45%;
 }
 
