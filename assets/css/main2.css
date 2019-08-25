@@ -34,36 +34,77 @@ body {
    letter-spacing: 8px;
 }
 
+h1, h2, h3 {
+   text-transform: capitalize;
+   text-align: center;
+}
+
+/* **column1 menu */
+
+.column1 {
+   grid-column: 1/2;
+   grid-row: 1/5;
+   background-color: rgb(139, 139, 139);
+   margin: 38.42% 0 0 0;
+   padding: 0% 0 0 4%;
+   
+}
+
+.column1--menu__menu {
+   font-size: 22px;
+   font-weight: bold;
+   background-color: #777;
+   padding: 0 0 2% 0;
+}
+.column1--menu__webDev, .column1--menu__read {
+   font-size: 18px;
+   font-weight: bold;
+}
+
+.column1--menu__webDev {
+   padding: 0 0 2% 0;
+}
+
+.column1--menu__webPage {
+   font-size: 18px;
+   font-weight: bold;
+}
+
+.column1--menu__comingSoon {
+   border-top: 1px dotted;
+   padding: 1% 0 1% 0;
+}
+
+.column1-menu__books {
+   border-top: 1px dotted;
+   padding: 2.5% 0 0 0;
+}
+
+.column1--menu__read  {
+   background-color: #777;
+   padding: 0 0 2% 0;
+}
+
+/* TODO: do hover over link, unline shows */
+li {
+   text-transform: capitalize;
+   list-style-type: none;
+}
+
+/* ** main column */
+.intro--top {
+   grid-column: 2/3;
+   grid-row: 2/3;  
+   background-color: rgb(177, 177, 177);
+   padding: 1.5% 3% 1.5% 3%;
+}
+
 .column2--main__h2, .column2--main__h3 {
    background-color: rgb(255, 255, 255);
 }
 
 .column2--main__h3 {
    padding: 0 0 2% 0;
-}
-
-h1, h2, h3 {
-   text-transform: capitalize;
-   text-align: center;
-}
-
-li {
-   text-transform: capitalize;
-}
-/* column1 menu */
-.column1 {
-   grid-column: 1/2;
-   grid-row: 1/5;
-   background-color: rgb(139, 139, 139);
-   
-}
-
-/* main column */
-.intro--top {
-   grid-column: 2/3;
-   grid-row: 2/3;  
-   background-color: rgb(177, 177, 177);
-   padding: 1.5% 3% 1.5% 3%;
 }
 
 .column2--main {

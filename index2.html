@@ -15,46 +15,51 @@
       <h1 class="header__h1 h1">A blog for learning</h1>
       <h3 class="header__h2 h2">Learn web dev with me</h3>
    </header>
-
+         <!-- ** Column 1 - Menu -->
          <div class="column1">
             <ul class="column1--menu">
-
-               <li class="column1--menu__webDev">Web development</li>
+               <li class="column1--menu__menu">List of articles:</li>
+               <li class="column1--menu__webDev">Web development:</li>
                <ul class="column1--menu__art">
-                  <li class="column1--menu__webPage">Build a modern web page series</li>
-                  <ol class="column1--menu__list">
+                  <li class="column1--menu__webPage">Build a modern web page series:</li>
+                  <ul class="column1--menu__list">
                      <li>Building a header - part 1</li>
-                     <li>Building a header - part 2</li>
-                     <li>Creating cool CSS animations</li>
-                  </ol>                    
+                     <ul class="column1--menu__comingSoon">
+                        <li class="column1--menu__one">Coming soon!</li>
+                        <li>Building a header - part 2</li>
+                        <li>Creating cool CSS animations</li>
+                     </ul>                  
+                  </ul>                    
                </ul>
                
                <ul class="column1-menu__books">
-                  <li class="column1--menu__read">thoughts from books I have read</li>
+                  <li class="column1--menu__read">thoughts from a few books:</li>
                   <ul class="column1--menu__bookList">
-                     <li class="column1--menu__one">the one thing</li>
-                     <li class="column1--menu__obstacle">the obstacle is the way</li>
+                     <ul class="column1--menu__comingSoon">
+                        <li class="column1--menu__one">Coming soon!</li>
+                        <ul class="column1--menu__futBooks">
+                           <li class="column1--menu__one">the one thing</li>
+                           <li class="column1--menu__obstacle">the obstacle is the way</li>
+                        </ul>          
+                     </ul>
                   </ul>
-               </ul>
-               
+               </ul>  
             </ul>
          </div>
-      
+            
+         <!-- ** Intro -->
+         <div class="intro--top">
+            <p>
+               Following a tutorial can be frustrating and confusing. I break down what I am 
+               currently learning in bite size steps to make understanding new information 
+               easier.
+            </p>
+         </div>
 
-      
-            <div class="intro--top">
-                  <p>
-                     Following a tutorial can be frustrating and confusing. I break down what I am 
-                     currently learning in bite size steps to make understanding new information 
-                     easier.
-                  </p>
-            </div>
-
+            <!-- ** main column -->
             <section class="column2--main">
                   <h2 class="column2--main__h2 h2">Build a Modern Landing Page Series</h2>
                   <h3 class="column2--main__h3 h3">Building a Landing page background</h3>
-            
-                  
                      <p class="column2--main__content">
                            First start an HTML page like this:
                      </p> 
@@ -142,6 +147,7 @@
             </section>
       </div>   
 
+      <!-- ** footer -->
       <footer class="footer">
          <p>Copyright 2019 Jose Fon</p>
       </footer>
