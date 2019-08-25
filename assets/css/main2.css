@@ -10,7 +10,6 @@ body {
    display: grid;
    grid-template-columns: 25% 65% 10%;
    grid-template-rows: 8% 5% auto 3em; 
-   /* color: rgb(59, 59, 59); */
    background-color: rgb(207, 207, 207);
    font-size: 16px;
    font-family: "Lato", sans-serif;
@@ -23,7 +22,24 @@ body {
    grid-column: 2/3;
    grid-row: 1/2;
    background-color: rgb(255, 255, 255);
+   
+}
+
+.header__h1 {
    letter-spacing: 15px;
+   padding: 1.6% 0 0 0;
+}
+
+.header__h2 {
+   letter-spacing: 8px;
+}
+
+.column2--main__h2, .column2--main__h3 {
+   background-color: rgb(255, 255, 255);
+}
+
+.column2--main__h3 {
+   padding: 0 0 2% 0;
 }
 
 h1, h2, h3 {
@@ -38,7 +54,6 @@ li {
 .column1 {
    grid-column: 1/2;
    grid-row: 1/5;
-   
    background-color: rgb(139, 139, 139);
    
 }
@@ -48,33 +63,35 @@ li {
    grid-column: 2/3;
    grid-row: 2/3;  
    background-color: rgb(177, 177, 177);
-   padding: 1.5%;
+   padding: 1.5% 3% 1.5% 3%;
 }
 
 .column2--main {
    grid-column: 2/3;
    grid-row: 3/4;
    background-color: rgb(224, 224, 224);  
-   padding: 2% 2% 3% 2%;
+   padding: 1.5% 3% 1.5% 3%;
    margin: 0 0 3% 0;
 }
 
-.code {
-   border-radius: 10px 10px 10px 10px ;
-   background-color: rgb(43, 43, 43);
-   color: rgb(236, 236, 236); 
+.column2--main__content {
+   background-color: rgb(97, 97, 97);
+   padding: 0.8% 0 0.8% 0;
 }
 
 .pre {
-   border-radius: 10px 10px 10px 10px ;
-   background-color: rgb(139, 138, 138); 
+   border-radius: 8px 8px 8px 8px ;
+   background-color: rgb(22, 22, 22); 
    white-space: pre-wrap;
    word-wrap: break-word;
    text-align: justify;
+   color: rgb(245, 245, 245);
+   margin: 0 0 
 }
 
 .footer {
    grid-column: 1/4;
    grid-row: 4/5;
    background-color: rgb(78, 78, 78);
+   color: rgb(228, 228, 228);
 }
