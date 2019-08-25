@@ -1,158 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <link rel="stylesheet" href="assets/css/main2.css">
-   <title>Document</title>
-</head>
-
-<body>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="assets/css/main2.css">
+      <title>Document</title>
+   </head>
    
-   <header class="header">
+   <body>
       
-      <h1 class="header__h1 h1">A blog for learning</h1>
-      <h3 class="header__h2 h2">Learn web dev with me</h3>
-   </header>
-         <!-- ** Column 1 - Menu -->
-         <div class="column1">
-            <ul class="column1--menu">
-               <li class="column1--menu__menu">List of articles:</li>
-               <li class="column1--menu__webDev">Web development:</li>
-               <ul class="column1--menu__art">
-                  <li class="column1--menu__webPage">Build a modern web page series:</li>
-                  <ul class="column1--menu__list">
-                     <li>Building a header - part 1</li>
-                     <ul class="column1--menu__comingSoon">
-                        <li class="column1--menu__one">Coming soon!</li>
-                        <li>Building a header - part 2</li>
-                        <li>Creating cool CSS animations</li>
-                     </ul>                  
-                  </ul>                    
-               </ul>
-               
-               <ul class="column1-menu__books">
-                  <li class="column1--menu__read">thoughts from a few books:</li>
-                  <ul class="column1--menu__bookList">
-                     <ul class="column1--menu__comingSoon">
-                        <li class="column1--menu__one">Coming soon!</li>
-                        <ul class="column1--menu__futBooks">
-                           <li class="column1--menu__one">the one thing</li>
-                           <li class="column1--menu__obstacle">the obstacle is the way</li>
-                        </ul>          
-                     </ul>
+      <header class="header">
+         
+         <h1 class="header__h1 h1">A blog for learning</h1>
+         <h3 class="header__h2 h2">Learn web dev with me</h3>
+         
+      </header>
+   
+      <!-- ** Column 1 - Menu -->
+      <div class="column1">
+   
+         <ul class="column1--menu">
+            <li class="column1--menu__menu">List of articles:</li>
+            <li class="column1--menu__webDev">Web development:</li>
+            <ul class="column1--menu__art">
+               <li class="column1--menu__webPage">Build a modern web page series:</li>
+               <ul class="column1--menu__list">
+                  <li>Building a header - part 1</li>
+                  <ul class="column1--menu__comingSoon">
+                     <li class="column1--menu__one">Coming soon!</li>
+                     <li>Building a header - part 2</li>
+                     <li>Creating cool CSS animations</li>
+                  </ul>   
+               </ul>                  
+            </ul>                    
+         </ul>
+            
+         <ul class="column1-menu__books">
+            <li class="column1--menu__read">thoughts from a few books:</li>
+            <ul class="column1--menu__bookList">
+               <ul class="column1--menu__comingSoon">
+                  <li class="column1--menu__one">Coming soon!</li>
+                  <ul class="column1--menu__futBooks">
+                     <li class="column1--menu__one">the one thing</li>
+                     <li class="column1--menu__obstacle">the obstacle is the way</li>      
                   </ul>
-               </ul>  
-            </ul>
+               </ul>
+            </ul>  
+         </ul>
+   
+      </div>
+            
+      <!-- ** Intro -->
+      <div class="intro--top">
+         <p>
+            Following a tutorial can be frustrating and confusing. I break down what I am 
+            currently learning in bite size steps to make understanding new information 
+            easier.
+         </p>
+      </div>
+   
+      <!-- ** main column -->
+      <section class="column2--main">
+            <h2 class="column2--main__h2 h2">Build a Modern Landing Page Series</h2>
+            <h3 class="column2--main__h3 h3">Building a Landing page background</h3>
+               <p class="column2--main__content">
+                     First start an HTML page like this:
+               </p> 
+                     
+               
+         <div class="column2--main__code">
+               <pre class="pre">
+                  <code>
+         &lt;!DOCTYPE html&gt; 
+         &lt;html lang="en"&gt;  
+            &lt;head&gt; 
+               &lt;meta charset="UTF-8"&gt; 
+               &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; 
+               &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt; 
+               &lt;title&gt;Document&lt;/title&gt;
+            &lt;/head&gt; 
+            &lt;body&gt; 
+                        
+            &lt;/body&gt; 
+         &lt;/html&gt;
+                  </code>
+               </pre>
          </div>
-            
-         <!-- ** Intro -->
-         <div class="intro--top">
-            <p>
-               Following a tutorial can be frustrating and confusing. I break down what I am 
-               currently learning in bite size steps to make understanding new information 
-               easier.
-            </p>
+               
+         <p class="column2--main__content">
+            index.html 
+            First inside the &lt;body&gt; element we are going to create a &lt;header&gt; element.
+         </p>
+   
+         <div class="column2--main__code">
+            <pre class="pre">
+               <code>
+               &lt;body&gt;
+                  &lt;header class="header"&gt;
+                     some text...
+                  &lt;/header&gt;
+               &lt;/body&gt;
+               </code>
+            </pre>
          </div>
-
-            <!-- ** main column -->
-            <section class="column2--main">
-                  <h2 class="column2--main__h2 h2">Build a Modern Landing Page Series</h2>
-                  <h3 class="column2--main__h3 h3">Building a Landing page background</h3>
-                     <p class="column2--main__content">
-                           First start an HTML page like this:
-                     </p> 
+                     
+         <p class="column2--main__content">
+            For now that’s all we need. We are now going to go to our style.css file.
+         </p>
+   
+         <p class="column2--main__content">
+               Reset with this code:
+         </p>
+   
+         <div class="column2--main__code">
+            <pre class="pre">
+               <code>
+               * { 
+                  padding: 0;
+                  margin: 0;
+                  box-sizing: border-box;
+               }               
+               </code>
+            </pre>
+         </div>
+               
+         <p class="column2--main__content">
+               The point of a reset is to eliminate variations due to browser defaults 
+         </p>
+         <p class="column2--main__content">
+               Box-sizing: border-box; changes the box model so that the border and padding are no longer added to the total width and height that is specified for a box.         
+         </p>
+         <p class="column2--main__content">
+               Font properties for the entire web page. The properties related to font are usually inherited
+         </p>
+   
+         <div class="column2--main__code">
+            <pre class="pre">
+               <code>
+               Body {
+                  font-family: “Lato”, sans-serif;
+                  font-weight: 400;
+                  font-size: 16px;
+                  line-height: 1.7;
+                  color: #777;
+               }
+               </code>
+            </pre>
+         </d>
+         <p class="column2--main__content">The font-family is the parent element of all the other elements and its properties will be inherited by all the children elements. </p>
+         <p class="column2--main__content">The font “Lato” is already linked from Google.com to the index.html file. </p>
+         <p class="column2--main__content">Line-height: 1.7; means 1.7 times the predefined line height.</p>
+         <p class="column2--main__content">The end result:</p>
+         
+         <div class="column2--main__code">
+            <div class="pre">
+               <code>
+               * { 
+                  padding: 0;
+                  margin: 0;
+                  box-sizing: border-box;
+               }
                   
-            
-                  <div class="column2--main__code">
-                        <pre class="pre">
-                           <code>
-            &lt;!DOCTYPE html&gt; 
-            &lt;html lang="en"&gt;  
-               &lt;head&gt; 
-                  &lt;meta charset="UTF-8"&gt; 
-                  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; 
-                  &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt; 
-                  &lt;title&gt;Document&lt;/title&gt;
-               &lt;/head&gt; 
-               &lt;body&gt; 
-                           
-               &lt;/body&gt; 
-            &lt;/html&gt;
-                           </code>
-                        </pre>
-                  </div>
-            
-                  <p class="column2--main__content">
-                     index.html 
-                     First inside the &lt;body&gt; element we are going to create a &lt;header&gt; element.
-                  </p>
-            
-                  <div class="column2--main__code">
-                     <pre class="pre">
-                        <code>
-            &lt;body&gt;
-               &lt;header class="header"&gt;
-                  some text...
-               &lt;/header&gt;
-            &lt;/body&gt;
-                        </code>
-                     </pre>
-                  </div>
-                  
-                  <p class="column2--main__content">
-                     For now that’s all we need. We are now going to go to our style.css file.
-                  </p>
-            
-                  <p class="column2--main__content">
-                        Reset with this code:
-                  </p>
-            
-                  <div class="column2--main__code">
-                     <pre class="pre">
-                        <code>
-            * { 
-               padding: 0;
-               margin: 0;
-               box-sizing: border-box;
-            }               
-                        </code>
-                     </pre>
-                  </div>
-            
-                  <p class="column2--main__content">
-                        The point of a reset is to eliminate variations due to browser defaults 
-                  </p>
-                  <p class="column2--main__content">
-                        Box-sizing: border-box; changes the box model so that the border and padding are no longer added to the total width and height that is specified for a box.         
-                  </p>
-                  <p class="column2--main__content">
-                        Font properties for the entire web page. The properties related to font are usually inherited
-                  </p>
-            
-                  <div class="column2--main__code">
-                     <pre class="pre">
-                        <code>
-            Body {
-               font-family: “Lato”, sans-serif;
-               font-weight: 400;
-               font-size: 16px;
-               line-height: 1.7;
-               color: #777;
-            }
-                        </code>
-                     </pre>
-                  </div>
-            </section>
-      </div>   
-
+               body {
+                  font-family: "Lato", sans-serif;
+                  font-weight: 400;
+                  font-size: 16px;
+                  line-height: 1.7;
+                  color: #777;
+               }
+               </code>
+            </div>
+         </div>
+   
+      </section>  
+   
       <!-- ** footer -->
       <footer class="footer">
          <p>Copyright 2019 Jose Fon</p>
       </footer>
-   
-
-
-</body>
+      
+   </body>
 </html>
