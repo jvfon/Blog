@@ -7,48 +7,50 @@
    <link rel="stylesheet" href="assets/css/main2.css">
    <title>Document</title>
 </head>
+
 <body>
+   
    <header class="header">>
       <!-- TODO: social media links on top-->
       <h1 class="header__h1 h1">A blog for learning</h1>
-      <h2 class="header__h2 h2">Learn to build stuff with me</h2>
-      <div class="header__p">
-            <p>
-               Following a tutorial can be frustrating and confusing. I break down what I am 
-               currently learning in bite size steps to make understanding new information 
-               easier.
-            </p>
-      </div>
-
+      <h2 class="header__h2 h2">Learn stuff with me</h2>
    </header>
 
-   <div class="row">
-
-      <div class="column1">
          <div class="column1--menu">
-            <ul class="column1--menu__ul">
-               <li>Build a Modern Landing Page Series</li>
-               <ol class="column1--menu__ul__ol">
-                  <li>Building a Landing page background</li>
-               </ol>
+            <ul class="column1--menu__sections">
+               <li class="column1--menu__webDev">Web development</li>
+               <ul class="column1--menu__ul__art">
+                  <li class="column1--menu">Build a modern landing page series</li>
+                     <ol class="column1--menu--ul--li">
+                           <li>Building a Landing page background</li>
+                     </ol>
+               </ul>
             </ul>
          </div>
-      </div>
+      
 
-      <div class="column2">
+      
+            <div class="intro--top">
+                  <p>
+                     Following a tutorial can be frustrating and confusing. I break down what I am 
+                     currently learning in bite size steps to make understanding new information 
+                     easier.
+                  </p>
+            </div>
+
             <section class="column2--main">
                   <h2 class="column2--main__h2 h2">Build a Modern Landing Page Series</h2>
                   <h3 class="column2--main__h3 h3">Building a Landing page background</h3>
             
                   
-                        <p class="column2--main__content">
+                      <p class="column2--main__content">
                            First start an HTML page like this:
-                        </p> 
+                     </p> 
                   
             
                   <div class="column2--main__code">
-                        <pre>
-                        <code>
+                        <pre class="pre">
+                           <code>
             &lt;!DOCTYPE html&gt; 
             &lt;html lang="en"&gt;  
                &lt;head&gt; 
@@ -61,17 +63,17 @@
                            
                &lt;/body&gt; 
             &lt;/html&gt;
-                        </code>
+                           </code>
                         </pre>
                   </div>
             
                   <p class="column2--main__content">
                      index.html 
-                     First inside the <body> element we are going to create a &lt;header&gt; element.
+                     First inside the &lt;body&gt; element we are going to create a &lt;header&gt; element.
                   </p>
             
                   <div class="column2--main__code">
-                     <pre>
+                     <pre class="pre">
                         <code>
             &lt;body&gt;
                &lt;header class="header"&gt;
@@ -91,7 +93,7 @@
                   </p>
             
                   <div class="column2--main__code">
-                     <pre>
+                     <pre class="pre">
                         <code>
             * { 
                padding: 0;
@@ -102,18 +104,18 @@
                      </pre>
                   </div>
             
-                  <p class="reg-content">
+                  <p class="column2--main__content">
                         The point of a reset is to eliminate variations due to browser defaults 
                   </p>
-                  <p class="reg-content">
+                  <p class="column2--main__content">
                         Box-sizing: border-box; changes the box model so that the border and padding are no longer added to the total width and height that is specified for a box.         
                   </p>
-                  <p class="reg-content">
+                  <p class="column2--main__content">
                         Font properties for the entire web page. The properties related to font are usually inherited
                   </p>
             
                   <div class="column2--main__code">
-                     <pre>
+                     <pre class="pre">
                         <code>
             Body {
                font-family: “Lato”, sans-serif;
@@ -125,10 +127,13 @@
                         </code>
                      </pre>
                   </div>
-               </section>
-      </div>
-      <div class="column-right"></div>
-   </div>
+            </section>
+      </div>   
+
+      <footer class="footer">
+         footer
+      </footer>
+   
 
 
 </body>

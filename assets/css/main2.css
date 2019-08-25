@@ -8,23 +8,21 @@
 
 body {
    display: grid;
-   grid-template-columns: 20% 60% 20%;
-   grid-template-columns: 1fr 2fr;
-   color: rgb(59, 59, 59);
+   grid-template-columns: 25% 65% 10%;
+   grid-template-rows: 8% 5% auto 3em; 
+   /* color: rgb(59, 59, 59); */
    background-color: rgb(207, 207, 207);
    font-size: 16px;
    font-family: "Lato", sans-serif;
    font-weight: 400;
-   line-height: 1.7;
+   line-height: 1.5;  
    
 }
 
 .header {
-   background-color: rgb(241, 241, 241);
-}
-
-.header__p {
-   background-color: rgb(44, 44, 44);
+   grid-column: 2/3;
+   grid-row: 1/2;
+   background-color: rgb(255, 255, 255);
 }
 
 h1, h2, h3 {
@@ -32,24 +30,28 @@ h1, h2, h3 {
    text-align: center;
 }
 
+li {
+   text-transform: capitalize;
+}
 /* column1 menu */
 .column1 {
-   background-color: rgb(49, 49, 49);
-   width: 15%;
-}
-
-.column1--menu {
+   grid-column: 1/2;
+   grid-row: 1/5;
    
-   width: 100px;
+   background-color: rgb(139, 139, 139);
+   
 }
 
 /* main column */
-.column2 {
-   width: 50%;
-   margin: 45%;
+.intro--top {
+   grid-column: 2/3;
+   grid-row: 2/3;  
+   background-color: rgb(177, 177, 177);
 }
 
-.main-content {
+.column2--main {
+   grid-column: 2/3;
+   grid-row: 3/4;
    background-color: rgb(224, 224, 224);
    
 }
@@ -62,16 +64,16 @@ h1, h2, h3 {
    
 }
 
-.reg-content {
-   background-color: rgb(255, 253, 253);
-   
-}
-
-pre {
+.pre {
    border-radius: 10px 10px 10px 10px ;
-   background-color: #fff; 
+   background-color: rgb(139, 138, 138); 
    white-space: pre-wrap;
    word-wrap: break-word;
    text-align: justify;
 }
 
+.footer {
+   grid-column: 1/4;
+   grid-row: 4/5;
+   background-color: rgb(78, 78, 78);
+}
