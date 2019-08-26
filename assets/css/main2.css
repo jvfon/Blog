@@ -21,16 +21,19 @@ body {
    grid-column: 2/3;
    grid-row: 1/2;
    background-color: rgb(255, 255, 255);
-   
+   text-align: center;
 }
 
-.header__h1 {
+.header--title__primary {
    letter-spacing: 15px;
    padding: 1.6% 0 0 0;
+   display: block;
 }
 
-.header__h2 {
+.header--title__sub {
    letter-spacing: 8px;
+   display: block;
+}
 }
 
 h1, h2, h3 {
