@@ -39,14 +39,27 @@
          <ul class="column1-menu__books">
             <li class="column1--menu__read">thoughts from a few books:</li>
             <ul class="column1--menu__bookList">
-               <ul class="column1--menu__comingSoon">
-                  <li class="column1--menu__one">Coming soon!</li>
+               <ul class="column1--menu__coming">
+                  <li class="column1--menu__soon">Coming soon!</li>
                   <ul class="column1--menu__futBooks">
                      <li class="column1--menu__one">the one thing</li>
                      <li class="column1--menu__obstacle">the obstacle is the way</li>      
+                     <li class="column1--menu__one">the tools</li>
+                     <li class="column1--menu__one">conceptual blockbusting</li>
                   </ul>
                </ul>
             </ul>  
+         </ul>
+
+         <ul class="column1-menu">
+               <li class="column1--menu__misc">miscellaneous:</li>
+               
+                  <ul class="column1--menu__coming">
+                     <li class="column1--menu__soon">Coming soon!</li>
+                     <ul class="column1--menu__futArt">
+                        <li class="column1--menu__vsc">useful VS Code shortcuts</li>                        
+                     </ul>
+                  </ul>         
          </ul>
    
       </div>
@@ -55,8 +68,8 @@
       <div class="intro--top">
          <p>
             Following a tutorial can be frustrating and confusing. I break down what I am 
-            currently learning in bite size steps to make understanding new information 
-            easier.
+            currently learning in bite size steps to make new information 
+            easier to understand.
          </p>
       </div>
    
@@ -67,25 +80,24 @@
                <p class="column2--main__content">
                      First start an HTML page like this:
                </p> 
-                     
-               
+                                    
          <div class="column2--main__code">
-               <pre class="pre">
-                  <code>
-         &lt;!DOCTYPE html&gt; 
-         &lt;html lang="en"&gt;  
-            &lt;head&gt; 
-               &lt;meta charset="UTF-8"&gt; 
-               &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; 
-               &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt; 
-               &lt;title&gt;Document&lt;/title&gt;
-            &lt;/head&gt; 
-            &lt;body&gt; 
-                        
-            &lt;/body&gt; 
-         &lt;/html&gt;
-                  </code>
-               </pre>
+            <pre class="pre">
+               <code>
+   &lt;!DOCTYPE html&gt; 
+   &lt;html lang="en"&gt;  
+      &lt;head&gt; 
+         &lt;meta charset="UTF-8"&gt; 
+         &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; 
+         &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt; 
+         &lt;title&gt;Document&lt;/title&gt;
+      &lt;/head&gt; 
+      &lt;body&gt; 
+                  
+      &lt;/body&gt; 
+   &lt;/html&gt;
+               </code>
+            </pre>
          </div>
                
          <p class="column2--main__content">
@@ -96,11 +108,11 @@
          <div class="column2--main__code">
             <pre class="pre">
                <code>
-               &lt;body&gt;
-                  &lt;header class="header"&gt;
-                     some text...
-                  &lt;/header&gt;
-               &lt;/body&gt;
+   &lt;body&gt;
+      &lt;header class="header"&gt;
+         some text...
+      &lt;/header&gt;
+   &lt;/body&gt;
                </code>
             </pre>
          </div>
@@ -116,11 +128,11 @@
          <div class="column2--main__code">
             <pre class="pre">
                <code>
-               * { 
-                  padding: 0;
-                  margin: 0;
-                  box-sizing: border-box;
-               }               
+   * { 
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+   }               
                </code>
             </pre>
          </div>
@@ -138,13 +150,13 @@
          <div class="column2--main__code">
             <pre class="pre">
                <code>
-               Body {
-                  font-family: “Lato”, sans-serif;
-                  font-weight: 400;
-                  font-size: 16px;
-                  line-height: 1.7;
-                  color: #777;
-               }
+   Body {
+      font-family: “Lato”, sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #777;
+   }
                </code>
             </pre>
          </d>
@@ -156,23 +168,143 @@
          <div class="column2--main__code">
             <div class="pre">
                <code>
-               * { 
-                  padding: 0;
-                  margin: 0;
-                  box-sizing: border-box;
-               }
-                  
-               body {
-                  font-family: "Lato", sans-serif;
-                  font-weight: 400;
-                  font-size: 16px;
-                  line-height: 1.7;
-                  color: #777;
-               }
+   * { 
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+   }
+      
+   body {
+      font-family: "Lato", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #777;
+   }
                </code>
             </div>
          </div>
-   
+
+         <p class="column2--main__content">Now, we are going to edit the &lt;header&gt; element.</p>
+         
+         <div class="column2--main__code">
+            <pre class="pre">
+               <code>
+   .header {
+      height: 95vh;
+      background-image: url(../img/hero.jpg);
+      background-size: cover:
+      background-position: top;
+   }
+               </code>
+            </pre>
+         </div>
+
+         <p class="column2--main__content">height: 95vh makes the height of the &lt;header&gt; element 95% of the height of the viewport height.</p>
+         <p class="column2--main__content">background-image: url(../img/hero.jpg);
+               two dots (..) to go up to the image folder and then write the file name.</p>   
+         <p class="column2--main__content">background-size: cover; 
+               “cover” tries to fit the size of the image to the size of the box.</p>
+         <p class="column2--main__content">background-position: top;
+               The top of the background stays in a fixed position when the web page is being resized. We can also use “center” and “bottom” for a different result.</p>
+         <p class="column2--main__content">To have a gradient all over the image, we use the background-image property. We are going to use the background-image property that we already have and add onto it. </p>
+
+         <div class="column2--main__code">
+            <pre class="pre">
+               <code>
+   background-image: url(../img/hero.jpg);
+               </code>
+            </pre>
+         </div>               
+
+         <p class="column2--main__content">Since we want the gradient to be on top. The gradient has to be specified first.</p>
+
+         <div class="column2--main__code">
+            <pre class="pre">
+               <code>
+   background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../img/hero.jpg);  <br>
+               </code>
+            </pre>
+         </div>           
+
+         <p class="column2--main__content">#7ed56f light green goes first.</p>
+         <p class="column2--main__content">#28b485 dark green goes last.</p>
+         <p class="column2--main__content">“to right bottom”, the gradient goes from the top to the right bottom corner.</p>
+         <p class="column2--main__content">Next we change from hex to rgba colors. On VS Code put the cursor on the hex number. A color picker window will show up, slide down the slider for the opacity until the number is at around 0.8.</p>
+
+         <div class="column2--main__code">
+            <pre class="pre">
+               <code>
+   background-image: linear-gradient(to right bottom, 
+      rgba(127, 213, 112, 0.801), 
+      rgba(39, 179, 133, 0.801)), 
+      url(../img/hero.jpg);  
+               </code>
+            </pre>
+         </div> 
+
+         <p class="column2--main__content">The final code:</p>
+         
+         <div class="column2--main__code">
+            <pre class="pre">
+               <code>
+      .header {
+         height: 95vh;
+         background-image: linear-gradient(to right bottom, 
+            rgba(127, 213, 112, 0.801), 
+            rgba(39, 179, 133, 0.801)), 
+            url(../img/hero.jpg);  
+         background-size: cover:
+         background-position: top;
+      }                  
+               </code>
+            </pre>
+         </div>
+
+         <p class="column2--main__content">We are going to add padding around the entire body.</p>
+
+         <div class="column2--main__code">
+            <pre class="pre">
+               <code>
+   padding: 30px;                   
+               </code>
+            </pre>
+         </div>
+
+         <p class="column2--main__content">padding gets inherited.</p>
+
+         <div class="column2--main__code">
+            <pre class="pre">
+               <code>
+   .header {
+      height: 95vh;
+      background-image: url(../img/hero.jpg);
+      background-size: cover:
+      background-position: top;
+      padding: 30px; 
+   }               
+               </code>
+            </pre>
+         </div>
+
+         <p class="column2--main__content"></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       </section>  
    
       <!-- ** footer -->
