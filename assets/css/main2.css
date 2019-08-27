@@ -9,7 +9,7 @@
 body {
    display: grid;
    grid-template-columns: 20% auto 10%;
-   grid-template-rows: 5% 3% auto 3em; 
+   grid-template-rows: 3% 3% auto 3em; 
    background-color: rgb(207, 207, 207);
    font-size: 16px;
    font-family: "Lato", sans-serif;
@@ -33,7 +33,7 @@ body {
 .header--title__sub {
    letter-spacing: 8px;
    display: block;
-}
+   font-size: 22px;
 }
 
 h1, h2, h3 {
@@ -143,4 +143,5 @@ li {
    grid-row: 4/5;
    background-color: rgb(78, 78, 78);
    color: rgb(228, 228, 228);
+   padding: 1%;
 }
