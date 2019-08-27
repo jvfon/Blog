@@ -49,6 +49,15 @@ a {
    color: rgb(19, 19, 19);  
 }
 
+a:hover {
+   font-weight: 700;
+   text-decoration: ita
+}
+
+a:visited {
+   color: 
+}
+
 .column1 {
    grid-column: 1/2;
    grid-row: 1/5;
