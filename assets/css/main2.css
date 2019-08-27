@@ -51,11 +51,11 @@ a {
 
 a:hover {
    font-weight: 700;
-   text-decoration: ita
+   font-style: italic;
 }
 
 a:visited {
-   color: 
+   
 }
 
 .column1 {
