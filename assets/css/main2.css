@@ -68,19 +68,19 @@ a:visited {
    
 }
 
-.column1--menu__menu {
+.column1--menu__artList {
    font-size: 22px;
    font-weight: bold;
    background-color: #777;
    padding: 0 0 2% 0;
    margin: 0 0 1% 0;
 }
-.column1--menu__webDev, .column1--menu__read, .column1--menu__misc {
+.column1--menu__webDev, .column1--menu__JavaScript,.column1--menu__read, .column1--menu__misc {
    font-size: 18px;
    font-weight: bold;
 }
 
-.column1--menu__webDev {
+.column1--menu__webDev, .column1--menu__JavaScript {
    padding: 0 0 2% 0;
    margin: 0 0 1% 0;
 }
@@ -165,4 +165,8 @@ li {
    background-color: rgb(78, 78, 78);
    color: rgb(228, 228, 228);
    padding: 1%;
+}
+
+@media(min-width: 600px ) {
+
 }
