@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="assets/css/main3.css">
+      <title>Document</title>
+   </head>
+   
+   <body>
+      
+      <header class="header">       
+         <h1 class="header--title">
+            <span class="header--title__primary">A blog for learning</span>
+            <span class="header--title__sub">Learn web dev with me</span>
+         </h1>         
+      </header>
+   
+      <!-- ** Column 1 - Menu -->
+      <div class="column1">
+   
+         
+   
+      </div>
+            
+      <!-- ** Intro -->
+      <div class="intro--top">
+         <p>
+            Following a tutorial can be frustrating and confusing. I break down what I am 
+            currently learning in bite size steps to make new information 
+            easier to understand.
+         </p>
+      </div>
+   
+      <!-- ** main column -->
+      <section class="column2--main">
+            <h2 class="column2--main__h2 h2">Build a Modern Landing Page Series</h2>
+            <h3 class="column2--main__h3 h3">Building a Landing page background</h3>
+               <p class="column2--main__content">
+                     First start an HTML page like this:
+               </p> 
+                                    
+         <div class="column2--main__code">
+            <pre class="pre">
+               <code>
+   &lt;!DOCTYPE html&gt; 
+   &lt;html lang="en"&gt;  
+      &lt;head&gt; 
+         &lt;meta charset="UTF-8"&gt; 
+         &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; 
+         &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt; 
+         &lt;title&gt;Document&lt;/title&gt;
+      &lt;/head&gt; 
+      &lt;body&gt; 
+                  
+      &lt;/body&gt; 
+   &lt;/html&gt;
+               </code>
+            </pre>
+         </div>
+               
+         <p class="column2--main__content">
+            index.html 
+            First inside the &lt;body&gt; element we are going to create a &lt;header&gt; element.
+         </p>
+   
+         <div class="column2--main__code">
+            <pre class="pre">
+               <code>
+   &lt;body&gt;
+      &lt;header class="header"&gt;
+         some text...
+      &lt;/header&gt;
+   &lt;/body&gt;
+               </code>
+            </pre>
+         </div>
+                     
+         <p class="column2--main__content">
+            For now that’s all we need. We are now going to go to our style.css file.
+         </p>
+   
+         <p class="column2--main__content">
+               Reset with this code:
+         </p>
+   
+         <div class="column2--main__code">
+            <pre class="pre">
+               <code>
+   * { 
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+   }               
+               </code>
+            </pre>
+         </div>
+               
+         <p class="column2--main__content">
+               The point of a reset is to eliminate variations due to browser defaults 
+         </p>
+         <p class="column2--main__content">
+               Box-sizing: border-box; changes the box model so that the border and padding are no longer added to the total width and height that is specified for a box.         
+         </p>
+         <p class="column2--main__content">
+               Font properties for the entire web page. The properties related to font are usually inherited
+         </p>
+   
+         <div class="column2--main__code">
+            <pre class="pre">
+               <code>
+   Body {
+      font-family: “Lato”, sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #777;
+   }
+               </code>
+            </pre>
+         </d>
+         <p class="column2--main__content">The font-family is the parent element of all the other elements and its properties will be inherited by all the children elements. </p>
+         <p class="column2--main__content">The font “Lato” is already linked from Google.com to the index.html file. </p>
+         <p class="column2--main__content">Line-height: 1.7; means 1.7 times the predefined line height.</p>
+         <p class="column2--main__content">The end result:</p>
+         
+         <div class="column2--main__code">
+            <div class="pre">
+               <code>
+   * { 
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+   }
+      
+   body {
+      font-family: "Lato", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #777;
+   }
+               </code>
+            </div>
+         </div>
+
+         <p class="column2--main__content">Now, we are going to edit the &lt;header&gt; element.</p>
+         
+         <div class="column2--main__code">
+            <pre class="pre">
+               <code>
+   .header {
+      height: 95vh;
+      background-image: url(../img/hero.jpg);
+      background-size: cover:
+      background-position: top;
+   }
+               </code>
+            </pre>
+         </div>
+
+         <p class="column2--main__content">height: 95vh makes the height of the &lt;header&gt; element 95% of the height of the viewport height.</p>
+         <p class="column2--main__content">background-image: url(../img/hero.jpg);
+               two dots (..) to go up to the image folder and then write the file name.</p>   
+         <p class="column2--main__content">background-size: cover; 
+               “cover” tries to fit the size of the image to the size of the box.</p>
+         <p class="column2--main__content">background-position: top;
+               The top of the background stays in a fixed position when the web page is being resized. We can also use “center” and “bottom” for a different result.</p>
+         <p class="column2--main__content">To have a gradient all over the image, we use the background-image property. We are going to use the background-image property that we already have and add onto it. </p>
+
+         <div class="column2--main__code">
+            <pre class="pre">
+               <code>
+   background-image: url(../img/hero.jpg);
+               </code>
+            </pre>
+         </div>               
+
+         <p class="column2--main__content">Since we want the gradient to be on top. The gradient has to be specified first.</p>
+
+         <div class="column2--main__code">
+            <pre class="pre">
+               <code>
+   background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../img/hero.jpg);  <br>
+               </code>
+            </pre>
+         </div>           
+
+         <p class="column2--main__content">#7ed56f light green goes first.</p>
+         <p class="column2--main__content">#28b485 dark green goes last.</p>
+         <p class="column2--main__content">“to right bottom”, the gradient goes from the top to the right bottom corner.</p>
+         <p class="column2--main__content">Next we change from hex to rgba colors. On VS Code put the cursor on the hex number. A color picker window will show up, slide down the slider for the opacity until the number is at around 0.8.</p>
+
+         <div class="column2--main__code">
+            <pre class="pre">
+               <code>
+   background-image: linear-gradient(to right bottom, 
+      rgba(127, 213, 112, 0.801), 
+      rgba(39, 179, 133, 0.801)), 
+      url(../img/hero.jpg);  
+               </code>
+            </pre>
+         </div> 
+
+         <p class="column2--main__content">The final code:</p>
+         
+         <div class="column2--main__code">
+            <pre class="pre">
+               <code>
+      .header {
+         height: 95vh;
+         background-image: linear-gradient(to right bottom, 
+            rgba(127, 213, 112, 0.801), 
+            rgba(39, 179, 133, 0.801)), 
+            url(../img/hero.jpg);  
+         background-size: cover:
+         background-position: top;
+      }                  
+               </code>
+            </pre>
+         </div>
+
+         <p class="column2--main__content">We are going to add padding around the entire body.</p>
+
+         <div class="column2--main__code">
+            <pre class="pre">
+               <code>
+   padding: 30px;                   
+               </code>
+            </pre>
+         </div>
+
+         <p class="column2--main__content">padding gets inherited.</p>
+
+         <div class="column2--main__code">
+            <pre class="pre">
+               <code>
+   .header {
+      height: 95vh;
+      background-image: url(../img/hero.jpg);
+      background-size: cover:
+      background-position: top;
+      padding: 30px; 
+   }               
+               </code>
+            </pre>
+         </div>
+
+         <p class="column2--main__content"></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </section>  
+   
+      <!-- ** footer -->
+      <footer class="footer">
+         <p>Copyright 2019 Jose Fon</p>
+      </footer>
+      
+   </body>
+</html>
