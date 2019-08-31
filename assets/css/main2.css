@@ -170,11 +170,13 @@ li {
 @media(min-width: 400px ) {
    body {
       font-size: 14px;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr; 
    }
 }
 
 @media (min-width: 500px) {
    .column1--menu {
-      
+
    }
 }
