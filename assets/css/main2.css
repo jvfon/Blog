@@ -170,8 +170,11 @@ li {
 @media(min-width: 400px ) {
    body {
       font-size: 14px;
-      /* font-weight: 300; */
    }
+}
 
-
+@media (min-width: 500px) {
+   .column1--menu {
+      
+   }
 }
