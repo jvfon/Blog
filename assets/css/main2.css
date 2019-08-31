@@ -167,9 +167,11 @@ li {
    padding: 1%;
 }
 
-@media(min-width: 600px ) {
+@media(min-width: 400px ) {
    body {
       font-size: 14px;
-      font-weight: 300;
+      /* font-weight: 300; */
    }
+
+
 }
