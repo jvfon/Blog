@@ -36,10 +36,11 @@ header {
    height: 100%;
 }
 
-.column2--intro {
+.intro {
    background-color: rgb(114, 113, 113);
    grid-column: 2/3;
    grid-row: 2/3;
+   height: 100%;
 }
 
  /* **footer */
@@ -50,7 +51,11 @@ footer {
    height: 100%;
 }
 
-/* media queries */
+/* ** media queries */
 @media (min-width: 450px) {
-
+   body {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 0.5fr 1fr 1fr 1fr; 
+      width: 100%;
+   }
 }
