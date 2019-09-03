@@ -33,6 +33,7 @@ body {
 .main-footer {
    background-color: rgb(163, 163, 163);
    grid-area: footer;
+   grid
 }
 
 .wrapper {
