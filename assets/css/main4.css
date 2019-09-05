@@ -42,6 +42,7 @@ body {
    grid-gap: 20px;
    grid-template-areas: 
       "header"
+      "header"
       "nav"
       "content"
       "sidebar"
