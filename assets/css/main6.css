@@ -54,26 +54,62 @@
    }   */
 
    /* RESET LAYOUT AND ADD COLORS */
-body {
+/* body {
    margin: 0;
    padding: 0;
    max-width: inherit;
    background: #fff;
    color: #4a4a4a;
- }
- header, footer {
+}
+header, footer {
    font-size: large;
    text-align: center;
    padding: 0.3em 0;
    background-color: #4a4a4a;
    color: #f9f9f9;
- }
- nav {
+}
+nav {
    background: #eee;
+}
+main {
+   background: #f9f9f9;
+}
+aside {
+   background: #eee;
+} */
+
+/* FLOAT-BASED LAYOUT */
+body {
+   padding-left: 200px;
+   padding-right: 190px;
+   min-width: 240px;
+ }
+ header, footer {
+   margin-left: -200px;
+   margin-right: -190px;   
+ }
+ main, nav, aside {
+   position: relative;
+   float: left;
  }
  main {
-   background: #f9f9f9;
+   padding: 0 20px;
+   width: 100%;
+ }
+ nav {
+   width: 180px;
+   padding: 0 10px;
+   right: 240px;
+   margin-left: -100%;
  }
  aside {
-   background: #eee;
+   width: 130px;
+   padding: 0 10px;
+   margin-right: -100%;
+ }
+ footer {
+   clear: both;
+ }
+ * html nav {
+   left: 150px;
  }
