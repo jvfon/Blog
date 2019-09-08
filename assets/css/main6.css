@@ -53,7 +53,7 @@
       font-size: 1em;
    }   */
 
-   /* RESET LAYOUT AND ADD COLORS */
+/* ** RESET LAYOUT AND ADD COLORS */
 /* body {
    margin: 0;
    padding: 0;
@@ -78,7 +78,8 @@ aside {
    background: #eee;
 } */
 
-/* FLOAT-BASED LAYOUT */
+/* ** FLOAT-BASED LAYOUT */
+/*
 body {
    padding-left: 200px;
    padding-right: 190px;
@@ -109,7 +110,31 @@ aside {
 }
 footer {
    clear: both;
-}
- * html nav {
+} 
+ /* ** html nav {
    left: 150px;
+}  */
+
+/* FLEXBOX-BASED LAYOUT */
+body {
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+}
+.container {
+   display: flex;
+   flex: 1;
+}
+main {
+   flex: 1;
+   padding: 0 20px;
+}
+nav {
+   flex: 0 0 180px;
+   padding: 0 10px;
+   order: -1;
+}
+aside {
+   flex: 0 0 130px;
+   padding: 0 10px;
 }
