@@ -115,7 +115,8 @@ footer {
    left: 150px;
 }  */
 
-/* FLEXBOX-BASED LAYOUT */
+/* ** FLEXBOX-BASED LAYOUT */
+/*
 body {
    min-height: 100vh;
    display: flex;
@@ -137,4 +138,35 @@ nav {
 aside {
    flex: 0 0 130px;
    padding: 0 10px;
+} */
+
+/* ** GRID-BASED LAYOUT */
+body {
+   display: grid;
+   min-height: 100vh;
+   grid-template-columns: 200px 1fr 150px;
+   grid-template-rows: min-content 1fr min-content;
+}
+header {
+   grid-row: 1;
+   grid-column: 1 / 4;
+}
+nav {
+   grid-row: 2;
+   grid-column: 1 / 2;
+   padding: 0 10px;
+}
+main {
+   grid-row: 2;
+   grid-column: 2 / 3;
+   padding: 0 20px;
+}
+aside {
+   grid-row: 2;
+   grid-column: 3 / 4;
+   padding: 0 10px;
+}
+footer {
+   grid-row: 3;
+   grid-column: 1 / 4;
 }
