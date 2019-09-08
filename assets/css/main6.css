@@ -83,33 +83,33 @@ body {
    padding-left: 200px;
    padding-right: 190px;
    min-width: 240px;
- }
- header, footer {
+}
+header, footer {
    margin-left: -200px;
    margin-right: -190px;   
- }
- main, nav, aside {
+}
+main, nav, aside {
    position: relative;
    float: left;
- }
- main {
+}
+main {
    padding: 0 20px;
    width: 100%;
- }
- nav {
+}
+nav {
    width: 180px;
    padding: 0 10px;
    right: 240px;
    margin-left: -100%;
- }
- aside {
+}
+aside {
    width: 130px;
    padding: 0 10px;
    margin-right: -100%;
- }
- footer {
+}
+footer {
    clear: both;
- }
+}
  * html nav {
    left: 150px;
- }
+}
