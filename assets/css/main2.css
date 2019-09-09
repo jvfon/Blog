@@ -8,7 +8,7 @@
 
 body {
    display: grid;
-   grid-template-columns: minmax(15ch, 28ch) minmax(60ch, 100ch) 1fr;
+   grid-template-columns: minmax(15ch, 28ch) minmax(37ch, 100ch) 1fr;
    /*  grid-template-columns: repeat(260px auto 100px, minmax(500px, 1fr)); */
    /*  grid-template-rows: 110px 70px auto 50px; */
    background-color: rgb(207, 207, 207);
@@ -145,11 +145,12 @@ li {
    background-color: rgb(224, 224, 224);  
    padding: 1.5% 3% 1.5% 3%;
    margin: 0 0 3% 0;
+   
 }
 
 .column2--main__content {
    background-color: rgb(143, 143, 143);
-   padding: 0.8% 0 0.8% 0;
+   padding: 1em;
 }
 
 .pre {
@@ -159,7 +160,8 @@ li {
    word-wrap: break-word;
    text-align: justify;
    color: rgb(245, 245, 245);
-   margin: 0 0 
+   margin: 0 0;
+   padding: 1em;
 }
 
 .footer {
@@ -167,7 +169,7 @@ li {
    grid-row: 4/5;
    background-color: rgb(78, 78, 78);
    color: rgb(228, 228, 228);
-   padding: 1%;
+   padding: 1em;
 }
 
 
