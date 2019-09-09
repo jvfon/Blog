@@ -8,8 +8,9 @@
 
 body {
    display: grid;
-   grid-template-columns: 260px auto 100px;
-   grid-template-rows: 110px 70px auto 50px;
+   grid-template-columns: minmax(15ch, 28ch) minmax(60ch, 100ch) 1fr;
+   /*  grid-template-columns: repeat(260px auto 100px, minmax(500px, 1fr)); */
+   /*  grid-template-rows: 110px 70px auto 50px; */
    background-color: rgb(207, 207, 207);
    font-size: 16px;
    font-family: "Lato", sans-serif;
