@@ -8,8 +8,8 @@
 
 body {
    display: grid;
-   grid-template-columns: 20% auto 10%;
-   grid-template-rows: 3% 3% auto 3em; 
+   grid-template-columns: 260px auto 100px;
+   grid-template-rows: 110px 70px auto 50px;
    background-color: rgb(207, 207, 207);
    font-size: 16px;
    font-family: "Lato", sans-serif;
@@ -116,10 +116,12 @@ a:visited {
 li {
    text-transform: capitalize;
    list-style-type: none;
-  
+   
 }
 
-/* ** main column */
+
+/* ** main column */ 
+
 .intro--top {
    grid-column: 2/3;
    grid-row: 2/3;  
@@ -167,6 +169,8 @@ li {
    padding: 1%;
 }
 
+
+/*
 @media(min-width: 400px ) {
    body {
       font-size: 14px;
@@ -179,4 +183,10 @@ li {
    .column1--menu {
 
    }
-}
+}    */
+
+
+
+
+
+
