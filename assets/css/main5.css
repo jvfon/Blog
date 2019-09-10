@@ -143,8 +143,8 @@ li {
    /*  grid-column: 2/3;
    grid-row: 3/4;    */
    background-color: rgb(224, 224, 224);  
-   padding: 1.5% 3% 1.5% 3%;
-   margin: 0 0 3% 0;
+   padding: 1rem 1.5rem 1rem 1.5rem;
+   margin: 0 0 1.5rem 0;
    
 }
 
@@ -161,7 +161,7 @@ li {
    text-align: justify;
    color: rgb(245, 245, 245);
    margin: 0 0;
-   padding: 1em;
+   padding: 1rem;
 }
 
 .footer {
@@ -169,12 +169,12 @@ li {
    grid-row: 4/5;  
    background-color: rgb(78, 78, 78);
    color: rgb(228, 228, 228);
-   padding: 1em;
+   padding: 1rem;
 }
 
 
 
-@media(min-width: 450 px ) {
+@media(min-width: 450px ) {
    body {
       font-size: 14px;
       grid-template-columns: 1fr;
