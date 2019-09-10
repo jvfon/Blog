@@ -104,13 +104,13 @@ a:visited {
 
 .column1--menu__misc {
    border-top: 1px dotted;
-   padding: 2.5% 0 0 0;   
+   padding: 2rem 0 0 0;   
 }
 
 
 .column1--menu__read  {
    background-color: #777;
-   padding: 0 0 2% 0;
+   padding: 0 0 2rem 0;
 }
 
 /* TODO: do hover over link, unline shows */
