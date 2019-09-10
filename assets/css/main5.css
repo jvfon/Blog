@@ -73,8 +73,8 @@ a:visited {
    font-size: 22px;
    font-weight: bold;
    background-color: #777;
-   padding: 0 0 2% 0;
-   margin: 0 0 1% 0;
+   padding: 0 0 1rem 0;
+   margin: 0 0 1.2rem 0;
 }
 .column1--menu__webDev, .column1--menu__JavaScript,.column1--menu__read, .column1--menu__misc {
    font-size: 18px;
@@ -182,13 +182,13 @@ li {
    }
 }
 
-@media (min-max: 100px) {
+@media (min-max: 600px) {
    .header {
       font-size: 15px;
       grid-column: 1/1;
       grid-row: 1/1;
    }
-}   */
+}  
 
 
 
