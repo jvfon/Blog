@@ -174,7 +174,7 @@ li {
 
 
 
-/* @media(min-width: 400 px ) {
+@media(min-width: 450 px ) {
    body {
       font-size: 14px;
       grid-template-columns: 1fr;
@@ -182,9 +182,11 @@ li {
    }
 }
 
-/*  @media (min-width: 500px) {
-   .column1--menu {
-
+@media (min-max: 100px) {
+   .header {
+      font-size: 15px;
+      grid-column: 1/1;
+      grid-row: 1/1;
    }
 }   */
 
