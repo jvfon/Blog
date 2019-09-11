@@ -24,7 +24,7 @@ body {
    grid-row: 1/2;
    background-color: rgb(255, 255, 255);
    text-align: center;
-   /*  padding: 1rem;   */
+   padding: 1rem 0;  
 }
 
 .header--title__primary {
@@ -38,9 +38,16 @@ body {
    font-size: 22px;
 }
 
-h1, h2, h3 {
+h1 {
    text-transform: capitalize;
    text-align: center;
+}
+
+h2, h3 {
+   text-transform: capitalize;
+   text-align: left;
+   /*  padding: 0 1rem; */
+   margin: 0 0 1rem 0; 
 }
 
 /* **column1 menu */
@@ -130,12 +137,13 @@ li {
    padding: 1em 1em 1em 1em;
 } */
 
-.column2--main__h2, .column2--main__h3 {
-   background-color: rgb(255, 255, 255);
+.column2--main__h2 {
+   background-color: rgb(228, 228, 228);
 }
 
 .column2--main__h3 {
-   padding: 0 0 1rem 0;
+   background-color: rgb(255, 255, 255);
+   padding: 0 0 0 0;
 }
 
 
