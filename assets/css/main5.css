@@ -6,6 +6,8 @@
    box-sizing: border-box;
 }
 
+
+
 body {
    display: grid;
    grid-template-columns: minmax(15ch, 28ch) minmax(37ch, 100ch) 1fr;
