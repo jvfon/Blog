@@ -46,9 +46,14 @@ h1 {
 h2, h3 {
    text-transform: capitalize;
    text-align: left;
+
+}
+
+h2 {
    /*  padding: 0 1rem; */
    margin: 0 0 1rem 0; 
 }
+
 
 /* **column1 menu */
 
