@@ -24,7 +24,7 @@ body {
    grid-row: 1/2;
    background-color: rgb(255, 255, 255);
    text-align: center;
-   padding: 1rem;
+   /*  padding: 1rem;   */
 }
 
 .header--title__primary {
@@ -63,8 +63,8 @@ a:visited {
    grid-column: 1/2;
    grid-row: 2/5;
    background-color: rgb(139, 139, 139);
-   margin: 0.5rem 0 0 0;
-   padding: 0.5rem 0.3rem 0 1rem;
+   /*  margin: 0.5rem 0 0 0;   */
+   /*  padding: 0.5rem 0.3rem 0 1rem;   */
    text-decoration: none;
    
 }
@@ -73,8 +73,8 @@ a:visited {
    font-size: 22px;
    font-weight: bold;
    background-color: #777;
-   padding: 0 0 1rem 0;
-   margin: 0 0 1rem 0;
+   padding: 0 0 0 0;
+   margin: 0 0 0 0;
 }
 .column1--menu__webDev, .column1--menu__JavaScript,.column1--menu__read, .column1--menu__misc {
    font-size: 18px;
@@ -82,35 +82,35 @@ a:visited {
 }
 
 .column1--menu__webDev, .column1--menu__JavaScript {
-   padding: 0 0 1rem 0;
+   padding: 0 0 0 0;
    
 }
 
 .column1--menu__webPage {
    font-size: 18px;
    font-weight: bold;
-   margin: 0 0 1rem 0;
+   /*  margin: 0 0 1rem 0;   */
 }
 
 .column1--menu__comingSoon {
    border-top: 1px dotted;
-   padding: 1rem 0 1rem 0;
+   /*   padding: 1rem 0 1rem 0;   */
 }
 
 .column1-menu__books {
    border-top: 1px dotted;
-   padding: 0.5rem 0 0 0;
+   /*  padding: 0.5rem 0 0 0;   */
 }
 
 .column1--menu__misc {
    border-top: 1px dotted;
-   padding: 0.5rem 0 0 0;   
+   /*  padding: 0.5rem 0 0 0;    */
 }
 
 
 .column1--menu__read  {
    background-color: #777;
-   padding: 0 0 0.5rem 0;
+   /*  padding: 0 0 0.5rem 0;   */
 }
 
 /* TODO: do hover over link, unline shows */
@@ -143,14 +143,14 @@ li {
    /*  grid-column: 2/3;
    grid-row: 3/4;    */
    background-color: rgb(224, 224, 224);  
-   padding: 1rem 1.5rem 1rem 1.5rem;
-   margin: 0 0 1.5rem 0;
+   /*  padding: 1rem 1.5rem 1rem 1.5rem;  */
+   /*  margin: 0 0 1.5rem 0;  */
    
 }
 
 .column2--main__content {
    background-color: rgb(143, 143, 143);
-   padding: 1rem;
+   /*  padding: 1rem;  */
 }
 
 .pre {
@@ -160,8 +160,8 @@ li {
    word-wrap: break-word;
    text-align: justify;
    color: rgb(245, 245, 245);
-   margin: 0 0;
-   padding: 1rem;
+   /*  margin: 0 0;   */
+   /*  padding: 1rem;   */
 }
 
 .footer {
@@ -169,12 +169,12 @@ li {
    grid-row: 4/5;  
    background-color: rgb(78, 78, 78);
    color: rgb(228, 228, 228);
-   padding: 1rem;
+   /*  padding: 1rem;   */
 }
 
 
 
-@media(min-width: 450px ) {
+/*  @media(min-width: 450 px ) {
    body {
       font-size: 14px;
       grid-template-columns: 1fr;
@@ -188,7 +188,7 @@ li {
       grid-column: 1/1;
       grid-row: 1/1;
    }
-}  
+}    */
 
 
 
