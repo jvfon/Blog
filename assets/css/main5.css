@@ -49,11 +49,6 @@ h2, h3 {
 
 }
 
-h2 {
-   /*  padding: 0 1rem; */
-   margin: 0 0 1rem 0; 
-}
-
 
 /* **column1 menu */
 
@@ -144,11 +139,12 @@ li {
 
 .column2--main__h2 {
    background-color: rgb(228, 228, 228);
+   padding: 0.5rem 0 0 0.8rem;
 }
 
 .column2--main__h3 {
    background-color: rgb(255, 255, 255);
-   padding: 0 0 0 0;
+   padding: 0.5rem 0 0.5rem  0.8rem;
 }
 
 
