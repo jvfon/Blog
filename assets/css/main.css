@@ -32,7 +32,11 @@ footer, header, hgroup, menu, nav, section {
 	display: block;}
 
 body {
-	line-height: 1;
+	line-height: 1.5;
+}
+
+header {
+	letter-spacing: 1.2rem;
 }
 
 ol, ul {
