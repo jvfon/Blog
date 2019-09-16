@@ -31,12 +31,15 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+/* body */
+
 body {
 	line-height: 1.5;
+	font-family: "Lato" sans-serif;
 }
 
 header {
-	letter-spacing: 1.5rem;
+	letter-spacing: 1.2rem;
 	text-transform: capitalize;
 }
 
