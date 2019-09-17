@@ -23,6 +23,7 @@ section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
+	box-sizing: border-box;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;}
@@ -36,6 +37,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1.5;
 	font-family: "Lato" sans-serif;
+	background-color: #777;
 }
 
 header {
