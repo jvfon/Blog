@@ -4,8 +4,15 @@
    box-sizing: border-box;
 }
 
+body {
+   
+}
+
 #container {
    display: flex;
+   height: 100vh;
+   flex-direction: column-reverse;
+   
 }
 
 .box1 {
@@ -23,6 +30,7 @@
 .box5{
    background-color: rgb(168, 0, 219);
 }
+
 
 
 
