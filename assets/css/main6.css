@@ -57,6 +57,7 @@ header {
 .header--container__logo {
    flex: 1; /* takes all the available space */
             /* pushes the search button to the right and the menu button to the left */
-}
+   text-align: center; /* centering the logo */
+         }
 
 
