@@ -9,14 +9,6 @@
 
 
 body {
-
-}
-
-.wrapper {
-   display: grid;
-   grid-template-columns: minmax(15ch, 28ch) minmax(37ch, 100ch) 1fr;
-   /*  grid-template-columns: repeat(260px auto 100px, minmax(500px, 1fr)); */
-   /*  grid-template-rows: 110px 70px auto 50px; */
    background-color: rgb(207, 207, 207);
    font-size: 16px;
    font-family: "Lato", sans-serif;
@@ -25,12 +17,23 @@ body {
    color: rgb(19, 19, 19);  
 }
 
+.nav {
+   width: 100vw;
+   position: fixed;
+   background-color: rgb(231, 231, 231);;
+}
+
+.wrapper {
+   display: grid;
+   grid-template-columns: minmax(15ch, 28ch) minmax(37ch, 100ch) 1fr;
+}
+
 .header {
    grid-column: 1/4;
    grid-row: 1/2;
    background-color: rgb(255, 255, 255);
    text-align: center;
-   padding: 1rem 0;  
+   padding: 3rem 0 0 0;  
 }
 
 .header--title__primary {
@@ -182,11 +185,11 @@ li {
 }
 
 .footer {
-   height: 10vh;
    background-color: rgb(78, 78, 78);
    color: rgb(228, 228, 228);
+   bottom: 0;
+   width: 100vw; /* makes the footer take the width of the webpage */
    position: fixed;
-   z-index: 10;
 }
 
 
