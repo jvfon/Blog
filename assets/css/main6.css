@@ -34,6 +34,18 @@ header {
    
 }
 
+.header--container__menu__ham span {
+   display: block;
+   width: 25px;
+   height: 3px;
+   background-color: #777;
+}
+
+.header--container__menu__ham span:nth-of-type(2) {
+   /* ** select the 2nd span */
+   margin: 3pc 0;
+}
+
 .header--container__logo {
 
 }
@@ -42,9 +54,7 @@ header {
 
 }
 
-.header--container__menu,
-.header--container__logo,
-.header--container__search {
+.header--container__menu {
    border: 1px solid red;
 }
 
