@@ -22,11 +22,12 @@ body {
    width: 100vw;
    position: fixed;
    background-color: rgb(231, 231, 231);;
-   
+   font-size: 25px;
 }
 
-.icon {
+button {
    border: none;
+   font-size: 25px;
 }
 
 .wrapper {
