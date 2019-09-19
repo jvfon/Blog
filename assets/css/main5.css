@@ -18,7 +18,7 @@ body {
    color: rgb(19, 19, 19);  
 }
 
-.nav {
+.nav--icons {
    display: flex;
    width: 100vw;
    position: fixed;
