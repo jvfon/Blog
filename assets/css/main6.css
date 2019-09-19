@@ -43,7 +43,7 @@ header {
 
 .header--container__menu__ham span:nth-of-type(2) {
    /* ** select the 2nd span */
-   margin: 3pc 0;
+   margin: 3px 0; /* separate the lines a little */
 }
 
 .header--container__logo {
