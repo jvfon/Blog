@@ -14,6 +14,9 @@
 
 
 /* ** header */
+
+
+
 header {
    padding: 1rem 0;
    background-color: #fff;
@@ -29,6 +32,24 @@ header {
    align-items: center; 
    align-content: center; 
 }
+
+/* we don't need to see the trigger in order to use it */
+.trigger {
+   display: none;
+}
+
+/* we use an attribute selector, lets grab all the input with the name "menu-trigger" */
+/* let's style it when it's checked */
+/* we want to get to the span tags to style those. */
+/* we need to use a sibling selector "+" sign */
+/* to go from input to its sibling "header--container__menu" */
+/* inside the sibling there are span tags, we want to style the 2nd one */
+input[name="menu-trigger"]:checked + .header--container__menu span:nth-of-type(2) {
+   opacity: 0;
+   height: 0; /* we want it to disapear */
+   margin: 0;
+}
+
 
 .header--container__menu { /* centers the hamburger menu */
    display: flex;
@@ -47,6 +68,7 @@ header {
    width: 25px;
    height: 3px;
    background-color: #777;
+   transition: transform .34s ease-in-out;
 }
 
 .header--container__menu__ham span:nth-of-type(2) {
@@ -63,7 +85,7 @@ header {
 }
 
 .header--container__menu {
-   border: 1px solid red;
+   
 }
 
 .header--container__menu,

@@ -11,8 +11,17 @@
       <div class="page--wrap">
          <header class="header">
             <div class="header--container">
+
+               <!-- check box hack -->
+               <!-- turn a ham menu into an X when menu is open so we know -->
+               <!-- to close it -->
+               <input type="checkbox" name = "menuTrigger" id="menu-trigger" class="trigger"/>
+
                <div class="header--container__menu">
-                  <label for="" class="header--container__menu__ham">
+                  <label for="menu-trigger" class="header--container__menu__ham">
+                  <!-- when the menu is clicked, the input checks on and off-->
+                  <!-- the way we do that we put a for="menu-trigger"-->
+                  <!-- the for="" has to be the same as the id in the input -->
 
                      <!-- ** hamburger menu -->
                      <span></span>
