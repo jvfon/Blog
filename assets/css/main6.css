@@ -30,8 +30,11 @@ header {
    align-content: center; 
 }
 
-.header--container__menu {
-   
+.header--container__menu { /* centers the hamburger menu */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid red;
 }
 
 .header--container__menu__ham span {
