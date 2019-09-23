@@ -2,6 +2,9 @@
    padding: 0;
    margin: 0;
    box-sizing: border-box;
+   background: rgba(0,0,0,.05); /* see box model on every element without */                               
+   box-shadow: 0 0 0 1px black; /* hovering over them individually in the inspector */
+
 }
 /* **
    header
