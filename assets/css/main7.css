@@ -8,6 +8,8 @@
 /* nav */
 /* body */
 /* wrapper */
+/* media queries */
+/* header */
 
 
 /* ** nav  */
@@ -18,20 +20,29 @@
     justify-content: flex-end;
 }
 
-.nav-blog,
-.nav-about,
+.nav-home,
+.nav-step,
+.nav-books,
 .nav-twitter {
     background-color: darkgray;
     margin: 0.5rem;
     padding: 0.2rem 0.8rem;
 }
 
+/* ** header */
+.header-h1 {
+    grid-column: 1/13;
+    background-color: rgb(172, 172, 172);
+    padding: 1.5rem;
+}
+
 /* ** wrapper */ 
 .wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
 } 
+
 
 /* ** media queries */ 
 @media (max-width: 500px) {
