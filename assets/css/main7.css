@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -8,9 +11,13 @@
 /* nav */
 /* body */
 /* wrapper */
-/* media queries */
 /* header */
+/* media queries */
 
+/* ** body */
+body {
+    font-family: "Ubuntu", sans-serif;
+}
 
 /* ** nav  */
 .nav {
@@ -18,6 +25,7 @@
     display: flex;
     height: 2.5rem;
     justify-content: flex-end;
+    text-transform: capitalize;
 }
 
 .nav-home,
@@ -29,19 +37,27 @@
     padding: 0.2rem 0.8rem;
 }
 
-/* ** header */
-.header-h1 {
-    grid-column: 1/13;
-    background-color: rgb(172, 172, 172);
-    padding: 1.5rem;
-}
-
 /* ** wrapper */ 
 .wrapper {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
 } 
+
+/* ** header */
+header {
+    grid-column: 1/13; 
+    text-align: center;
+    background-color: rgb(172, 172, 172);
+    padding: 1.3rem;
+    text-align: center;
+}
+
+.header-h1 {
+    letter-spacing: 0.5rem;
+    text-transform: capitalize;
+    font-size: 2.5rem;
+}
 
 
 /* ** media queries */ 
