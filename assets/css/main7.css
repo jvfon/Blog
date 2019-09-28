@@ -14,6 +14,8 @@
 /* body */
 /* wrapper */
 /* header */
+
+/* javascript articles */
 /* media queries */
 
 /* ** body */
@@ -67,10 +69,23 @@ header {
     font-size: 2.5rem;
 }
 
+/* ** javascript articles */
 .articles-javascript_functions {
     grid-column: 3/5;
     grid-row: 4/5;
-    background-color: #777;
+    background-color: rgb(202, 200, 200);
+}
+
+.articles-javascript_functionsMulti {
+    grid-column: 5/7;
+    grid-row: 4/5;
+    background-color: rgb(155, 154, 154);   
+}
+
+.articles-javascript_objects {
+    grid-column: 7/9;
+    grid-row: 4/5;
+    background-color: rgb(226, 224, 224);   
 }
 
 /* ** media queries */ 
