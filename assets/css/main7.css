@@ -1,5 +1,7 @@
 
+@import url(fontawesome-all.min.css);
 @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 * {
     padding: 0;
@@ -16,7 +18,7 @@
 
 /* ** body */
 body {
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Lato", sans-serif;
 }
 
 /* ** nav  */
@@ -26,6 +28,7 @@ body {
     height: 2.5rem;
     justify-content: flex-end;
     text-transform: capitalize;
+    text-decoration: none;
 }
 
 .nav-home,
@@ -35,6 +38,11 @@ body {
     background-color: darkgray;
     margin: 0.5rem;
     padding: 0.2rem 0.8rem;
+}
+
+.nav-twitter-icon li {
+    font-size: 25px;
+    text-decoration: none;
 }
 
 /* ** wrapper */ 
@@ -54,11 +62,16 @@ header {
 }
 
 .header-h1 {
-    letter-spacing: 0.5rem;
+    letter-spacing: 4.5rem;
     text-transform: capitalize;
     font-size: 2.5rem;
 }
 
+.articles-javascript_functions {
+    grid-column: 3/5;
+    grid-row: 4/5;
+    background-color: #777;
+}
 
 /* ** media queries */ 
 @media (max-width: 500px) {
