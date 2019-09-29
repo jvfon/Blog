@@ -20,6 +20,7 @@
 
 /* ** body */
 body {
+    background-color: rgb(226, 226, 226);
     font-family: "Lato", sans-serif;
 }
 
@@ -49,6 +50,8 @@ body {
 
 /* ** wrapper */ 
 .wrapper {
+    border-color: black;
+    border-width: 1rem; 
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
@@ -85,7 +88,9 @@ header {
 .articles-javascript_objects {
     grid-column: 7/9;
     grid-row: 4/5;
-    background-color: rgb(226, 224, 224);   
+    background-color: rgb(216, 216, 216);   
+    border-color: black;
+    
 }
 
 /* ** media queries */ 
