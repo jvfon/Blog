@@ -67,14 +67,18 @@ header {
 }
 
 .header-h1 {
-    letter-spacing: 4.5rem;
+    letter-spacing: 2.5rem;
     text-transform: capitalize;
     font-size: 2.5rem;
 }
 
 /* ** javascript articles */
+.articles-javascript {
+    display: grid;
+}
+
 .articles-javascript_functions {
-    grid-column: 3/5;
+    grid-column: 1/2;
     grid-row: 4/5;
     background-color: rgb(202, 200, 200);
 }
