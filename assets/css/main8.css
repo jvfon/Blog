@@ -5,6 +5,10 @@ body {
    grid-gap: 1em;
 }
 
+nav {
+   grid-column: 1 / span 5;
+}
+
 header,
 footer {
    grid-column: 1 / span 5;
