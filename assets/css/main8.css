@@ -6,7 +6,9 @@ body {
 }
 
 nav {
-   grid-column: 1 / span 5;
+   /* grid-column: 1 / span 5; */
+   display: flex;
+   justify-content: flex-end;
 }
 
 header,
