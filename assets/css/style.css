@@ -31,17 +31,23 @@ nav {
 	background-color: rgb(63, 36, 56);
 }
 
-ul {
+.nav {
 	display: flex;
 	justify-content: space-between;
+	padding: 10px 25px;
 }
 
 .nav__list {
+	display: flex;
+	justify-content: space-between;
 	text-transform: uppercase;
 	list-style: none;
-}
-
-.nav__list a {
 	text-decoration: none;
 	color: #fff;
+
 }
+
+.nav__item + .nav__item {
+	margin-left: 3em;
+}
+
