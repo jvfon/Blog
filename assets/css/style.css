@@ -47,7 +47,3 @@ nav {
 
 }
 
-.nav__item + .nav__item {
-	margin-left: 3em;
-}
-
