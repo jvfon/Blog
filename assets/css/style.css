@@ -58,22 +58,19 @@ header {
 
 .nav {
 	padding: 1em;
+	display: flex;
+	justify-content: space-between;
 }
 
 .nav__list {
 	list-style: none;
 	display: flex;
-
 }
 
 .nav__item {
 	list-style: none;
 	text-transform: uppercase;
 	margin-right: 1em;
-}
-
-.nav__item--push-right {
-	margin-left: auto;
 }
 
 .nav__link {
