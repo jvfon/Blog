@@ -73,7 +73,7 @@ header {
 }
 
 .nav__item--push-right {
-	
+	margin-left: auto;
 }
 
 .nav__link {
