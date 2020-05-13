@@ -34,15 +34,15 @@ header {
 
 .logo {
 	margin-right: 1em;
-	border: 2px solid green;
 }
 
 .nav {
-	
+	/* width: 100%; */
+	flex-grow: 1;
+	flex-shrink: 1;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	border: 2px solid yellow;
 }
 
 .nav__list {
@@ -65,7 +65,7 @@ header {
 
 .container {
 	padding: 1em;
-	width: 80%;
+	width: 90%;
 	max-width: 1100px;
 	margin: 0 auto;
 }
