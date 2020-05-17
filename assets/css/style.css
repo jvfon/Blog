@@ -28,6 +28,10 @@ header {
     background-color: #F3EED9
 }
 
+h2 {
+    color: #824936;
+}
+
 .hero {
     width: 80%;
     max-width: 1128px;
@@ -50,3 +54,4 @@ header {
     text-transform: uppercase;
     
 }
+
