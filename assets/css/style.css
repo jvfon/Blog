@@ -31,6 +31,8 @@ header {
 h2 {
     color: #824936;
     font-family: 'Playfair Display', serif;
+    text-transform: capitalize;
+
 }
 
 .hero {
