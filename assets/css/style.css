@@ -63,4 +63,11 @@ h2 {
 
 .nav {
     background-color: rgb(2, 47, 83);
+
+}
+
+.navbar {
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
 }
