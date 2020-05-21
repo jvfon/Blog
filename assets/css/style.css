@@ -62,7 +62,7 @@ h2 {
  */
 
 .nav {
-    background-color: rgb(2, 76, 136);
+    background-color: rgb(56, 113, 160);
 
 }
 
@@ -70,4 +70,8 @@ h2 {
     color: #fff;
     text-decoration: none;
     text-transform: capitalize;
+}
+
+.main {
+    background-color: rgb(135, 150, 168);
 }
