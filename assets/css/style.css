@@ -65,12 +65,17 @@ h2 {
     background-color: rgb(56, 113, 160);
     padding: 10px;
 }
+.navbar--link {
+
+}
 
 .navbar--item {
     color: #fff;
     text-decoration: none;
     text-transform: capitalize;
 }
+
+
 
 .main {
     background-color: rgb(135, 150, 168);
