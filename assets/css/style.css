@@ -62,15 +62,15 @@ h2 {
  */
 
 .nav {
-    background-color: rgb(56, 113, 160);
-    padding: 10px;
+    background-color: #fff;
+    padding:
 }
 .navbar--link {
     color:
 }
 
 .navbar--item {
-    color: #fff;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     text-transform: capitalize;
 }
