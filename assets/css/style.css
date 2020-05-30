@@ -41,6 +41,7 @@ h2 {
     background-color: #fff;
     padding: 10px;
     display: flex;
+    margin-left: 100%;
 }
 .navbar--link {
     color:
@@ -51,7 +52,7 @@ h2 {
     text-decoration: none;
     text-transform: capitalize;
     border: 2px solid red;
-    
+
 }
 
 
