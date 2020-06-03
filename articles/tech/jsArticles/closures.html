@@ -9,20 +9,27 @@
 </head>
 <body>
    <h1>Closures</h1>
-   The ability to access a parent level scope from a child level scope even after the parent function has been terminated.  
+   <p>
+      The ability to access a parent level scope from a child level scope even after the parent function has been terminated.  
+   </p>
 
-```js
-function outer() {
-    const outerVar = "Hey I am the outer Var!";
-    function inner() {
-        const innerVar = "I am an inner Var!";
-        console.log(innerVar);
-        console.log(outerVar);
-    }
-}
-```
+   <pre>
+      <code>
+         function outer() {
+            const outerVar = "Hey I am the outer Var!";
+            function inner() {
+               const innerVar = "I am an inner Var!";
+               console.log(innerVar);
+               console.log(outerVar);
+            }
+         }
+      </code>
+   </pre>
 
-The look up chain won't find a variable called "outerVar" so it will go up one level until it finds the variable.  
+
+   <p>
+      The look up chain won't find a variable called "outerVar" so it will go up one level until it finds the variable.  
+   </p>
 
    <p>
       By calling out the functions, we can confirm this:
