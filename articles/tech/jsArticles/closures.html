@@ -24,40 +24,44 @@ function outer() {
 
 The look up chain won't find a variable called "outerVar" so it will go up one level until it finds the variable.  
 
-By calling out the functions, we can confirm this:
+<p>
+   By calling out the functions, we can confirm this:
+</p>
 
-```js
-function outer() {
-    const outerVar = "Hey I am the outer Var!";
-    function inner() {
-        const innerVar = "I am an inner Var!";
-        console.log(innerVar);
-        console.log(outerVar);
-    }
-    inner();
-}
-outer();
-```
+   <pre>
+      <code>
+         function outer() {
+            const outerVar = "Hey I am the outer Var!";
+            function inner() {
+               const innerVar = "I am an inner Var!";
+               console.log(innerVar);
+               console.log(outerVar);
+            }
+            inner();
+         }
+         outer();
+      </code>
+   </pre>
 
 Closure comes into play when the functions are called outside the "outer()" function. 
 
 
-<pre>
-   <code>
-      function outer() {
-         const outerVar = "Hey I am the outer Var!";
-         function inner() {
-            const innerVar = "I am an inner Var!";
-            console.log(innerVar);
-            console.log(outerVar);
+   <pre>
+      <code>
+         function outer() {
+            const outerVar = "Hey I am the outer Var!";
+            function inner() {
+               const innerVar = "I am an inner Var!";
+               console.log(innerVar);
+               console.log(outerVar);
+            }
+            return inner;
          }
-         return inner;
-      }
-      
-      const innerFn = outer();
-      inner();
-   </code>
-</pre>
+         
+         const innerFn = outer();
+         inner();
+      </code>
+   </pre>
 
 
 We run the outer function which creates a variable, the inner function returns. 
