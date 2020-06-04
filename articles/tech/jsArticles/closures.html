@@ -123,14 +123,19 @@
       Created 2 functions because we can create function based of which ever greeting we like.  
    </p>
 
-```js
-const sayHello = createGreeting('Hello'); 
-const sayHey = createGreeting('Hey');
-console.log(sayHello('Jose'));
-console.log(sayHello('George'));
-console.log(sayHey('George'));
-```
-We created the variable "myGreet" inside of the function "creaeGreeting". The variable can be accessed at a lower scope. The act of referencing the variable at a lower scope is called a closure, even after the variable has been closed over. 
+   <pre>
+      <code>
+         const sayHello = createGreeting('Hello'); 
+         const sayHey = createGreeting('Hey');
+         console.log(sayHello('Jose'));
+         console.log(sayHello('George'));
+         console.log(sayHey('George'));
+      </code>
+   </pre>
+
+   <p>
+      We created the variable "myGreet" inside of the function "creaeGreeting". The variable can be accessed at a lower scope. The act of referencing the variable at a lower scope is called a closure, even after the variable has been closed over. 
+   </p>
 
    
 </body>
