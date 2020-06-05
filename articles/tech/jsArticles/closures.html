@@ -137,6 +137,19 @@
       We created the variable "myGreet" inside of the function "creaeGreeting". The variable can be accessed at a lower scope. The act of referencing the variable at a lower scope is called a closure, even after the variable has been closed over. 
    </p>
 
+   <p>
+      Example 2: 
+   </p>
+
+```js
+function createGame(gameName) {
+    let score = 0;
+    function win() {
+        score ++;
+        return `Your name ${gameName} scoare is ${score}`;
+    }
+}
+
    
 </body>
 </html>
