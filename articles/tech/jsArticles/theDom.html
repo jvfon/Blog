@@ -114,4 +114,34 @@
       Using <code>console.dir(h2s);</code> shows all the properties of <code>&lth2&gt</code>. The properites can be use as "getters" to get data that we need or "setters". 
    </p>
 
+   Tag text to the beginning or end of a string
+
+```html
+    <div>
+        <article class="item">
+                <h2>
+                    I'm an article
+                </h2>
+                <p class="pizza">
+                    I ate this many pizzas
+                </p>
+        </article>
+    </div>
+```
+```js
+const pizzaList = document.querySelector('.pizza');
+console.log(pizzaList.textContent);
+```
+To tag to the string:
+
+```js
+pizzaList.insertAdjacentText('beforeend', 'apple');
+```
+.insertAdjacentText is a method.  
+
+---
+Anything on an HTML page is a node. An element is wrapped by a tag.  
+
+## Adding and removing classes
+
 </html>
