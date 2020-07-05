@@ -1,6 +1,7 @@
 # Shopify Developers
 ##  Contents
-[Setting up the store environment](#Setting-up-the-store-environment)
+[Setting up the store environment](#Setting-up-the-store-environment)  
+[Create Shopify app](#Create-Shopify-app)  
 
 
 ## Go to https://developers.shopify.com/
@@ -23,4 +24,12 @@ Hit the "save" button.
 
 ### Install ThemeKit 
 
-Go to https://shopify.github.io/themekit
+Go to https://shopify.github.io/themekit  
+For Windows environment use chocolatey: https://chocolatey.org/ and follow the instructions to set it up.  
+
+Open VSCode, go to extensions install liquid.  
+
+## Create Shopify app
+
+Go to https://partners.shopify.com
+Click on "apps" on the left side.  
