@@ -33,8 +33,16 @@ Open VSCode, go to extensions install liquid.
 
 Go to your store: store-name.myshopify.com and click on "manage private apps" on the main window. Then click on "create new private app".  
 
-On the "App details" section put the name of the theme you are building on the "Private app name field". Name it "name.API" end the name with "API".  
+On the "App details" section put the name of the theme you are building on the "Private app name field". Name it "nameTheme.API" end the name with "Theme.API" to make things easier.  
 
 Put your email on the "Emergency developer email" field.  
 
-On the "Adim api" section click on the 
+On the "Adim api" section click on the "Show inactive Adim API permissions" pull down.  
+
+Scroll down until you see "Theme templates and theme assets" and change the access to "read and write". Hit save and click on "create app".  
+
+Create a folder inside your projects folder called "Shopify-theme". Go inside "Shopify-theme" 
+
+Go back to the Theme Kit documentation page: https://shopify.github.io/themekit/, go to "Getting started" and scroll to the bottom.  
+
+Where it says "Create a new theme" 
