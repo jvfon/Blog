@@ -47,4 +47,29 @@ Go back to the Theme Kit documentation page: https://shopify.github.io/themekit/
 
 Where it says "Create a new theme" copy the first line of code: ```theme new --password=[your-password] --store=[your-store.myshopify.com] --name=[theme name]``` and past it on admin command prompt. 
 
-Go to your Shopify store: https://store-name.myshopify.com/admin/apps/private/261901854222, then find the password field, copy it and replace "[your-password]" with the password you copied from your store. The same thing do with the store name and them name. Go the search field of the browser, copy the store name from there: store-name.shopify.com.  
+Go to your Shopify store: https://store-name.myshopify.com/admin/apps/private/261901854222, then find the password field, copy it and replace "[your-password]" with the password you copied from your store. 
+
+The same thing do with the store name and them name. Go the search field of the browser, copy the store name from there: store-name.shopify.com.  
+
+"[theme-name]" Here is where you put name of your theme. Hit "enter".
+
+Go to your store's website. On "Sales Channels" on the left side you will see "Online Store" click the link, then click "themes".
+
+You will see a theme called "debut" as the current theme. Then on "Theme Library" you will see you new theme. 
+
+ThemeKit looks at the files from our local environment and then uploads new changes to the Shopify store.
+
+On the command prompt inside your theme folder type "theme watch". "Theme watch" looks at any changes within this folder and if there are any changes, it's going to upload those changes to the website.  
+
+On VSCode, open the folder where your Shopify theme is located.  
+
+On "templates" on the right side click on "index.liquid", that is our home page.
+
+On "layout" and then "theme.liquid". There you will noticed HTML, CSS and some programing going on. The programing is Liquid.
+
+Go back to your webstore on "Theme library" click the "Actions" pull down menu. Hit "publish".  
+
+Usually you don't want to work on a theme that's live so you would hit "duplicate" under "Actions" in the "Current theme" area. But we are practicing with your own store so it's ok to test a new theme.
+
+
+
