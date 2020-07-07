@@ -71,5 +71,7 @@ Go back to your webstore on "Theme library" click the "Actions" pull down menu. 
 
 Usually you don't want to work on a theme that's live so you would hit "duplicate" under "Actions" in the "Current theme" area. But we are practicing with your own store so it's ok to test a new theme.
 
+Once you hit "publish" Shopify will warn you not to publish your theme. Hit "ok" and you will see a new page with "Themes" on top. Hit "view your store". You will see a very basic template created for you by Shopify.  
 
+Go back to VSCode to your Liquid theme. Scroll down until you see ```<a href="/account">account</a>``` 
 
