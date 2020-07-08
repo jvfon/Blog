@@ -73,5 +73,9 @@ Usually you don't want to work on a theme that's live so you would hit "duplicat
 
 Once you hit "publish" Shopify will warn you not to publish your theme. Hit "ok" and you will see a new page with "Themes" on top. Hit "view your store". You will see a very basic template created for you by Shopify.  
 
-Go back to VSCode to your Liquid theme. Scroll down until you see ```<a href="/account">account</a>``` 
+Go back to VSCode to your Liquid theme. Scroll down until you see ```<a href="/cart">cart</a>```, between this line and the next one type "```<h1>Billy's Store</h1>'''" or anything you want. 
+
+When you go back to your theme online and hit refresh, you should see "Billy's Store" on your store's webpage.
+
+
 
