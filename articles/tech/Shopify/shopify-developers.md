@@ -3,6 +3,8 @@
 [Setting up the store environment](#Setting-up-the-store-environment)  
 [Create Shopify app](#Create-Shopify-app)  
 
+[Working with an existing website](#Working-with-an-existing-website)
+
 
 ## Go to https://developers.shopify.com/
 
@@ -76,6 +78,28 @@ Once you hit "publish" Shopify will warn you not to publish your theme. Hit "ok"
 Go back to VSCode to your Liquid theme. Scroll down until you see ```<a href="/cart">cart</a>```, between this line and the next one type "```<h1>Billy's Store</h1>'''" or anything you want. 
 
 When you go back to your theme online and hit refresh, you should see "Billy's Store" on your store's webpage.
+
+## Working with an existing website
+
+Go back to your Shopify store (Shopify website). Under "Theme library", make a duplicate of the "Debut" theme. Hit "duplicate" under the "Actions" pull down menu.
+
+You can preview the copy of Debut. You will the theme that comes with Shopify. Everything that you need to build a theme is already built in this theme. You can copy and paste want you need from Debut. There is no need to re-invent the wheel.  
+
+To download the copy of Debut, hit "ctrl + c" on the command prompt to stop "theme watch". 
+
+Create a folder called "Debut" just like the theme's name.
+
+On the command prompt go inside the Debut folder.  
+
+In VSCode open the debut folder and then create a config file, name it "config.yml" 
+
+Next we need the ID of the copy of the theme debut. Go to your Shopify store. On the "Theme library" area hit "customize". 
+
+The ID is located on top, on the search field of the browser after the "/theme/" section. The ID should be a series of numbers like "104345043112". Save this number.
+
+Hit the browser's back button. 
+
+
 
 
 
