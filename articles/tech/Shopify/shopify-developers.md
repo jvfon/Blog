@@ -97,7 +97,19 @@ Next we need the ID of the copy of the theme debut. Go to your Shopify store. On
 
 The ID is located on top, on the search field of the browser after the "/theme/" section. The ID should be a series of numbers like "104345043112". Save this number.
 
-Hit the browser's back button. 
+Hit the browser's back button. On your Shopify store, go back to "Apps" on the left hand side panel. 
+
+Hit "Manage private apps". On the next section, copy the API key and save it.
+
+Click the theme's name. You can also copy the API number form here. 
+
+Copy the password and save it.
+
+Go back to the Shopify themeKit website, click on "Commands" and then click on "configure" on the left panel.
+
+Copy the code, it starts with "development:". Then go to VSCode to the config.yml file. Paste the code in there. 
+
+Replace "your-api-password" and "your theme id" with the password and theme id you saved. 
 
 
 
