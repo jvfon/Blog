@@ -111,6 +111,10 @@ Copy the code, it starts with "development:". Then go to VSCode to the config.ym
 
 Replace "your-api-password" and "your theme id" with the password and theme id you saved. 
 
+password has to be by itself no brackets or parenthesis, theme ide in quotes " " and store address by itself too. 
+
+
+
 
 
 
