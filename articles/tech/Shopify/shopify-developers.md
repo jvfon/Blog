@@ -39,9 +39,9 @@ On the "App details" section put the name of the theme you are building on the "
 
 Put your email on the "Emergency developer email" field.  
 
-On the "Adim api" section click on the "Show inactive Adim API permissions" pull down.  
+On the "Admin api" section click on the "Show inactive Admin API permissions" pull down.  
 
-Scroll down until you see "Theme templates and theme assets" and change the access to "read and write". Hit save and click on "create app".  
+Scroll down until you see "Theme templates" and "theme assets" and change the access to "read and write". Hit save and click on "create app".  
 
 Create a folder inside your projects folder called "Shopify-theme". Go inside "Shopify-theme". Go inside the "Shopify-theme" folder and add another folder: store-nameTheme".  
 
