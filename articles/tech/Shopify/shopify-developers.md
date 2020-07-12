@@ -113,7 +113,15 @@ Replace "your-api-password" and "your theme id" with the password and theme id y
 
 password has to be by itself no brackets or parenthesis, theme ide in quotes " " and store address by itself too. 
 
+Go to the command prompt, make sure you are in the debut folder and type: "theme download", then hit "enter". 
 
+To test things out go to VSCode again. Open the config.yml file. Hit the sections folder and click on header.  
+
+Look for where it says "logo". You only want to make a change. Look for the class "site-header_logo-link". Add some text right before the "</a>" closing tag. 
+
+Go to the debut folder on the command prompt. Type theme watch and then change what you put before the "</a>" tag.  
+
+Refresh your Shopify store website and look at the change.  
 
 
 
