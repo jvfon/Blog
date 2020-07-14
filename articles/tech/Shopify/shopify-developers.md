@@ -41,7 +41,7 @@ Put your email on the "Emergency developer email" field.
 
 On the "Admin api" section click on the "Show inactive Admin API permissions" pull down.  
 
-Scroll down until you see "Theme templates" and "theme assets" and change the access to "read and write". Hit save and click on "create app".  
+Scroll down until you see "Theme templates" and "theme assets" and change the access to "read and write". Hit "save" and click on "create app".  
 
 Create a folder inside your projects folder called "Shopify-theme". Go inside "Shopify-theme". Go inside the "Shopify-theme" folder and add another folder: store-nameTheme".  
 
