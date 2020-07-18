@@ -20,7 +20,7 @@ The section "Developer preview" is to see the latest updates from shopify to the
 Put the physical store address.  
 
 On the "store purpose" section choose "test app on theme".  
-Hit the "save" button.  
+Hit the "save" button that is on top.
 
 ## Setting up the store environment
 
@@ -33,9 +33,9 @@ Open VSCode, go to extensions install liquid.
 
 ## Create Shopify app
 
-Go to your store: store-name.myshopify.com and click on "manage private apps" on the main window. Then click on "create new private app".  
+Go to your store: store-name.myshopify.com, click on "Apps" on the left panel. Then click on "manage private apps" on the main window and  click on "create new private app".  
 
-On the "App details" section put the name of the theme you are building on the "Private app name field". Name it "nameTheme.API" end the name with "Theme.API" to make things easier.  
+On the "App details" section put the name of the theme you are building on the "Private app name field". Name it "theme-nameTheme.API" end the name with "Theme.API" to make things easier.  
 
 Put your email on the "Emergency developer email" field.  
 
