@@ -10,7 +10,7 @@
 
 Create an account  
 Click "Stores" on the top left side.  
-Click "add store" button.  
+Click "add store" button that is on the right side.
 Pick "development store".  
 Put the name of your store on the store name field.  
 On the login field, put the email that's going to be linked to the store.  
