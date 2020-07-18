@@ -41,13 +41,13 @@ Put your email on the "Emergency developer email" field.
 
 On the "Admin api" section click on the "Show inactive Admin API permissions" pull down.  
 
-Scroll down until you see "Theme templates" and "theme assets" and change the access to "read and write". Hit "save" and click on "create app".  
+Scroll down until you see "Themes" and "theme assets" and change the access to "read and write". Hit "save" and click on "create app".  
 
-Create a folder inside your projects folder called "Shopify-theme". Go inside "Shopify-theme". Go inside the "Shopify-theme" folder and add another folder: store-nameTheme".  
+Create a folder inside your projects folder called "Shopify-theme". Go inside the "Shopify-theme" folder and add another folder: store-nameTheme".  
 
-Go back to the Theme Kit documentation page: https://shopify.github.io/themekit/, go to "Getting started" and scroll to the bottom.  
+Go back to the Theme Kit documentation page: https://shopify.github.io/themekit/, click on "Getting started" on the left panel and scroll down near the bottom on the main area.
 
-Where it says "Create a new theme" copy the first line of code: ```theme new --password=[your-password] --store=[your-store.myshopify.com] --name=[theme name]``` and past it on admin command prompt. 
+Where it says "Create a new theme" copy the first line of code: ```theme new --password=[your-password] --store=[your-store.myshopify.com] --name=[theme name]``` and paste it on admin command prompt. 
 
 Go to your Shopify store: https://store-name.myshopify.com/admin/apps/private/261901854222, then find the password field, copy it and replace "[your-password]" with the password you copied from your store. 
 
