@@ -58,9 +58,9 @@ The same thing do with the store name and them name. Go the search field of the 
 
 ## Standard Theme (debut)
 
-Go to your store's website. On "Sales Channels" on the left side you will see "Online Store" click the link, then click "themes".
+Go to your store's website. On "Sales Channels" on the left panel you will see the "Online Store" link, click the link, then click "themes".
 
-You will see a theme called "debut" as the current theme. Then on "Theme Library" you will see you new theme. 
+You will see a theme called "debut" as the current theme. Then when you scrolldown, on "Theme Library" you will see your new theme. 
 
 ThemeKit looks at the files from our local environment and then uploads new changes to the Shopify store.
 
