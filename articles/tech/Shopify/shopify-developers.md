@@ -68,7 +68,7 @@ On the command prompt inside your theme folder type "theme watch". "Theme watch"
 
 On VSCode, open the folder where your Shopify theme is located.  
 
-On "templates" on the right side click on "index.liquid", that is our home page.
+In the "templates" folder on the right side click on "index.liquid", that is our home page.
 
 On "layout" and then "theme.liquid". There you will noticed HTML, CSS and some programing going on. The programing is Liquid.
 
