@@ -1,15 +1,17 @@
 # Shopify Developers
-##  Contents
+##  Contents  
+[Create an account](#Create-an-account)  
 [Setting up the store environment](#Setting-up-the-store-environment)  
 [Create Shopify app](#Create-Shopify-app)  
-[Standard Theme - debut](#Standard-Theme-debut)
-
-[Working with an existing website](#Working-with-an-existing-website)
+[Standard Theme - debut](#Standard-Theme-debut)  
+[Publish your theme](#Publish-your-theme)  
+[Test your theme](#Test-your-theme)  
+[Working with an existing website](#Working-with-an-existing-website)  
 
 
 ## Go to https://developers.shopify.com/
 
-Create an account  
+## Create an account  
 Click "Stores" on the top left side.  
 Click "add store" button that is on the right side.
 Pick "development store".  
@@ -72,11 +74,15 @@ In the "templates" folder on the right side click on "index.liquid", that is our
 
 On "layout" and then "theme.liquid". There you will noticed HTML, CSS and some programing going on. The programing is Liquid.
 
+## Publish your theme
+
 Go back to your webstore on "Theme library" click the "Actions" pull down menu. Hit "publish".  
 
 Usually you don't want to work on a theme that's live so you would hit "duplicate" under "Actions" in the "Current theme" area. But we are practicing with your own store so it's ok to test a new theme.
 
 Once you hit "publish" Shopify will warn you not to publish your theme. Hit "ok" and you will see a new page with "Themes" on top. Hit "view your store". You will see a very basic template created for you by Shopify.  
+
+## Test your theme
 
 Go back to VSCode to your Liquid theme. Scroll down until you see ```<a href="/cart">cart</a>```, between this line and the next one type "```<h1>Billy's Store</h1>'''" or anything you want. 
 
@@ -86,7 +92,7 @@ When you go back to your theme online and hit refresh, you should see "Billy's S
 
 Go back to your Shopify store (Shopify website). Under "Theme library", make a duplicate of the "Debut" theme. Hit "duplicate" under the "Actions" pull down menu.
 
-You can preview the copy of Debut. You will the theme that comes with Shopify. Everything that you need to build a theme is already built in this theme. You can copy and paste want you need from Debut. There is no need to re-invent the wheel.  
+You can preview the copy of Debut wich is the theme that comes with Shopify. Everything that you need to build a theme is already built in this theme. You can copy and paste want you need from Debut. There is no need to re-invent the wheel.  
 
 To download the copy of Debut, hit "ctrl + c" on the command prompt to stop "theme watch". 
 
@@ -104,7 +110,7 @@ Hit the browser's back button. On your Shopify store, go back to "Apps" on the l
 
 Hit "Manage private apps". On the next section, copy the API key and save it.
 
-Click the theme's name. You can also copy the API number form here. 
+Click the theme's name located under "Private app name". You can also copy the API number form here. 
 
 Copy the password and save it.
 
