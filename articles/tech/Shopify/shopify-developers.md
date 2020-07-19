@@ -120,11 +120,11 @@ Copy the code, it starts with "development:". Then go to VSCode to the config.ym
 
 Replace "your-api-password" and "your theme id" with the password and theme id you saved. 
 
-password has to be by itself no brackets or parenthesis, theme ide in quotes " " and store address by itself too. 
+The password and store address have to be by themselves, no brackets nor parentheses, and the theme id has to be in quotes " ".
 
 Go to the command prompt, make sure you are in the debut folder and type: "theme download", then hit "enter". 
 
-To test things out go to VSCode again. Open the config.yml file. Hit the sections folder and click on header.  
+To test things out go to VSCode again. Open the config.yml file. Hit the "sections" folder and click on header.liquid.  
 
 Look for where it says "logo". You only want to make a change. Look for the class "site-header_logo-link". Add some text right before the "</a>" closing tag. 
 
