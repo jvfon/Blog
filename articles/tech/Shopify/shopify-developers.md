@@ -2,6 +2,7 @@
 ##  Contents
 [Setting up the store environment](#Setting-up-the-store-environment)  
 [Create Shopify app](#Create-Shopify-app)  
+[Standard Theme - debut](#Standard-Theme-debut)
 
 [Working with an existing website](#Working-with-an-existing-website)
 
@@ -54,6 +55,8 @@ Go to your Shopify store: https://store-name.myshopify.com/admin/apps/private/26
 The same thing do with the store name and them name. Go the search field of the browser, copy the store name from there: store-name.shopify.com.  
 
 "[theme-name]" Here is where you put name of your theme. Hit "enter".
+
+## Standard Theme (debut)
 
 Go to your store's website. On "Sales Channels" on the left side you will see "Online Store" click the link, then click "themes".
 
