@@ -126,7 +126,7 @@ Go to the command prompt, make sure you are in the debut folder and type: "theme
 
 To test things out go to VSCode again. Open the config.yml file. Hit the "sections" folder and click on header.liquid.  
 
-Look for where it says "logo". You only want to make a change. Look for the class "site-header_logo-link". Add some text right before the "</a>" closing tag. 
+Look for where it says "logo". You only want to make a change. Look for the class "site-header__logo-link". Add some text right before the "</a>" closing tag. 
 
 Go to the debut folder on the command prompt. Type theme watch and then change what you put before the "</a>" tag.  
 
