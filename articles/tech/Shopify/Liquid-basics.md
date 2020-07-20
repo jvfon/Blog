@@ -4,6 +4,8 @@
 [Creating a variable](#Creating-a-variable)  
 [Types](#Types)  
 [Filters](#Filters)  
+[Math](#Math)   
+
 
 
 On VS Code open any theme folder. Go to "layout" folder and open the file: theme.liquid.  
@@ -79,4 +81,11 @@ ex:  Take the 3rd value from the array and add the dollar "$" symbol.
 
 The output will be $25.00. If you use "25", the output will be $0.25.  
 
-## Math
+## Math  
+
+```{% assign number= 2 | plus: 2 %}```
+
+```<h2>{{number}}</h2>```
+
+
+
