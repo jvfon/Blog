@@ -5,6 +5,8 @@
 [Types](#Types)  
 [Filters](#Filters)  
 [Math](#Math)   
+[Comments](#Comments)  
+[Control flow](#Control-flow)  
 
 
 
@@ -72,6 +74,7 @@ Access each name by its index number
 ```<h1>{{line}} {{name[1]}}</h1>```
 
 ## Filters
+Check: https://shopify.dev/docs/themes/liquid/reference/filters
 
 A pipe "|" is used to tell when a filter is going to be used.  
 
@@ -86,6 +89,54 @@ The output will be $25.00. If you use "25", the output will be $0.25.
 ```{% assign number= 2 | plus: 2 %}```
 
 ```<h2>{{number}}</h2>```
+
+ex: represent (( 2 + 2 ) * (4 + 5))  
+```{% assign number= 2 | plus: 2 %}```
+```{% assign numberb= 4 | plus: 5 %}```
+```{% assign number= number | times: numberb %}```
+
+```<h2>{{number}}</h2>```
+
+## Comments
+
+Start a comment with: {% comment %}
+End a comment with: {% end comment}  
+
+## Control flow
+
+Truthy is almost everythiing.  
+
+Falsy are false and nil.  
+&nbsp;    
+
+```{% if 5 %}```
+```<h1>Showing Products</h1>```
+```{% endif %}```
+
+The h1 tag content will show.
+&nbsp;  
+
+```{% if false %}```
+```<h1>Showing Products</h1>```
+```{% endif %}```  
+The h1 tag content won't show.  
+&nbsp;  
+
+If the value is true, show it if not don't show it.  
+```{% if assign = false %}```
+```{% if value %}```
+```<h1>Showing Products</h1>```
+```{% endif %}```  
+In this case h1 won't show. If you change assign = true, then h1 will show.  
+&nbsp;   
+
+```{% if assign = false %}```
+```{% if value %}```
+```<h1>Showing Products</h1>```
+```
+```{% endif %}```  
+
+
 
 
 
