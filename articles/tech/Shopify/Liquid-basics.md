@@ -138,6 +138,9 @@ In this case h1 won't show. If you change assign = true, then h1 will show.
 ```{% else %}```
 ```<h1>Not Showing Products</h1>```
 ```{% endif %}```  
+&nbsp;   
+
+
 
 
 
