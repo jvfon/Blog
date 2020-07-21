@@ -10,6 +10,9 @@
 [If statment](#If-statment)   
 [Else statement](#Else-statement)  
 [Elsif](#Elsif)  
+[Case](#Case)  
+[Loops](#Loops)  
+
 
 
 
@@ -179,7 +182,25 @@ If it is not equal to what we are asking for, then show the product(s).
 {% endunless %}  
 ```
 When both values are different ```<h1>``` will show. 
+&nbsp;  
 
+# Case
+```
+{% assign value = "Jose" %}  
+{% case value %}
+   {% when "Bill" %}
+      <h1>Hey Bill</h1>
+   {% when "Jose" %}
+      <h1>Hey Jose</h1>
+   {% when "Tom" %}
+      <h1>Hey Tom</h1>
+   {% else %}
+      <h1>I don't know you</h1>
+   {% endcase %}
+```
+Depending on what the value is equal to, the program will output a string.  
+
+# Loops
 
 
 
