@@ -9,7 +9,7 @@
 [Control flow](#Control-flow)   
 [If statment](#If-statment)   
 [Else statement](#Else-statement)  
-[Else if](#Else-if)  
+[Elsif](#Elsif)  
 
 
 
@@ -155,15 +155,30 @@ In this case h1 won't show. If you change assign = true, then h1 will show.
 "Not Showing Products" will show if assign = false.
 &nbsp;   
 
-## Else if
-```{% assign value = 3 %}```  
-```{% if value == 2 %}```  
-```<h1>2</h1>```  
-```{% else %}```  
-```<h1>Not 2</h1>```  
-```{% endif %}```   
-"Showing Products" will show if you assign = 2  
-"Not Showing Products" will show if assign = false.  
+## Elsif
+
+```
+{% assign value = 3 %}  
+{% if value == 2 %}
+<h1>Showing 2 Products</h1>
+
+{% elsif value == 3 %}  
+<h1>Showing 3 Products</h1>  
+{% Not Showing %}   
+{% endif %}   
+``` 
+"Showing 2 Products" will show if you assign = 2  
+"Showing 3 Products" will show if assign = 3.  
+&nbsp;  
+
+If it is not equal to what we are asking for, then show the product(s).
+```
+{% assign value = 3 %}  
+{% unless value == 2 %}
+<h1>Showing Products</h1>
+{% endunless %}  
+```
+When both values are different ```<h1>``` will show. 
 
 
 
