@@ -132,12 +132,14 @@ In this case h1 won't show. If you change assign = true, then h1 will show.
 &nbsp;   
 
 ### Else statement 
-```{% if assign = false %}```
+```{% if assign = true %}```
 ```{% if value %}```
 ```<h1>Showing Products</h1>```
 ```{% else %}```
 ```<h1>Not Showing Products</h1>```
 ```{% endif %}```  
+"Showing Products" will show if you assign = true.  
+"Not Showing Products" will show if assign = false.
 &nbsp;   
 
 
