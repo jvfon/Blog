@@ -6,7 +6,10 @@
 [Filters](#Filters)  
 [Math](#Math)   
 [Comments](#Comments)  
-[Control flow](#Control-flow)  
+[Control flow](#Control-flow)   
+[If statment](#If-statment)   
+[Else statement](#Else-statement)  
+[Else if](#Else-if)  
 
 
 
@@ -132,7 +135,7 @@ In this case h1 won't show. If you change assign = true, then h1 will show.
 &nbsp;   
 
 ### Else statement 
-```{% if assign = true %}```
+```{% assign value = true %}```
 ```{% if value %}```
 ```<h1>Showing Products</h1>```
 ```{% else %}```
@@ -142,7 +145,25 @@ In this case h1 won't show. If you change assign = true, then h1 will show.
 "Not Showing Products" will show if assign = false.
 &nbsp;   
 
+```{% assign value = 2 %}```
+```{% if value == 2%}```
+```<h1>2</h1>```
+```{% else %}```
+```<h1>Not 2</h1>```
+```{% endif %}```  
+"Showing Products" will show if you assign = 2 
+"Not Showing Products" will show if assign = false.
+&nbsp;   
 
+## Else if
+```{% assign value = 3 %}```  
+```{% if value == 2 %}```  
+```<h1>2</h1>```  
+```{% else %}```  
+```<h1>Not 2</h1>```  
+```{% endif %}```   
+"Showing Products" will show if you assign = 2  
+"Not Showing Products" will show if assign = false.  
 
 
 
