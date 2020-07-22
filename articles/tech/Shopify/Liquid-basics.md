@@ -202,6 +202,12 @@ Depending on what the value is equal to, the program will output a string.
 
 # Loops
 
-
+```
+{% assign names = "Tim, Lucas, Madison" | split ", " %}
+{% for name in names %}
+   {{ name }}
+{% endfor %}
+```  
+"name" is a temporary variable. You can use any string.  
 
 
