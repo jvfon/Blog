@@ -200,14 +200,22 @@ When both values are different ```<h1>``` will show.
 ```
 Depending on what the value is equal to, the program will output a string.  
 
-# Loops
+## Loops
 
 ```
-{% assign names = "Tim, Lucas, Madison" | split ", " %}
+{% assign names = "Tim, Lucas, Madison" | split: ", " %}
 {% for name in names %}
-   {{ name }}
+   {{ names }}
 {% endfor %}
 ```  
-"name" is a temporary variable. You can use any string.  
+"name" is a temporary variable. You can use any string. 
+
+### UL
+```
+{% assign names = "Tim, Lucas, Madison" | split: ", " %}
+{% for name in names %}
+   {{ names }}
+{% endfor %}
+```  
 
 
