@@ -213,9 +213,24 @@ Depending on what the value is equal to, the program will output a string.
 ### UL
 ```
 {% assign names = "Tim, Lucas, Madison" | split: ", " %}
+<ul>
 {% for name in names %}
-   {{ names }}
+<li>{{ names }}</li>
 {% endfor %}
+</ul>
 ```  
+Creates a list with all the names.  
 
+### else
 
+```
+{% assign names = "", " %}
+<ul>
+{% for name in names %}
+<li>{{ names }}</li>
+{% else %}
+<li> Sorry no names available. </li>
+{% endfor %}
+</ul>
+```  
+If the array has no names, it outputs: "Sorry no names available."
