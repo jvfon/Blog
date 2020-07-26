@@ -233,10 +233,86 @@ Creates a list with all the names.
 {% assign names = "", " %}
 <ul>
 {% for name in names %}
-<li>{{ names }}</li>
+<li>{{ name }}</li>
 {% else %}
 <li> Sorry no names available. </li>
 {% endfor %}
 </ul>
 ```  
 If the array has no names, it outputs: "Sorry no names available."
+&nbsp;
+
+To limit the amount of names displayed use "limit".  
+```
+{% assign names = "Tom, Carlos, Will, Bob, Mike, Chris", " %}
+<ul>
+{% for name in names limit: 2 %}
+<li>{{ name }}</li>
+{% else %}
+<li> Sorry no names available. </li>
+{% endfor %}
+</ul>
+```  
+&nbsp;
+
+To skip a few names use "offset".  
+```
+{% assign names = "Tom, Carlos, Will, Bob, Mike, Chris", " %}
+<ul>
+{% for name in names offset: 2 %}
+<li>{{ name }}</li>
+{% else %}
+<li> Sorry no names available. </li>
+{% endfor %}
+</ul>
+```  
+&nbsp;
+
+To reverse the order of the names use "reversed".  
+```
+{% assign names = "Tom, Carlos, Will, Bob, Mike, Chris", " %}
+<ul>
+{% for name in names reversed %}
+<li>{{ name }}</li>
+{% else %}
+<li> Sorry no names available. </li>
+{% endfor %}
+</ul>
+```
+&nbsp;
+
+To print from a certain number to a certain number pass an range instead of an array. The second ```<ul>``` will print numbers.     
+```
+{% assign names = "Tom, Carlos, Will, Bob, Mike, Chris", " %}
+<ul>
+{% for x in names offset: 2 %}
+<li>{{ x }}</li>
+{% else %}
+<li> Sorry no names available. </li>
+{% endfor %}
+</ul>
+<ul>
+{% for x in (1..10) %}
+<li>{{ x }}</li>
+{% else %}
+<li> Sorry no names available. </li>
+{% endfor %}
+</ul>
+```    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
