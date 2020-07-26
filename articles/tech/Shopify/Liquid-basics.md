@@ -299,6 +299,46 @@ To print from a certain number to a certain number pass an range instead of an a
 {% endfor %}
 </ul>
 ```    
+&nbsp;
+
+The second ```<ul>``` working with an array. Pass the name of the array and let i = to an index number
+```
+{% assign names = "Tom, Carlos, Will, Bob, Mike, Chris", " %}
+<ul>
+{% for x in names offset: 2 %}
+<li>{{ x }}</li>
+{% else %}
+<li> Sorry no names available. </li>
+{% endfor %}
+</ul>
+<ul>
+{% for i in (0..5) %}
+<li>{{ names[i] }}</li>
+{% else %}
+<li> Sorry no names available. </li>
+{% endfor %}
+</ul>
+``` 
+&nbsp;
+
+Break the loop, once it reaches a certain index, stop the loop.  
+{% assign names = "Tom, Carlos, Will, Bob, Mike, Chris", " %}
+<ul>
+{% for x in names offset: 2 %}
+<li>{{ x }}</li>
+{% else %}
+<li> Sorry no names available. </li>
+{% endfor %}
+</ul>
+<ul>
+{% for i in (0..5) %}
+<li>{{ names[i] }}</li>
+{% else %}
+<li> Sorry no names available. </li>
+{% endfor %}
+</ul>
+``` 
+&nbsp;
 
 
 
