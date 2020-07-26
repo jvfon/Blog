@@ -149,12 +149,12 @@ In this case h1 won't show. If you change assign = true, then h1 will show.
 &nbsp;   
 
 ```
-```{% assign value = 2 %}  
-```{% if value == 2%}```
-```<h1>2</h1>```
-```{% else %}```
-```<h1>Not 2</h1>```
-```{% endif %}
+{% assign value = 2 %}  
+{% if value == 2%}
+<h1>2</h1>
+{% else %}
+<h1>Not 2</h1>
+{% endif %}
 ```  
 "Showing Products" will show if you assign = 2 
 "Not Showing Products" will show if assign = false.
