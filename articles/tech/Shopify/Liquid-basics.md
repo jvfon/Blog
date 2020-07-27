@@ -22,7 +22,7 @@ Comment out everything that is inside the body tag, hit ctrl + /.
 
 ## Creating a variable
 
-Start with {%, to close use %}.  
+Start with ```{%```, to close use ```%}```.  
 
 ex:   
 ```{% assign variable = "Hello World" %}```
