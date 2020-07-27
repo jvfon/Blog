@@ -322,6 +322,7 @@ The second ```<ul>``` working with an array. Pass the name of the array and let 
 &nbsp;
 
 Break the loop, once it reaches a certain index, stop the loop.  
+```
 {% assign names = "Tom, Carlos, Will, Bob, Mike, Chris", " %}
 <ul>
 {% for x in names offset: 2 %}
@@ -332,14 +333,77 @@ Break the loop, once it reaches a certain index, stop the loop.
 </ul>
 <ul>
 {% for i in (0..5) %}
-<li>{{ names[i] }}</li>
-{% else %}
-<li> Sorry no names available. </li>
+   {% if i == 3 %}
+      {% break %}
+   {% else %}   
+      <li>{{ names[i] }}</li>
+{% endif %}
 {% endfor %}
 </ul>
 ``` 
 &nbsp;
 
+To skip an index, use "continue". The 4rth name will be skipped.  
+```
+{% assign names = "Tom, Carlos, Will, Bob, Mike, Chris", " %}
+<ul>
+{% for x in names offset: 2 %}
+<li>{{ x }}</li>
+{% else %}
+<li> Sorry no names available. </li>
+{% endfor %}
+</ul>
+<ul>
+{% for i in (0..5) %}
+   {% if i == 3 %}
+      {% continue %}
+   {% else %}   
+      <li>{{ names[i] }}</li>
+{% endif %}
+{% endfor %}
+</ul>
+``` 
+&nbsp;
+
+Assign a number within the range that can be a variable.  
+```
+{% assign names = "Tom, Carlos, Will, Bob, Mike, Chris", " %}
+<ul>
+{% for x in names offset: 2 %}
+<li>{{ x }}</li>
+{% else %}
+<li> Sorry no names available. </li>
+{% endfor %}
+</ul>
+<ul>
+{% assign last = 5 %}
+{% for i in (0..last) %}
+   {% if i == 3 %}
+      {% continue %}
+   {% else %}   
+      <li>{{ names[i] }}</li>
+{% endif %}
+{% endfor %}
+</ul>
+``` 
+&nbsp;
+
+To skip a section of the code use "raw".  
+
+```
+{% raw %}
+   code you want to skip goes here
+{% endraw %}
+```
+&nbsp;
+
+
+Controlling white space. After you print the "product" range and inspect it on the browswer. You will discover white space to get rid of it use "-" at the beginning and ending.
+```
+{% assign names = "Tom, Carlos, Will, Bob, Mike, Chris", " %}
+{%- assign product = "Ezzy Cartridge Loader", " -%}
+{{product}}
+```
 
 
 
