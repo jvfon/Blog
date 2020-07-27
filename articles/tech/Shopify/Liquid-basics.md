@@ -404,10 +404,21 @@ Controlling white space. After you print the "product" range and inspect it on t
 {%- assign product = "Ezzy Cartridge Loader", " -%}
 {{product}}
 ```
+&nbsp;
 
+### Reuse a line
+Use "capture".  
 
+{% assign names = "Tom, Carlos, Will, Bob, Mike, Chris", " %}
+{%- assign product = "Voyager", " -%}
+{% capture sentence %} I just bought the {{product}} {% endcapture %}
 
-
+<h1>{{ sentence }}</h1>
+<h2>{{ sentence }}</h2>
+<p>{{ sentence }}</p>
+```
+"sentence" is like a variable, you can use any name.
+&nbsp;
 
 
 
