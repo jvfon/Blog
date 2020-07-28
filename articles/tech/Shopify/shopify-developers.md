@@ -84,7 +84,7 @@ Once you hit "publish" Shopify will warn you not to publish your theme. Hit "ok"
 
 ## Test your theme
 
-Go back to VSCode to your Liquid theme. Scroll down until you see ```<a href="/cart">cart</a>```, between this line and the next one type "```<h1>Billy's Store</h1>'''" or anything you want. 
+Go back to VSCode to your Liquid theme. Scroll down until you see ```<a href="/cart">cart</a>```, between this line and the next one type "Billy's Store" or anything you want. 
 
 When you go back to your theme online and hit refresh, you should see "Billy's Store" on your store's webpage.
 
