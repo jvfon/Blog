@@ -102,7 +102,7 @@ On the command prompt go inside the Debut folder.
 
 In VSCode open the debut folder and then create a config file, name it "config.yml" 
 
-Next we need the ID of the copy of the theme debut. Go to your Shopify store. On the "Theme library" area hit "customize". 
+Next we need the ID of the copy of the theme debut. Go to your Shopify store. On the "Theme library" area hit "Customize". 
 
 The ID is located on top, on the search field of the browser after the "/theme/" section. The ID should be a series of numbers like "104345043112". Save this number.
 
