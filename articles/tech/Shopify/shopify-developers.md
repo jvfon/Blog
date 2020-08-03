@@ -36,7 +36,7 @@ Open VSCode, go to extensions install liquid.
 
 ## Create Shopify app
 
-Go to your store: store-name.myshopify.com, click on "Apps" on the left panel. Then click on "<span style="color: pink;"> manage private apps</span>" on the main window and  click on "create new private app".  
+Go to your store: store-name.myshopify.com, click on "Apps" on the left panel. Then click on "manage private apps" on the main window and  click on "create new private app".  
 
 On the "App details" section put the name of the theme you are building on the "Private app name field". Name it "theme-nameTheme.API" end the name with "Theme.API" to make things easier.  
 
@@ -46,6 +46,7 @@ On the "Admin api" section click on the "Show inactive Admin API permissions" pu
 
 Scroll down until you see "Themes" and "theme assets" and change the access to "read and write". Hit "save" and click on "create app".  
 
+----
 Create a folder inside your projects folder called "Shopify-theme". Go inside the "Shopify-theme" folder and add another folder: store-nameTheme".  
 
 Go back to the Theme Kit documentation page: https://shopify.github.io/themekit/, click on "Getting started" on the left panel and scroll down near the bottom on the main area.
@@ -56,7 +57,7 @@ Go to your Shopify store: https://store-name.myshopify.com/admin/apps/private/26
 
 The same thing do with the store name and them name. Go the search field of the browser, copy the store name from there: store-name.shopify.com.  
 
-"[theme-name]" Here is where you put name of your theme. Hit "enter".
+"[theme-name]" Here is where you put name of your theme name that "nameTheme.API". Hit "enter".
 
 ## Standard Theme (debut)
 
