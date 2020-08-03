@@ -36,7 +36,7 @@ Open VSCode, go to extensions install liquid.
 
 ## Create Shopify app
 
-Go to your store: store-name.myshopify.com, click on "Apps" on the left panel. Then click on "manage private apps" on the main window and  click on "create new private app".  
+Go to your store: store-name.myshopify.com, click on "Apps" on the left panel. Then click on "<span style="color: pink;"> manage private apps</span>" on the main window and  click on "create new private app".  
 
 On the "App details" section put the name of the theme you are building on the "Private app name field". Name it "theme-nameTheme.API" end the name with "Theme.API" to make things easier.  
 
