@@ -73,7 +73,7 @@ On VSCode, open the folder where your Shopify theme is located.
 
 In the "templates" folder on the right side click on "index.liquid", that is our home page.
 
-Go to the "layout" and then click on the "theme.liquid" file. There you will noticed HTML, CSS and some programing going on. The programing is Liquid.
+Go to the "layout" and then click on the "theme.liquid" file. There you will noticed HTML, CSS and some programing going on. The code inside {% and %} tags is Liquid.
 
 ## Publish your theme
 
@@ -109,7 +109,7 @@ The ID is located on top, on the search field of the browser after the "/theme/"
 
 Hit the browser's back button. On your Shopify store, go back to "Apps" on the left hand side panel. 
 
-Hit "Manage private apps". On the next section, copy the API key and save it.
+Hit "Manage private apps" on the main section. On the next section, copy the API key and save it.
 
 Click the theme's name located under "Private app name". You can also copy the API number form here. 
 
