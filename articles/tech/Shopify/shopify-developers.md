@@ -104,6 +104,7 @@ On the command prompt go inside the Debut folder.
 
 In VSCode open the debut folder and then create a config file, name it "config.yml" 
 
+### Get the theme id from here:
 Next we need the ID of the copy of the theme debut. Go to your Shopify store. On the "Theme library" area hit "Customize". 
 
 The ID is located on top, on the search field of the browser after the "/theme/" section. The ID should be a series of numbers like "104345043112". Save this number.
@@ -126,7 +127,7 @@ The password and store address have to be by themselves, no brackets nor parenth
 
 Go to the command prompt, make sure you are in the debut folder and type: "theme download", then hit "enter". 
 
-To test things out go to VSCode again. Open the config.yml file. Hit the "sections" folder and click on header.liquid.  
+To test things out go to VSCode again. In the xxxTheme-debut folder, open the "sections" folder and click on header.liquid.  
 
 Look for where it says "logo". You only want to make a change. Look for the class "site-header__logo-link". Add some text right before the "</a>" closing tag. 
 
