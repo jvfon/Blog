@@ -94,7 +94,7 @@ When you go back to your theme online and hit refresh, you should see "Billy's S
 Go back to your Shopify store (Shopify website). Under "Theme library", make a duplicate of the "Debut" theme. Hit "duplicate" under the "Actions" pull down menu.
 
 You can preview the copy of Debut wich is the theme that comes with Shopify. Everything that you need to build a theme is already built in this theme. You can copy and paste want you need from Debut. There is no need to re-invent the wheel.  
-
+---
 To download the copy of Debut, hit "ctrl + c" on the command prompt to stop "theme watch". 
 
 Create a folder called "Debut" just like the theme's name.
@@ -114,7 +114,7 @@ Hit "Manage private apps" on the main section. On the next section, copy the API
 Click the theme's name located under "Private app name". You can also copy the API number form here. 
 
 Copy the password and save it.
-
+---
 Go back to the Shopify themeKit website, click on "Commands" and then click on "configure" on the left panel.
 
 Copy the code, it starts with "development:". Then go to VSCode to the config.yml file. Paste the code in there. 
