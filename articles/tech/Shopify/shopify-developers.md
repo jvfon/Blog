@@ -77,7 +77,7 @@ Go to the "layout" and then click on the "theme.liquid" file. There you will not
 
 ## Publish your theme
 
-Go back to your webstore on "Theme library" click the "Actions" pull down menu. Hit "publish".  
+Go back to your webstore on "Theme library", scroll down to the new theme you created for the store.click the "Actions" pull down menu and Hit "publish".  
 
 Usually you don't want to work on a theme that's live so you would hit "duplicate" under "Actions" in the "Current theme" area. But we are practicing with your own store so it's ok to test a new theme.
 
