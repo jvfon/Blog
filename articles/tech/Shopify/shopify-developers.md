@@ -55,7 +55,7 @@ Where it says "Create a new theme" copy the first line of code: ```theme new --p
 
 Go to your Shopify store: https://store-name.myshopify.com/admin/apps/private/261901854222, then find the password field, copy it and replace "[your-password]" with the password you copied from your store. 
 
-The same thing do with the store name and them name. Go the search field of the browser, copy the store name from there: store-name.shopify.com.  
+The same thing do with the store name. Go the search field of the browser, copy the store name from there: store-name.shopify.com.  
 
 "[theme-name]" Here is where you put name of your theme name that "nameTheme.API". Hit "enter".
 
