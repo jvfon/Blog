@@ -81,7 +81,7 @@ Go back to your webstore on "Theme library", scroll down to the new theme you cr
 
 Usually you don't want to work on a theme that's live so you would hit "duplicate" under "Actions" in the "Current theme" area. But we are practicing with your own store so it's ok to test a new theme.
 
-Once you hit "publish" Shopify will warn you not to publish your theme. Hit "ok" and you will see a new page with "Themes" on top. Hit "view your store". You will see a very basic template created for you by Shopify.  
+Once you hit "publish" Shopify will warn you not to publish your theme. Hit "ok" and you will see a new page with "Themes" on top. Hit "view your store" on the main page. You will see a very basic template created for you by Shopify.  
 
 ## Test your theme
 
