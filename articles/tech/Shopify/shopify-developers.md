@@ -90,6 +90,7 @@ Go back to VSCode to your Liquid theme. Scroll down until you see ```<a href="/c
 When you go back to your theme online and hit refresh, you should see "Billy's Store" on your store's webpage.
 
 ## Working with an existing website
+### Make a duplicate of debut
 
 Go back to your Shopify store (Shopify website). Under "Theme library", make a duplicate of the "Debut" theme. Hit "duplicate" under the "Actions" pull down menu.
 
