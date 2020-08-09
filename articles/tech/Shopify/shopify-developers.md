@@ -131,7 +131,7 @@ To test things out go to VSCode again. In the xxxTheme-debut folder, open the "s
 
 Look for where it says "logo". You only want to make a change. Look for the class "site-header__logo-link". Add some text right before the "</a>" closing tag. 
 
-Go to the debut folder on the command prompt. Type theme watch and then change what you put before the "</a>" tag.  
+Go to the debut folder on the command prompt. Type "theme watch" and then change what you put before the "</a>" tag.  
 
 Refresh your Shopify store website and look at the change.  
 
