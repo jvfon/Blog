@@ -49,6 +49,8 @@ Scroll down until you see "Themes" and "theme assets" and change the access to "
 ----
 Create a folder inside your projects folder called "Shopify-theme". Go inside the "Shopify-theme" folder and add another folder: store-nameTheme".  
 
+On the admin command prompt. Go to the theme directory you just created.
+
 Go back to the Theme Kit documentation page: https://shopify.github.io/themekit/, click on "Getting started" on the left panel and scroll down near the bottom on the main area.
 
 Where it says "Create a new theme" copy the first line of code: ```theme new --password=[your-password] --store=[your-store.myshopify.com] --name=[theme name]``` and paste it on admin command prompt. 
