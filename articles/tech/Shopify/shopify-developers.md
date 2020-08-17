@@ -59,7 +59,7 @@ Go to your Shopify store: https://store-name.myshopify.com/admin/apps/private/26
 
 The same thing do with the store name. Go the search field of the browser, copy the store name from there: store-name.shopify.com.  
 
-"[theme-name]" Here is where you put name of your theme name that "nameTheme.API". Hit "enter".
+"[theme-name]" Here is where you put name of your theme name that "nameTheme.API". Hit "enter" when you are done copying and pasting the information.
 
 ## Standard Theme (debut)
 
@@ -97,7 +97,8 @@ When you go back to your theme online and hit refresh, you should see "Billy's S
 Go back to your Shopify store (Shopify website). Under "Theme library", make a duplicate of the "Debut" theme. Hit "duplicate" under the "Actions" pull down menu.
 
 You can preview the copy of Debut wich is the theme that comes with Shopify. Everything that you need to build a theme is already built in this theme. You can copy and paste want you need from Debut. There is no need to re-invent the wheel.  
----
+
+### Download copy of Debut
 To download the copy of Debut, hit "ctrl + c" on the command prompt to stop "theme watch". 
 
 Create a folder called "Debut" just like the theme's name.
