@@ -114,9 +114,7 @@ The ID is located on top, on the search field of the browser after the "/theme/"
 
 Hit the browser's back button. On your Shopify store, go back to "Apps" on the left hand side panel. 
 
-Hit "Manage private apps" on the main section. On the next section, copy the API key and save it.
-
-Click the theme's name located under "Private app name". You can also copy the API number form here. 
+Click the theme's name located under "Private app name". You can also copy the API key form here. 
 
 Copy the password and save it.
 ---
