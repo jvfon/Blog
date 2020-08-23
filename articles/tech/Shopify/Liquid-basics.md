@@ -27,7 +27,7 @@ Start with ```{%```, to close use ```%}```.
 ex:   
 ```{% assign variable = "Hello World" %}```
 
-to out put type:  
+to output type:  
 ```{{variable}}```
 
 You can modify the output to show h1 size font:  
