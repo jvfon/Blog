@@ -398,7 +398,7 @@ To skip a section of the code use "raw".
 &nbsp;
 
 
-Controlling white space. After you print the "product" range and inspect it on the browswer. You will discover white space to get rid of it use "-" at the beginning and ending.
+Controlling white space. After you print the "product" range and inspect it on the browswer. You will discover white space. If you want to get rid of it use "-" at the beginning and ending.
 ```
 {% assign names = "Tom, Carlos, Will, Bob, Mike, Chris", " %}
 {%- assign product = "Ezzy Cartridge Loader", " -%}
