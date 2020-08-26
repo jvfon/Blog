@@ -27,9 +27,23 @@ When you look at the browser field you will find something like this: "https://t
 
 The last word "about" is the name of the page you just created.  
 
+You can add HTML to any of the other templates to edit them. 
+
 The template comes from the file "page.liquid" in the "templates" folder. Is a template of how we want data to be shown.  
 
 The file "theme.liquid" in the layout folder is the default layout. 
+
+You can create other layouts in the same folder with different settings for the background, text color, etc. 
+
+To change the default layout, type:
+```
+{% new-layout-name %}
+```
+on top of any pages you want to have the new layout.  
+
+
+
+
 
 
 
