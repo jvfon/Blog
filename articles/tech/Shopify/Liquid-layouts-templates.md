@@ -37,11 +37,25 @@ You can create other layouts in the same folder with different settings for the 
 
 To change the default layout, type:
 ```
-{% new-layout-name %}
+{% layout 'new-layout-name' %}
 ```
 on top of any pages you want to have the new layout.  
 
+## Specific tags for shopify
 
+Look inside theme.liquid.
+
+Shopify uses the code after the tag:
+```
+{{ content_for_header }}
+``` 
+for the header.
+
+and: 
+```
+{{ content_for_layout }}
+```
+to put the layout.  
 
 
 
