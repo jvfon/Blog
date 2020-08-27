@@ -57,6 +57,32 @@ and:
 ```
 to put the layout.  
 
+You can move the tag for layout above the tag for header if you want to.  
+
+One advantage of using layouts is that if you want to put a notification on every single page, you can change the layout and then display it on every single page instead of manually changing every single page.
+
+Ex: Display a notification on every single page.
+Put this code on the main theme:
+```
+<head>
+   <style>
+      notification {
+         background: red;
+         color: white;
+      }
+   </style>
+</head>
+<body>
+   <div class="notification">
+      This website will be under construction for 24hrs
+   </div>
+</body>
+```  
+Then make sure theme is used on every single page.  
+
+## Snipets
+
+
 
 
 
