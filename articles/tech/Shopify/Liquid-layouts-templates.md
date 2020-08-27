@@ -3,6 +3,8 @@
 ## Contents
 [Content](#Content)
 [Create a page](#Create-a-page)
+[Specific tags for shopify](#Specific-tags-for-shopify)
+[Snipets](#Snipets)
 
 ## Content
 The content for the layout is going to be located at the bottom of the "themeliquid" file on the "layout" folder.
@@ -13,7 +15,7 @@ The content for the layout is going to be located at the bottom of the "themeliq
         </main>
 ```
 
-# Create a page
+## Create a page
 
 Go to "pages" on the left panel under "Online Store" on the "Sales Channels".  
 
@@ -81,7 +83,23 @@ Put this code on the main theme:
 Then make sure theme is used on every single page.  
 
 ## Snipets
+Code snipets can be reuse. Let'say you want to put a link to the "about" page on every page of your website.
 
+```
+<a href="pages/about">About</a>
+```
+This link is located in the "theme.liquid" file. 
+```
+<body>
+   <header>
+      <a href="pages/about">About</a>
+   </header>
+</body>
+```
+On the main theme folder, create a folder called "snipets".  
+Create a file called "header.liquid".  
+Copy the code that's inside the ```<body>``` tag.  
+  
 
 
 
