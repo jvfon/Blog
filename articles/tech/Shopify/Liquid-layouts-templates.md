@@ -95,11 +95,19 @@ This link is located in the "theme.liquid" file.
       <a href="pages/about">About</a>
    </header>
 </body>
-```
+```  
+
+Move the code that's inside the ```<body>``` tag in the theme.liquid file.
+
 On the main theme folder, create a folder called "snipets".  
 Create a file called "header.liquid".  
-Copy the code that's inside the ```<body>``` tag.  
-  
+Paste the content from the theme.liquid ```<body>``` tag into the header.liquid file.
+
+In the theme.liquid file, put a link of the snipet, the header.liquid file
+```
+<body>
+   {% include 'header'}
+</body>
 
 
 
