@@ -99,17 +99,19 @@ This link is located in the "theme.liquid" file.
 
 Move the code that's inside the ```<body>``` tag in the theme.liquid file.
 
-On the main theme folder, create a folder called "snipets".  
-Create a file called "header.liquid".  
+On the main theme folder, create a folder called "snippets".  
+Create a file called "header.liquid" inside the snippets folder.
 Paste the content from the theme.liquid ```<body>``` tag into the header.liquid file.
 
-In the theme.liquid file, put a link of the snipet, the header.liquid file
+In the theme.liquid file, put a link of the snippet, the header.liquid file
 ```
 <body>
    {% include 'header'}
 </body>
+```
+This code will allow you to link the ```<body>``` tag content from header.liquid back to theme.liquid.  
 
-
+You can create more snippets and link them to different pages.  
 
 
 
