@@ -5,6 +5,7 @@
 [Create a page](#Create-a-page)
 [Specific tags for shopify](#Specific-tags-for-shopify)
 [Snipets](#Snipets)
+[Assets](#Assets)
 
 ## Content
 The content for the layout is going to be located at the bottom of the "themeliquid" file on the "layout" folder.
@@ -112,6 +113,37 @@ In the theme.liquid file, put a link of the snippet, the header.liquid file
 This code will allow you to link the ```<body>``` tag content from header.liquid back to theme.liquid.  
 
 You can create more snippets and link them to different pages.  
+
+## Assets
+
+The assets are located in the folder "Assets" in the files "application.js" and "application.scss".  
+
+Inside application.scss you can use sass but if you don't know sass, you can use regular css.  
+
+You can always change the extension file name from "scss" to "css". At the same time you need to go inside "theme.liquid" and change the code from: 
+```
+    {{ 'application.scss.css' | asset_url | stylesheet_tag }}
+```  
+To:  
+```  
+    {{ 'application.css' | asset_url | stylesheet_tag }}
+```  
+Remove "scss" from 'application.scss.css'.  
+
+If you have images for your theme, they need to be inside the "assets" folder.  
+
+Once you save the image, go to theme.liquid and add a link for the image.  
+```
+<body>
+   <img src="{{'ES-399.jpg' | asset_url}}">
+</body>
+```   
+
+Instead of using the application.js folder you can directly put ```<script>``` tags and link tags in theme.liquid below the application.scss.css link.  
+```
+<link rel="stylesheet" href="">
+``` 
+to connect to a cdn.  
 
 
 
