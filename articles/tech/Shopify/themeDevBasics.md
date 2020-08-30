@@ -3,7 +3,7 @@
 ## Contents
 [Sections](#Sections)  
 [Add Bootstrap](#Add-Bootstrap)  
-
+[Add a menu](#Add-a-menu)  
 
 ## Sections
 
@@ -59,6 +59,8 @@ Change "div" into "header" to make the new code part of the header.
         <a class="btn btn-outline-primary" href="#">Sign up</a>
     </header>
 ```
+## Add a menu
 
+Go to your shopify store website. Find "navigation" under "sales channel" on the left panel.  
 
 
