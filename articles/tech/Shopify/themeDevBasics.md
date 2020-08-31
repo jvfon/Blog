@@ -4,6 +4,7 @@
 [Sections](#Sections)  
 [Add Bootstrap](#Add-Bootstrap)  
 [Add a menu](#Add-a-menu)  
+[Another link with a submenu](#Another-link-with-a-submenu)  
 
 ## Sections
 
@@ -62,5 +63,33 @@ Change "div" into "header" to make the new code part of the header.
 ## Add a menu
 
 Go to your shopify store website. Find "navigation" under "sales channel" on the left panel.  
+
+Click on "Main menu" on the main area of the webpage.  
+
+On the next page you can "add menu item".  
+
+Fill out the "title" field and then through the "link" field link the new menu item with the folder of the page you previously created. Click on the "link" bar (field), go to the "pages" folder and find the page you previously created.  
+
+Ex: If you created the "about" page before using code, you can link that page to the "about" menu item on shopify through the "link" field.  
+
+### Add a link with a submenu
+
+Click "add menu item", call the menu item "Products", click the "link" bar, choose "collections", then click on "all collections"
+
+### Another link with a submenu
+
+"add menu item"  
+Name: "Products" 
+Link: "Collections", then "all collections"  
+
+"add menu item"  
+Link: "Products", then "all products"  
+Name: "Men's"
+
+On the Men's menu item, hover the cursor over the dots on the left side of the bar. Then drag the Men's menu item to the "Products" menu item. The Men's menu item becomes the submenu of the "Products" menu item.  
+
+
+
+
 
 
