@@ -160,7 +160,18 @@ Every time you loop over the link you create a variable:
 ```
 {% assign child_list_handle = link.title | handleize %}
 ```  
-The variable is called "child_list_handle" 
+The variable is called "child_list_handle". This variable is assigned to the link called "title" and title is converted into a handle. Handles are used to access the attributes of Liquid objects.  
+
+If linklists has the link "title" for the variable "child_list_handle" and it is not blank...
+```
+{% if linklists[child_list_handle].links != blank %}
+```
+
+
+
+
+
+
 
 
 
