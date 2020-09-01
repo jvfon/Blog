@@ -88,6 +88,73 @@ Name: "Men's"
 
 On the Men's menu item, hover the cursor over the dots on the left side of the bar. Then drag the Men's menu item to the "Products" menu item. The Men's menu item becomes the submenu of the "Products" menu item.  
 
+Copy this code from header.liquid in the snippets file.  
+```
+    {% for link in linklists.main-menu.links %}
+    {% assign child_list_handle = link.title | handleize %}
+    {% if linklists[child_list_handle].links != blank %}
+    <a href="{{ link.url }}">{{ link.title }}</a>
+    [
+    {% for childlink in linklists[child_list_handle].links %}
+    <a href="{{ childlink.url }}">{{ childlink.title | escape }}</a>
+    {% endfor %}]
+    {% else %}
+    <a href="{{ link.url }}">{{ link.title }}</a>
+    {% endif %}
+    {% endfor %}
+```  
+Place the code inside the navigation portion of: 
+``` 
+<header class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+    <h5 class="my-0 mr-md-auto font-weight-normal">Company name</h5>
+    <nav class="my-2 my-md-0 mr-md-3">
+        <a class="p-2 text-dark" href="#">Features</a>
+        <a class="p-2 text-dark" href="#">Enterprise</a>
+        <a class="p-2 text-dark" href="#">Support</a>
+        <a class="p-2 text-dark" href="#">Pricing</a>
+    </nav>
+    <a class="btn btn-outline-primary" href="#">Sign up</a>
+</header>
+```   
+This the code you cut from theme.liquid.
+
+Place the code from header.liquid here:
+```
+<header class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+    <h5 class="my-0 mr-md-auto font-weight-normal">Company name</h5>
+    <nav class="my-2 my-md-0 mr-md-3">
+    <!--- copied code starts here --->
+      {% for link in linklists.main-menu.links %}
+      {% assign child_list_handle = link.title | handleize %}
+      {% if linklists[child_list_handle].links != blank %}
+         <a href="{{ link.url }}">{{ link.title }}</a>
+         [
+            {% for childlink in linklists[child_list_handle].links %}
+            <a href="{{ childlink.url }}">{{ childlink.title | escape }}</a>
+         {% endfor %}]
+      {% else %}
+         <a href="{{ link.url }}">{{ link.title }}</a>
+      {% endif %}
+      {% endfor %}
+    <!--- copied code ends here --->
+        <a class="p-2 text-dark" href="#">Features</a>
+        <a class="p-2 text-dark" href="#">Enterprise</a>
+        <a class="p-2 text-dark" href="#">Support</a>
+        <a class="p-2 text-dark" href="#">Pricing</a>
+    </nav>
+    <a class="btn btn-outline-primary" href="#">Sign up</a>
+</header>
+```
+
+Running a for loop and reaching out to a list of links (comes with shopify).  
+```
+{% for link in linklists.main-menu.links %}
+```  
+The "main-menu" is the main menu you created. Inside of there, there is a list of links.  
+
+"links" is an array of objects.  
+
+
 
 
 
