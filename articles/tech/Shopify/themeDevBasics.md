@@ -152,7 +152,16 @@ Running a for loop and reaching out to a list of links (comes with shopify).
 ```  
 The "main-menu" is the main menu you created. Inside of there, there is a list of links.  
 
-"links" is an array of objects.  
+"links" is an array of objects. Inside "links", each index is a link that has info about the menu items you just created.  
+
+You can find more info about link here: https://www.shopify.com/partners/shopify-cheat-sheet. Enter "link" in the search field.  
+
+Every time you loop over the link you create a variable: 
+```
+{% assign child_list_handle = link.title | handleize %}
+```  
+The variable is called "child_list_handle" 
+
 
 
 
