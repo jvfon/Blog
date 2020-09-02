@@ -194,6 +194,21 @@ and put it in a couple of places inside the code you pasted.
         {% endfor %}
 ```  
 
+Then delete the code below:
+```
+        <a class="p-2 text-dark" href="#">Features</a>
+        <a class="p-2 text-dark" href="#">Enterprise</a>
+        <a class="p-2 text-dark" href="#">Support</a>
+        <a class="p-2 text-dark" href="#">Pricing</a>
+```
+
+At this moment the child menu item "Men's" will appear next to the parent. If you create a drop down menu you could put code for the child menu item.
+``
+ [{% for childlink in linklists[child_list_handle].links %}
+   <a href="{{ childlink.url }}" class="p-2 text-dark">{{ childlink.title | escape }}</a>
+   {% endfor %}]
+```
+
 
 
 
