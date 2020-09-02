@@ -145,7 +145,7 @@ Place the code from header.liquid here:
     <a class="btn btn-outline-primary" href="#">Sign up</a>
 </header>
 ```
-
+---
 Running a for loop and reaching out to a list of links (comes with shopify).  
 ```
 {% for link in linklists.main-menu.links %}
@@ -169,6 +169,31 @@ If linklists has the link "title" for the variable "child_list_handle" and it is
 the link will be printed and another for loop will be done on linklists.
 
 A loop is done over all the links we have inside de main menu to check if they have submenus. If a menu item doesn't have a child, the item menu is shown (printed). If the menu item has a child, both the menu item and the child are shown.  
+---  
+
+Take this class found right below the code you pasted in header liquid. 
+```
+class="p-2 text-dark"
+```  
+and put it in a couple of places inside the code you pasted.
+```
+        {% for link in linklists.main-menu.links %}
+        {% assign child_list_handle = link.title | handleize %}
+        {% if linklists[child_list_handle].links != blank %}
+         <!-- class goes below -->
+        <a href="{{ link.url }}"class="p-2 text-dark">{{ link.title }}</a>
+        [
+        {% for childlink in linklists[child_list_handle].links %}
+        <!-- class goes below -->
+        <a href="{{ childlink.url }}"class="p-2 text-dark">{{ childlink.title | escape }}</a>
+        {% endfor %}]
+        {% else %}
+         <!-- class goes below -->
+        <a href="{{ link.url }}"class="p-2 text-dark">{{ link.title }}</a>
+        {% endif %}
+        {% endfor %}
+```  
+
 
 
 
