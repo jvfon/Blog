@@ -166,7 +166,9 @@ If linklists has the link "title" for the variable "child_list_handle" and it is
 ```
 {% if linklists[child_list_handle].links != blank %}
 ```
+the link will be printed and another for loop will be done on linklists.
 
+A loop is done over all the links we have inside de main menu to check if they have submenus. If a menu item doesn't have a child, the item menu is shown (printed). If the menu item has a child, both the menu item and the child are shown.  
 
 
 
