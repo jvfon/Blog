@@ -194,7 +194,7 @@ and put it in a couple of places inside the code you pasted.
         {% endfor %}
 ```  
 
-Then delete the code below:
+Then delete the code below, we no longer need it:
 ```
         <a class="p-2 text-dark" href="#">Features</a>
         <a class="p-2 text-dark" href="#">Enterprise</a>
@@ -203,11 +203,57 @@ Then delete the code below:
 ```
 
 At this moment the child menu item "Men's" will appear next to the parent. If you create a drop down menu you could put code for the child menu item.
-``
+```
  [{% for childlink in linklists[child_list_handle].links %}
    <a href="{{ childlink.url }}" class="p-2 text-dark">{{ childlink.title | escape }}</a>
    {% endfor %}]
 ```
+
+At the end of the for loop, the code right above. Paste:
+```
+    <a href="/cart">cart</a>
+    <a href="pages/about">About</a>
+```
+This code was taken from header.liquid. It code for a cart.  At the end, the code will look like:
+```
+    <nav class="my-2 my-md-0 mr-md-3">
+
+        {% for link in linklists.main-menu.links %}
+        {% assign child_list_handle = link.title | handleize %}
+        {% if linklists[child_list_handle].links != blank %}
+        <a href="{{ link.url }}" class="p-2 text-dark">{{ link.title }}</a>
+        [
+        {% for childlink in linklists[child_list_handle].links %}
+        <a href="{{ childlink.url }}" class="p-2 text-dark">{{ childlink.title | escape }}</a>
+        {% endfor %}]
+        {% else %}
+        <a href="{{ link.url }}" class="p-2 text-dark">{{ link.title }}</a>
+        {% endif %}
+        {% endfor %}
+   <!-- new code below -->
+        <a href="/cart">cart</a>
+
+    </nav>
+```
+Delete the about page, you no longer need it.
+```
+    <a href="pages/about">About</a>
+```
+
+Copy the if statement from the header.liquid file.
+```
+    {% if shop.customer_accounts_enabled %}
+    {% if customer %}
+    <a href="/account">account</a>
+    {{ 'log out'  | customer_logout_link }}
+    {% else %}
+    {{ 'log in ' | customer_login_link }}
+    {{ 'register' | customer_register_link }}
+    {% endif %}
+    {% endif %}
+```
+
+
 
 
 
