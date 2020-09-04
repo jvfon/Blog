@@ -252,6 +252,86 @@ Copy the if statement from the header.liquid file.
     {% endif %}
     {% endif %}
 ```
+Pasted after the code for the cart.
+
+```
+        <a href="/cart">cart</a>
+
+        {% if shop.customer_accounts_enabled %}
+         {% if customer %}
+            <a href="/account">account</a>
+            {{ 'log out'  | customer_logout_link }}
+        {% else %}
+            {{ 'log in ' | customer_login_link }}
+            {{ 'register' | customer_register_link }}
+        {% endif %}
+        {% endif %}
+```
+"customer_accounts_enabled" is an object that comoes with shopify. Look it up on the shopify cheat sheet.  
+
+Check if the customer user is enable.
+
+"if customer" check if the customer is logged in.  
+
+If the customer is logged in it will show up here 
+```
+<a href="/account">account</a>
+```
+
+If the customer is not logged in, you will get the customer login link.
+```
+        {% else %}
+            {{ 'log in ' | customer_login_link }}
+            {{ 'register' | customer_register_link }}
+        {% endif %}
+```
+"customer_login_link" is also an object in shopify.  
+
+Instead of using that filter you can see what the direct link looks like and copy it from the shopify cheat sheet.  
+```
+{% else %}
+   <a href="/account/login">Login</a>
+   {{ 'register' | customer_register_link }}
+{% endif %}
+```
+The bottom code
+```
+...
+        {% if shop.customer_accounts_enabled %}
+        {% if customer %}
+            <a href="/account">account</a>
+            {{ 'log out'  | customer_logout_link }}
+        {% else %}
+            {{ 'log in ' | customer_login_link }}
+            {{ 'register' | customer_register_link }}
+        {% endif %}
+        {% endif %}
+
+    </nav>
+    <a class="btn btn-outline-primary" href="#">Sign up</a>
+</header>
+```
+goes here:
+```
+...
+        {% if shop.customer_accounts_enabled %}
+        {% if customer %}
+            <a href="/account">account</a>
+            {{ 'log out'  | customer_logout_link }}
+        {% else %}
+            <a href="/account/login">Login</a>
+            <a class="btn btn-outline-primary" href="#">Sign up</a>
+            {{ 'register' | customer_register_link }}
+        {% endif %}
+        {% endif %}
+
+    </nav>
+</header>
+```
+
+Search "customer_register_link" in the shopify cheat sheet. Use "register" to look for it.  
+
+
 
 
 
