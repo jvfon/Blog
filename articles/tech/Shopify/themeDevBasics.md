@@ -329,8 +329,44 @@ goes here:
 </header>
 ```
 
-Search "customer_register_link" in the shopify cheat sheet. Use "register" to look for it.  
+Search "customer_register_link" in the shopify cheat sheet. Use "register" to look for it. Replace:
+```
+{{ 'register' | customer_register_link }}
+```
 
+With:
+```
+{{ routes.account_register_url }}
+```
+The code will look like:
+```
+...
+...
+        {% if shop.customer_accounts_enabled %}
+        {% if customer %}
+            <a href="/account">account</a>
+            {{ 'log out'  | customer_logout_link }}
+        {% else %}
+            <a href="/account/login">Login</a>
+            <a class="btn btn-outline-primary" href="#">Sign up</a>
+            {{ routes.account_register_url }}
+        {% endif %}
+        {% endif %}
+
+    </nav>
+</header>
+```
+
+
+The, put the code in:
+```
+<a class="btn btn-outline-primary" href="#">Sign up</a>
+```
+Where the "#" is.
+```
+<a class="btn btn-outline-primary" href="{{ routes.account_register_url }}
+">Sign up</a>
+```
 
 
 
