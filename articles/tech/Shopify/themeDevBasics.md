@@ -367,7 +367,26 @@ Where the "#" is.
 <a class="btn btn-outline-primary" href="{{ routes.account_register_url }}
 ">Sign up</a>
 ```
+The code will look like:
+```
+...
+        <a href="/cart">cart</a>
 
+        {% if shop.customer_accounts_enabled %}
+        {% if customer %}
+        <a href="/account">account</a>
+        <a class="btn btn-outline-primary" href="{{ routes.account_register_url }}
+        ">Sign up</a>
+        {{ 'log out'  | customer_logout_link }}
+        {% else %}
+        <a href="/account/login">Login</a>
+        {% endif %}
+        {% endif %}
+```
+
+Whe you refresh your shop the new changes won't appear because the customer account has to be enabled.  
+
+Go to your shopify shop setting and change it.  
 
 
 
