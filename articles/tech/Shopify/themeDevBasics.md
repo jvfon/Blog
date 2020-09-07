@@ -390,6 +390,67 @@ Go to your shopify shop settings and change it. Setting is located on the left p
 
 Click on "checkout". Check "accounts are optional".  
 
+The new code should look like this:
+```
+...
+        <a href="/cart">cart</a>
+
+        {% if shop.customer_accounts_enabled %}
+        {% if customer %}
+        <a href="/account">account</a>
+
+
+        {{ 'log out'  | customer_logout_link }}
+
+        {% else %}
+        <a href="/account/login">Login</a>
+        <a class="btn btn-outline-primary" href="#">Sign up</a>
+        {{ routes.account_register_url }}
+        {% endif %}
+        {% endif %}
+
+```   
+
+Remove:
+```
+        {{ routes.account_register_url }}
+```
+
+Put: 
+```
+class="p-2 text-dark
+```
+in several places. 
+
+The code should look like:
+```
+        <a href="/cart">cart</a>
+
+        {% if shop.customer_accounts_enabled %}
+        {% if customer %}
+        <a href="/account" class="p-2 text-dark">account</a>
+
+
+        {{ 'log out'  | customer_logout_link }}
+
+        {% else %}
+        <a href="/account/login" class="p-2 text-dark">Login</a>
+        <a class="btn btn-outline-primary" href="#">Sign up</a>
+        {% endif %}
+        {% endif %}
+
+```   
+
+
+
+
+
+
+The new code will look like: 
+```
+...
+
+
 
 
 
