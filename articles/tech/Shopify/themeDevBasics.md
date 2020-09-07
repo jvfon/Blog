@@ -358,7 +358,7 @@ The code will look like:
 ```
 
 
-The, put the code in:
+Then, put the code in:
 ```
 <a class="btn btn-outline-primary" href="#">Sign up</a>
 ```
@@ -384,9 +384,16 @@ The code will look like:
         {% endif %}
 ```
 
-Whe you refresh your shop the new changes won't appear because the customer account has to be enabled.  
+When you refresh your shop the new changes won't appear because the customer account has to be enabled.  
 
-Go to your shopify shop setting and change it.  
+Go to your shopify shop settings and change it. Setting is located on the left panel at the bottom.  
+
+Click on "checkout". Check "accounts are optional".  
+
+
+
+
+
 
 
 
