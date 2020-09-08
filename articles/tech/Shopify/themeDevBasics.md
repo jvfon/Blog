@@ -441,14 +441,73 @@ The code should look like:
 
 ```   
 
-
-
-
-
+Replace the "#" in ```href="#"``` with:
+```
+{{ notes.account_register_url }}
+```  
 
 The new code will look like: 
 ```
 ...
+        <a href="/cart">cart</a>
+
+        {% if shop.customer_accounts_enabled %}
+        {% if customer %}
+        <a href="/account" class="p-2 text-dark">account</a>
+
+
+        {{ 'log out'  | customer_logout_link }}
+
+        {% else %}
+        <a href="/account/login" class="p-2 text-dark">Login</a>
+
+        <a class="btn btn-outline-primary" href="{{ notes.account_register_url }}
+        " class="p-2 text-dark">Sign up</a>
+        {% endif %}
+        {% endif %}
+```   
+
+### Change the company name
+
+You can search "shop" in the shopify cheat sheet and you will find this:
+```  
+{{ shop_locale.name }}
+```  
+
+Replace "Company name" with {{ shop.name }} the code you found.
+```
+</header>
+
+<header class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+    <h5 class="my-0 mr-md-auto font-weight-normal">Company name</h5>
+    <nav class="my-2 my-md-0 mr-md-3">
+```
+
+New code: 
+```   
+</header>
+
+<header class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+    <h5 class="my-0 mr-md-auto font-weight-normal">{{ shop.name }}
+</h5>
+    <nav class="my-2 my-md-0 mr-md-3">
+```
+
+### Put a link to home
+
+Search "route" in the shopify cheat sheet.  
+Copy and paste ```{{ routes.root_url }}``` here:
+```
+</header>
+
+<header class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+    <h5 class="my-0 mr-md-auto font-weight-normal"><a href="{{ routes.root_url }} ">{{ shop.name }}
+    </h5>
+```  
+
+At this point you can comment out or earse the original ```<header>``` tag.
+
+
 
 
 
