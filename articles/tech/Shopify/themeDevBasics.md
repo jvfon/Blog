@@ -507,6 +507,10 @@ Copy and paste ```{{ routes.root_url }}``` here:
 
 At this point you can comment out or earse the original ```<header>``` tag.
 
+## footer.liquid
+
+Create a snippet for the footer. 
+
 
 
 
