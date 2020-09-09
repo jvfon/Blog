@@ -509,7 +509,28 @@ At this point you can comment out or earse the original ```<header>``` tag.
 
 ## footer.liquid
 
-Create a snippet for the footer. 
+Create a snippet for the footer. Go to the snippets folder and create a new file called: "footer.liquid".
+
+Go back to the folder "layout", to the file "theme.liquid". Copy the footer and all its content.  
+```  
+<footer class="pt-4 my-md-5 pt-md-5 border-top">
+...
+</footer>
+```
+Paste the code in "footer.liquid".  
+
+Find:
+```
+    {% include 'header' %}
+```
+Copy and paste the code right above:
+```
+        <footer class="pt-4 my-md-5 pt-md-5 border-top">
+```
+Change ```{% include 'header' %}``` to:
+```
+    {% include 'footer' %}
+```
 
 
 
