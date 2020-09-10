@@ -532,6 +532,15 @@ Change ```{% include 'header' %}``` to:
     {% include 'footer' %}
 ```
 
+In the footer.liquid file, create a container below
+```
+        <footer class="pt-4 my-md-5 pt-md-5 border-top">
+```
+and put the footer code inside you just moved from theme.liquid.  
+
+Create a new file called "pricing.liquid" in the snippets folder.
+
+
 
 
 
