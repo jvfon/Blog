@@ -542,6 +542,26 @@ Create a new file called "pricing.liquid" in the snippets folder.
 
 Take the code you just put inside a container in footer.liquid and put it in pricing.liquid.  
 
+### Bring pricing.liquid into the home page.
+
+Go to index.liquid located in the templates folder. 
+
+Erase ```<%h1>Home Page</h1>``` and put:
+```
+{% include 'pricing' %}
+```  
+
+Go to theme.liquid and copy part of the code starting below "Start Bootstrap".
+```
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <h1 class="display-4">Pricing</h1>
+        <p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap
+            example. It’s built with default Bootstrap components and utilities with little customization.</p>
+    </div>
+```  
+
+
+
 
 
 
