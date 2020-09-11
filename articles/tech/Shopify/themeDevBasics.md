@@ -540,6 +540,10 @@ and put the footer code inside you just moved from theme.liquid.
 
 Create a new file called "pricing.liquid" in the snippets folder.
 
+Take the code you just put inside a container in footer.liquid and put it in pricing.liquid.  
+
+
+
 
 
 
