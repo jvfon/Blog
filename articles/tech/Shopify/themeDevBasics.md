@@ -559,6 +559,7 @@ Go to theme.liquid and copy part of the code starting below "Start Bootstrap".
             example. It’s built with default Bootstrap components and utilities with little customization.</p>
     </div>
 ```  
+Go to the pricing.liquid file and paste the code right below:
 
 
 
