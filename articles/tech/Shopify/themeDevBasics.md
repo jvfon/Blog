@@ -560,6 +560,11 @@ Go to theme.liquid and copy part of the code starting below "Start Bootstrap".
     </div>
 ```  
 Go to the pricing.liquid file and paste the code right below:
+```
+    <div class="container">
+```
+
+
 
 
 
