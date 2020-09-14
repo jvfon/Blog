@@ -6,6 +6,8 @@
 [Add a menu](#Add-a-menu)  
 [Another link with a submenu](#Another-link-with-a-submenu)  
 
+[Cleaning things up](#Cleaning-things-up)
+
 ## Sections
 
 Go to any of your shops, left panel and click "themes" under "online store'. Then go to "Theme library", choose a theme and  click "customize".  
@@ -559,10 +561,22 @@ Go to theme.liquid and copy part of the code starting below "Start Bootstrap".
             example. It’s built with default Bootstrap components and utilities with little customization.</p>
     </div>
 ```  
+### Cleaning things up
 Go to the pricing.liquid file and paste the code right below:
 ```
     <div class="container">
 ```
+Go to theme.liquid and move ```{{'application.js' | asset_url | script_tag}}``` to the bottom of the file. Wrap the code with ```<script>``` tags.
+
+Go to page.liquid, collection.liquid and the other pages and wrap the code with
+```
+<div class="container">
+</div>
+```
+To make things look better, things in the main body will line up better.  
+
+
+
 
 
 
