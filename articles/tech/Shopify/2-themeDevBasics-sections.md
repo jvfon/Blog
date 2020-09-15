@@ -2,6 +2,7 @@
 
 ## Contents
 
+[Access settings](#Access-settings)
 
 
 Go to your shopify store theme and hit "customize".  
@@ -53,7 +54,7 @@ Create a tag and a section, put them inside the code you copied from shopify.
 {
     "name": "Pricing",
     "class": "section-pricing",
-    "section": "section",
+    "tag": "section",
     "settings": [
         {
             "id": "header",
@@ -66,4 +67,34 @@ Create a tag and a section, put them inside the code you copied from shopify.
 {% endschema %}
 ```
 
+Go to the shopify theme page and refresh the page.
+
+On the left side panel the setting you just created are for the user to change.
+
+### Access settings
+
+Go to section_pricing.liquid on the "sections" folder.  On the top change this code:
+```
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <h1 class="display-4">Pricing</h1>
+```
+Change "Pricing" with:
+```
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <h1 class="display-4">{{section.settings.Title}}</h1>
+``` 
+In this section you want to have access to the settings.
+
+Also change the id from the schema, from "header" to "Title":
+```
+{% schema %}
+
+{
+    "name": "Pricing",
+    "class": "section-pricing",
+    "tag": "section",
+    "settings": [
+        {
+            "id": "title",
+``` 
 
