@@ -14,11 +14,11 @@ Comment out all the existing code.
 
 Create a new folder called "sections" on the layout folder.  
 
-Go to index.liquid on the "templates" folder and put ```{% section 'pricing' %}``` on the top of the page.  
+Go to index.liquid on the "templates" folder and put ```{% section 'section_pricing' %}``` on the top of the page.  
 
 Take all the code from pricing.liquid on the "snippets" folder.
 
-Create a new file called "pricing.liquid" on the "sections" folder and paste the code above.  
+Create a new file called "section_pricing.liquid" on the "sections" folder and paste the code above.  
 
 In this case we need to define this section and tell liquid what section this is. There are two types of sections, dynamic and static. Check out this link for more info ```https://shopify.dev/tutorials/develop-theme-use-sections```.  
 
@@ -37,7 +37,7 @@ Change the code, change the name from:
 ```
 to
 ```
-    "name": "Pricing",
+    "name": "pricing",
 ```
 
 Every time you render a section, shopify will create a div with an id and a class.
@@ -45,6 +45,25 @@ Every time you render a section, shopify will create a div with an id and a clas
 <div id="shopify-section-[id]" class="shopify-section slideshow">
   [output of the section template]
 </div>
+```
+
+Create a tag and a section, put them inside the code you copied from shopify.
+```
+{% schema %}
+{
+    "name": "Pricing",
+    "class": "section-pricing",
+    "section": "section",
+    "settings": [
+        {
+            "id": "header",
+            "type": "text",
+            "label": "Header",
+            "default": "Hello world"
+        }
+    ]
+}
+{% endschema %}
 ```
 
 
