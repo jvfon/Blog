@@ -81,7 +81,7 @@ Go to section_pricing.liquid on the "sections" folder.  On the top change this c
 Change "Pricing" with:
 ```
     <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-        <h1 class="display-4">{{section.settings.Title}}</h1>
+        <h1 class="display-4">{{section.settings.title}}</h1>
 ``` 
 In this section you want to have access to the settings.
 
@@ -97,4 +97,25 @@ Also change the id from the schema, from "header" to "Title":
         {
             "id": "title",
 ``` 
+and change the rest of the settings to reflect what you want to show the user
+```
+{% schema %}
+
+{
+    "name": "Pricing",
+    "class": "section-pricing",
+    "tag": "section",
+    "settings": [
+        {
+            "id": "title",
+            "type": "text",
+            "label": "Title",
+            "default": "Pricing"
+        }
+    ]
+}
+
+{% endschema %}
+```
+
 
