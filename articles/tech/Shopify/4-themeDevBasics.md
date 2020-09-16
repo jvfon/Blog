@@ -7,6 +7,8 @@
 [Another link with a submenu](#Another-link-with-a-submenu)  
 
 [Cleaning things up](#Cleaning-things-up)
+[Adding more sections ](#Adding-more-sections)
+[Creating blocks](#Creating-blocks)
 
 ## Sections
 
@@ -574,6 +576,119 @@ Go to page.liquid, collection.liquid and the other pages and wrap the code with
 </div>
 ```
 To make things look better, things in the main body will line up better.  
+
+You can place ```{% section 'section-pricing' %}``` on any page and changes made on the settings on the shopify website affect every page the section code was placed.  
+
+### Adding more sections 
+Starting from:
+```
+{% schema %}
+
+{
+    "name": "Pricing",
+    "class": "section-pricing",
+    "tag": "section",
+    "settings": [
+        {
+            "id": "title",
+            "type": "text",
+            "label": "Title",
+            "default": "Pricing"
+        }
+    ]
+}
+
+{% endschema %}
+```  
+to:
+```
+{
+    "name": "Pricing",
+    "class": "section-pricing",
+    "tag": "section",
+    "settings": [
+        {
+            "id": "title",
+            "type": "text",
+            "label": "Title",
+            "default": "Pricing"
+        }, {
+            "id": "Description",
+            "type": "textarea",
+            "label": "Section Description",
+            "default": "Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization."
+        }
+    ]
+}
+
+{% endschema %}
+```
+The new "default" setting was taken from the page the code resided in. 
+
+Add ```{{section.settings.Description}}``` in place of the text you took for the "default" setting.  
+
+This will add a text box called "Section Description" to the shopify theme that can be edited by the user.
+
+### Creating blocks
+
+Similar to a schema and usuful for objects that need to be repeated inside a schema.  
+
+Blocks start after settings.
+```  
+{% schema %}
+
+{
+    "name": "Pricing",
+    "class": "section-pricing",
+    "tag": "section",
+    "settings": [
+        {
+            "id": "title",
+            "type": "text",
+            "label": "Title",
+            "default": "Pricing"
+        }
+    ]
+}
+
+{% endschema %}
+```  
+to:
+```
+{
+    "name": "Pricing",
+    "class": "section-pricing",
+    "tag": "section",
+    "settings": [
+        {
+            "id": "title",
+            "type": "text",
+            "label": "Title",
+            "default": "Pricing"
+        }, {
+            "id": "Description",
+            "type": "textarea",
+            "label": "Section Description",
+            "default": "Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization."
+        }
+    ],
+    "blocks": [
+        {
+
+        }
+    ]
+}
+
+{% endschema %}
+```  
+Put a comma after settings, pass in an array and then pass an object. The object represent each block.  
+
+The "limit" is to set the number of columns and therefore the number of objects shown in a row, so it won't change the design of the page.
+
+
+
+
+
 
 
 
