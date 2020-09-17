@@ -10,6 +10,8 @@
 [Adding more sections ](#Adding-more-sections)
 [Creating blocks](#Creating-blocks)
 
+[Button style](#Button-style)
+
 ## Sections
 
 Go to any of your shops, left panel and click "themes" under "online store'. Then go to "Theme library", choose a theme and  click "customize".  
@@ -724,10 +726,61 @@ The "limit" is to set the number of columns and therefore the number of objects 
 
 {% endschema %}
 ```
+Use jsonlint.com to find errors.  
 
+```
+{
+    "id": "tier_name",
+    "type": "text",
+    "label": "Tier Name",
+    "default": "Free"
+}
+```  
+With this code the user can edit the top of the block content.  
 
+```"id": "tier_name"``` you can only use underscore to separate words.  
 
+Underneath the block settings comes the options:
+```
+{
+    "id": "tier_date",
+    "type": "select",
+    "label": "Tier Date",
+    "options": [
+        {
+            "value": "dy",
+            "label": "Daily"
+        }, {
+            "value": "mo",
+            "label": "Monthly"
+        }, {
+            "value": "yr",
+            "label": "Yearly"
+        }
+    ],
+    "default": "mo"
+}
+```  
+Inside the options array, there are select boxes to show daily, monthy or yearly.
 
+The default is set to monthly. 
+
+Then, there is going to be a tier description.  
+
+```
+{
+    "id": "tier_description",
+    "type": "textarea",
+    "label": "Tier Description",
+    "info": "Separate by a comma",
+    "default": "10 users included, 2GB of storage, Email support, Help center access",
+    "placeholder": "example a, example b, example c"
+}
+```  
+"Default" explains to the user what to do and "placeholder" gives an example of what to do.  
+
+### Button style
+The button style:  
 
 
 
