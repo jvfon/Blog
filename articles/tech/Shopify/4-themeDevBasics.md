@@ -781,6 +781,45 @@ Then, there is going to be a tier description.
 
 ### Button style
 The button style:  
+```  
+{
+    "id": "tier_button_style",
+    "type": "select",
+    "label": "Button Style",
+    "options": [
+        {
+            "value": "outline",
+            "label": "Outline"
+        }, {
+            "value": "filled",
+            "label": "filled"
+        }, {
+            "default": "outline"
+        }
+    ]
+}    
+```  
+Users can choose whether they want the button to have a solid color or to be outlined.  
+
+Here users can change the text inside the button.
+```  
+{
+    "id": "tier_button_text",
+    "type": "text",
+    "label": "Button Text",
+    "default": "Sign Up"
+}
+```  
+
+The button link.  
+```  
+{
+    "id": "tier_button_link",
+    "type": "text",
+    "label": "Tier link URL",
+    "default": "#"
+}
+```  
 
 
 
