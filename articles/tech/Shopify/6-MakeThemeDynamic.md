@@ -149,7 +149,7 @@ to
             </div>
             <div class="card-body">
                <h1 class="card-title pricing-card-title">{{block.settings.tier_price}}
-                  <small class="text-muted">/ mo</small>
+                  <small class="text-muted">/ {{block.settings.tier_date}}</small>
                </h1>
                <ul class="list-unstyled mt-3 mb-4">
                   <li>10 users included</li>
@@ -164,5 +164,8 @@ to
 </div>
 ```
 
+Loop over the string for the description, then split them up on the description list.  
+```
+{% for item in description_list %}
 
 
