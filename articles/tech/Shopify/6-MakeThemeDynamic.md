@@ -85,7 +85,7 @@ Create a variable to do the split trick.
 ```  
 <div class="card-deck mb-3 text-center">
    {% for block in section.blocks %}
-      {% assign descrition_list = block.settings.tier_description %}
+      {% assign description_list = block.settings.tier_description %}
       <div class="card mb-4 shadow-sm">
 ```  
 
@@ -117,7 +117,7 @@ From:
 ```
 <div class="card-deck mb-3 text-center">
    {% for block in section.blocks %}
-      {% assign descrition_list = block.settings.tier_description | split: "," %}
+      {% assign description_list = block.settings.tier_description | split: "," %}
       <div class="card mb-4 shadow-sm">
             <div class="card-header">
                <h4 class="my-0 font-weight-normal">Free</h4>
@@ -142,7 +142,7 @@ to
 ```
 <div class="card-deck mb-3 text-center">
    {% for block in section.blocks %}
-      {% assign descrition_list = block.settings.tier_description | split: "," %}
+      {% assign description_list = block.settings.tier_description | split: "," %}
       <div class="card mb-4 shadow-sm">
             <div class="card-header">
                <h4 class="my-0 font-weight-normal">{{block.settings.tier_name}}</h4>
@@ -164,8 +164,30 @@ to
 </div>
 ```
 
-Loop over the string for the description, then split them up on the description list.  
+Loop over the string for the description, then split them up on the description list. Loop over every single ```<li>```.  
 ```
-{% for item in description_list %}
+               <ul class="list-unstyled mt-3 mb-4">
+               {% for item in description_list %}
+                  <li>10 users included</li>
+                  <li>2 GB of storage</li>
+                  <li>Email support</li>
+                  <li>Help center access</li>
+               {% endfor %}
+               </ul>
+```  
+Erase most of the ```<li>```, leave one.
+```
+              <ul class="list-unstyled mt-3 mb-4">
+               {% for item in description_list %}
+                  <li>{{item}}</li>
+               {% endfor %}
+               </ul>
+```
+For each item in the description lis, loop over it and create an ```<li>``` and output it to the website.  
+
+Every time there is a new description, a new ```<li>``` is created.  
+
+
+
 
 
