@@ -194,6 +194,17 @@ original code:
 ```
 to:
 ```
+<button class="btn btn-lg btn-block" {% if block.settings.tier_button_style=="outline" %}
+   btn-outline-primary {% else %} btn-primary {% endif %} type=" button">Sign up for free</button>
+```  
+If the button style is "outline", print "btn-outline-primary; if not, print "btn-primary".  
+
+Change the "sign up" text and change the button code to an anchor.  
+```  
+                <a href="{{block.settings.tier_button_link}}" class="btn btn-lg btn-block"
+                    {% if block.settings.tier_button_style=="outline" %} btn-outline-primary {% else %} btn-primary
+                    {% endif %}>{{block.settings.tier_button_text}} </a>
+```  
 
 
 
