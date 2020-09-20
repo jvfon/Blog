@@ -683,7 +683,9 @@ to:
 
 {% endschema %}
 ```  
-Put a comma after settings, pass in an array and then pass an object. The object represent each block.  
+"Settings" are form fields.  
+
+Put a comma after settings, type "blocks", then pass in an array and then pass an object. A single object represents a block.  
 
 The "limit" is to set the number of columns and therefore the number of objects shown in a row, so it won't change the design of the page.
 

@@ -205,7 +205,7 @@ Change the "sign up" text and change the button code to an anchor.
                     {% if block.settings.tier_button_style=="outline" %} btn-outline-primary {% else %} btn-primary
                     {% endif %}>{{block.settings.tier_button_text}} </a>
 ```  
-
+When you are done with all the changes, hit "save" on the shopify webpage.  
 
 
 
