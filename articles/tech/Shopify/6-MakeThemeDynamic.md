@@ -187,6 +187,13 @@ For each item in the description lis, loop over it and create an ```<li>``` and 
 
 Every time there is a new description, a new ```<li>``` is created.  
 
+Change the button style depending on the button style the user chooses.
+original code:
+```
+<button class="btn btn-lg btn-block btn-outline-primary" type="button">Sign up for free</button>
+```
+to:
+```
 
 
 
