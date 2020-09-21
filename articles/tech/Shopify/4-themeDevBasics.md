@@ -711,7 +711,7 @@ The "limit" is to set the number of columns and therefore the number of objects 
     ],
     "blocks": [
         {
-            "type": "tier",
+            "type": "tier"
             "name": "Tier",
             "limit": 4,
             "settings": [
