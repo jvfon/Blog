@@ -3,7 +3,7 @@
 ## Content
 
 
-Go to the file "section_princing.liquid" from the "sections" folder. Cut this code out:
+Go to the file "section_princing.liquid" from the "sections" folder. Only one card is needed. Cut this code out:
 ```
 <div class="card mb-4 shadow-sm">
    <div class="card-header">
@@ -85,7 +85,7 @@ Create a variable to do the split trick.
 ```  
 <div class="card-deck mb-3 text-center">
    {% for block in section.blocks %}
-      {% assign description_list = block.settings.tier_description %}
+   {% assign description_list = block.settings.tier_description %}
       <div class="card mb-4 shadow-sm">
 ```  
 
@@ -97,7 +97,7 @@ Let's go into the section, let's go into the blocks. In there, loop the block th
 ```
    {% assign descrition_list = block.settings.tier_description %}
 ```
-Every time the for loop goes over a block create the variable "description_list" and assign the block settings tier description wich is the string from:
+Every time the for loop goes over a block create the variable "description_list" and assign the block settings "tier description" which is the string from:
 ```
 <ul class="list-unstyled mt-3 mb-4">
    <li>10 users included</li>
