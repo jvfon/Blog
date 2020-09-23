@@ -56,7 +56,7 @@ to:
 
 ```{{ content_for_index }}``` allows users to see the ```"category": "Custom Content"``` you are adding to the code.  
 
-
+For the blocks, you also need to use the same setting from the original schema blocks.  
 
 
 
