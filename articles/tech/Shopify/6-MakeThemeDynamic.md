@@ -3,6 +3,8 @@
 ## Content
 
 
+These sections will show up on every single page that has the link.
+
 Go to the file "section_princing.liquid" from the "sections" folder. Only one card is needed. Cut this code out:
 ```
 <div class="card mb-4 shadow-sm">
@@ -201,9 +203,10 @@ If the button style is "outline", print "btn-outline-primary; if not, print "btn
 
 Change the "sign up" text and change the button code to an anchor.  
 ```  
-                <a href="{{block.settings.tier_button_link}}" class="btn btn-lg btn-block"
-                    {% if block.settings.tier_button_style=="outline" %} btn-outline-primary {% else %} btn-primary
-                    {% endif %}>{{block.settings.tier_button_text}} </a>
+<a href="{{block.settings.tier_button_link}}" class="btn btn-lg btn-block
+{% if block.settings.tier_button_style == "outline" %} btn-outline-primary 
+{% else %} btn-primary 
+{% endif %}"> {{block.settings.tier_button_text}}
 ```  
 When you are done with all the changes, hit "save" on the shopify webpage.  
 
