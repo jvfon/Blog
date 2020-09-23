@@ -54,4 +54,9 @@ to:
 },
 ```
 
+```{{ content_for_index }}``` allows users to see the ```"category": "Custom Content"``` you are adding to the code.  
+
+
+
+
 
