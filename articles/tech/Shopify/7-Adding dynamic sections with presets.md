@@ -258,19 +258,28 @@ Complete pricing.liquid (from sections folder) code:
                     {
                         "type": "tier",
                         "settings": {
-                                "tier_name": "free"
+                                "tier_name": "free",
+                                "tier_price": "0",
+                                "tier_date": "mo",
+                                "tier_button_style": "outline"
                             }
                     },
                                         {
                         "type": "tier",
                         "settings": {
-                                "tier_name": "Monthly"
+                                "tier_name": "Monthly",
+                                "tier_price": "25",
+                                "tier_date": "mo",
+                                "tier_button_style": "filled"
                             }
                     },
                                         {
                         "type": "tier",
                         "settings": {
-                                "tier_name": "Yearly"
+                                "tier_name": "Yearly",
+                                "tier_price": "160",
+                                "tier_date": "yr",
+                                "tier_button_style": "filled"
                             }
                     }
                 ]
@@ -281,5 +290,4 @@ Complete pricing.liquid (from sections folder) code:
 
 {% endschema %}
 ```
-
-
+If you don't put presets, the blocks will take the schema default values. 
