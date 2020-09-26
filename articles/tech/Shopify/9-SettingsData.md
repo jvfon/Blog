@@ -22,6 +22,35 @@ The moment you save and start changing the theme settings from the shopify websi
 To view these changes, hit "Theme settings" on the left panel on the shopify website. Then hit "theme actions" on the bottom of the left panel. Choose "edit code".  
 
 Using presets you can deliver a template that a user can edit to suit his needs. 
+```
+{
+  "current": "Default",
+  "presets": {
+    "Default": {
+      "sections": {
+        "pricing": {
+          "type": "pricing",
+          "settings": {}
+        }
+      }
+    },
+    "content_for_index": [
+      "pricing"
+    ]
+  },
+  "dark": {
+    "sections": {
+      "pricing": {
+        "type": "pricing",
+        "settings": {}
+      }
+    },
+    "content_for_index": [
+      "pricing"
+    ]
+  }
+}
+```
 
 
 
