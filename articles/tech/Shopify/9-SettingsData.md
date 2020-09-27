@@ -27,6 +27,7 @@ Using presets you can deliver a template that a user can edit to suit his needs.
   "current": "Default",
   "presets": {
     "Default": {
+      "color_text": "#FF0000",
       "sections": {
         "pricing": {
           "type": "pricing",
@@ -34,27 +35,38 @@ Using presets you can deliver a template that a user can edit to suit his needs.
             "litle": "Light Pricing"
           }
         }
-      }
+      },
+      "content_for_index": [
+        "pricing"
+      ]
     },
-    "content_for_index": [
-      "pricing"
-    ]
-  },
-  "dark": {
-    "sections": {
-      "pricing": {
-        "type": "pricing",
-        "settings": {
-          "litle": "Light Pricing"
+    "Dark": {
+      "color_text": "#ffffff",
+      "sections": {
+        "pricing": {
+          "type": "pricing",
+          "settings": {
+            "litle": "Dark Pricing"
+          }
         }
-      }
-    },
-    "content_for_index": [
-      "pricing"
-    ]
+      },
+      "content_for_index": [
+        "pricing"
+      ]
+    }
   }
 }
 ```
+The initial look of the theme can be controlled with this settings.  
 
+With content for index, you can set the order of the sections.  
+```      
+"content_for_index": [
+  "gallery",
+  "pricing",
+  "newsletter",
+  "slider"
+]
+```
 
 
