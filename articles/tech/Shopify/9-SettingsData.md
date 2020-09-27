@@ -30,7 +30,9 @@ Using presets you can deliver a template that a user can edit to suit his needs.
       "sections": {
         "pricing": {
           "type": "pricing",
-          "settings": {}
+          "settings": {
+            "litle": "Light Pricing"
+          }
         }
       }
     },
@@ -42,7 +44,9 @@ Using presets you can deliver a template that a user can edit to suit his needs.
     "sections": {
       "pricing": {
         "type": "pricing",
-        "settings": {}
+        "settings": {
+          "litle": "Light Pricing"
+        }
       }
     },
     "content_for_index": [
