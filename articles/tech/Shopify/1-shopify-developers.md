@@ -75,8 +75,7 @@ On VSCode, open the folder where your Shopify theme is located.
 
 In the "templates" folder on the right side click on "index.liquid", that is our home page.
 
-<!-- 
-Go to the "layout" and then click on the "theme.liquid" file. There you will noticed HTML, CSS and some programing going on. The code inside the { and % tags is Liquid. -->
+Go to the "layout" and then click on the "theme.liquid" file. There you will noticed HTML, CSS and some programing going on. The code inside the { and % tags is Liquid.
 
 ## Publish your theme
 

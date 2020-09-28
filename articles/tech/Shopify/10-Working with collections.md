@@ -65,9 +65,13 @@ The for loop build pagination for you.
 {% endfor %}
 ```
 
-"Collections" will give you access to all of the products.
+"Collections" will give you access to all the collections.
 
-"Collection" will give you access to a specific group of producs. Ex: the collection of brown boots from all brands.  
+"Collection" will give you access to a specific collection. Ex: the collection of brown boots from all brands.  
+
+The "product" object will give you access to all the products. Check out product.liquid.  
+
+
 
 
 
