@@ -71,6 +71,12 @@ The for loop build pagination for you.
 
 The "product" object will give you access to all the products. Check out product.liquid.  
 
+In blog.liquid you can have all the articles about your store. It works the same way as the collections/products page. 
+
+Search "global objects" in the cheat sheet to find more about it. https://www.shopify.com/partners/shopify-cheat-sheet  
+
+
+
 
 
 
