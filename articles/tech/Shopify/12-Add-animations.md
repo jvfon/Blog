@@ -67,3 +67,39 @@ Make sure the iframe style is black
 ```
 style="background: black;
 ```
+
+Use ">-1.25" to make the animation start after the previous animation ends.  
+```
+).fromTo(
+    '.menu',
+    {
+        x: 200,
+        opacity: 0
+    },
+    {
+        x: 0,
+        opacity: 1,
+        duration: 1.3
+    },
+    '>-1.25'
+)
+```
+
+Use "stagger: 2" to animate each image within the element one after the other.
+```
+.fromTo(
+    "#jumbo .store-info img",
+    {
+        y: 400,
+        opacity: 0
+    },
+    {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        stagger: .5
+    },
+    ">-1.5"
+);
+```  
+
