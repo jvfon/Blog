@@ -103,3 +103,8 @@ Use "stagger: 2" to animate each image within the element one after the other.
 );
 ```  
 
+## Scroll Magic
+
+As you scroll down the webpage, Scroll Magic triggers animations to start.
+
+```
