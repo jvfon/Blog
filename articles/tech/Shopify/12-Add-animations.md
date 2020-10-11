@@ -128,4 +128,7 @@ let twoCScene = new ScrollMagic.Scene({
 
 ```offset: 200,``` = the start of the animation is pushed 200px down from the bottom of the page.  
 
+```reverse: true``` = Once you scroll up past the starting point of the bottom animation, the animation starts again but in reverse. With "false" the animation doesn't start again when you scroll up.
+
+
 
