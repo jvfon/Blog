@@ -108,3 +108,24 @@ Use "stagger: 2" to animate each image within the element one after the other.
 As you scroll down the webpage, Scroll Magic triggers animations to start.
 
 ```
+let homeController = new ScrollMagic.Controller();
+
+let twoCScene = new ScrollMagic.Scene({
+    triggerElement: "#twoCollections",
+    triggerHook: 1,
+    reverse: true,
+    // offset: 200,
+    // duration: 0
+    duration: document.querySelector("#twoCollections").offsetHeight
+})
+.setTween(twoCollectionTL)
+.addIndicators()
+.addTo(homeController);
+```
+```triggerHook 1``` = the animations get activated at the bottom of the page.  
+
+```duration: document.querySelector("#twoCollections").offsetHeight``` = the duration of the animations is based on the height of the parent element.  
+
+```offset: 200,``` = the start of the animation is pushed 200px down from the bottom of the page.  
+
+
