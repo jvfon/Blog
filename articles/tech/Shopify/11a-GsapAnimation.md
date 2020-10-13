@@ -1,5 +1,8 @@
 # Gsap animation
 
+File structure:
+projects/ js-animations/ gsap/ css, js.  
+
 Go to https://greensock.com/docs/v3/Installation and choose how you want to install Gsap.
 
 If you donwloaded the zip file, unzip the zip file in the js directory.
@@ -81,7 +84,7 @@ Go to https://greensock.com/docs/v3/GSAP/Tween for tween methods.
         let button4 = document.querySelector('.button4');
         let tween1;    
         button1.addEventListener('click', () => {
-            tween1 = gsap.fromTo('#box', {x: 500, y: 500}, {x: 0, y: 0, duration: 3});
+            tween1 = gsap.fromTo('#box', {x: 400, y: 400}, {x: 0, y: 0rotation: '+=360', duration: 3});
         })
         button2.addEventListener('click', () => {
             tween1.play()
@@ -96,8 +99,9 @@ Go to https://greensock.com/docs/v3/GSAP/Tween for tween methods.
     </script>
 </body>
 ```
+0,0 is the top left corner.  
 
-
+Other methods you can use are "rotation" and duration". 
 
 
 
