@@ -109,6 +109,47 @@ Ex: transformOrigin: '0% 100%', it moves the rotation axis from the top left cor
 
 transformOrigin: '50% 50%' will move the rotation axis to the center of the object.  
 
+```
+tween1 = gsap.fromTo('#box', 
+{x: 400, y: 400, width: '100px', height: '100'}, 
+{x: 400, y: 400, width: '200px', height: '200', rotation: '+=360', repeat: -1, rotationOrigin: '50% 50%', duration: 3});
+```
+Changing the width and height of the object from start to finish.  
+
+```
+tween1 = gsap.fromTo('#box', 
+{x: 400, y: 400, width: '100px', height: '100', borderRadius: 0}, 
+{x: 400, y: 400, width: '200px', height: '200', borderRadius: '50%', rotation: '+=360', repeat: 1, rotationOrigin: '50% 50%', duration: 1});
+```
+With borderRadius, the object changes from square to circle at the end of the animation.  
+
+The "yoyo" method needs the "repeat" method.  
+
+"paused: true", the object won't run after you hit "run" but rather will run after you hit "play".  
+
+"runBackwards: true", the animation starts from the end to the beginning.  
+
+```
+onStart: () => {
+      console.log('Started')
+}
+}
+);
+```
+You can trigger a function also.  
+```
+button1.addEventListener('click', () => {
+   tween1 = gsap.fromTo('#box', 
+   {x: 0, y: 0, background: 'red', width: '100px', height: '100', borderRadius: 0}, 
+   {x: 200, y: 200, background: 'black', width: '200px', height: '200', borderRadius: '50%', rotation: '+=360', repeat: 1, rotationOrigin: '50% 50%', duration: 1,
+   runBackwards: true,
+   onStart: () => {
+         console.log('Started')
+   }
+   }
+   );
+})
+```  
 
 
 
