@@ -141,15 +141,19 @@ You can trigger a function also.
 button1.addEventListener('click', () => {
    tween1 = gsap.fromTo('#box', 
    {x: 0, y: 0, background: 'red', width: '100px', height: '100', borderRadius: 0}, 
-   {x: 200, y: 200, background: 'black', width: '200px', height: '200', borderRadius: '50%', rotation: '+=360', repeat: 1, rotationOrigin: '50% 50%', duration: 1,
+   {x: 200, y: 200, background: 'black', width: '200px', height: '200', borderRadius: '50%', rotation: '+=360', repeat: 1, 
+   rotationOrigin: '50% 50%', duration: 1,
    runBackwards: true,
    onStart: () => {
          console.log('Started')
+   },
+   onComplete: () => {
+         console.log('Completed')
    }
-   }
-   );
+});
 })
 ```  
+Find out more about gsap properties here: https://greensock.com/docs/v3/GSAP/Tween
 
 
 
