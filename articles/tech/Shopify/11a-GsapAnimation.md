@@ -84,7 +84,7 @@ Go to https://greensock.com/docs/v3/GSAP/Tween for tween methods.
         let button4 = document.querySelector('.button4');
         let tween1;    
         button1.addEventListener('click', () => {
-            tween1 = gsap.fromTo('#box', {x: 400, y: 400}, {x: 0, y: 0rotation: '+=360', duration: 3});
+            tween1 = gsap.fromTo('#box', {x: 400, y: 400}, {x: 0, y: 0, rotation: '+=360', duration: 3});
         })
         button2.addEventListener('click', () => {
             tween1.play()
@@ -102,6 +102,14 @@ Go to https://greensock.com/docs/v3/GSAP/Tween for tween methods.
 0,0 is the top left corner.  
 
 Other methods you can use are "rotation" and duration". 
+
+The object's rotation axis is the top left corner. To change that, use "transformOrigin".  
+
+Ex: transformOrigin: '0% 100%', it moves the rotation axis from the top left corner to the bottom left corner.  
+
+transformOrigin: '50% 50%' will move the rotation axis to the center of the object.  
+
+
 
 
 
