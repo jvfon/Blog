@@ -155,6 +155,16 @@ button1.addEventListener('click', () => {
 ```  
 Find out more about gsap properties here: https://greensock.com/docs/v3/GSAP/Tween
 
+"Ease" changes the timing of the tweens. https://greensock.com/docs/v3/Eases.  Use it in conjuction with "duration".  
+
+You can also customize ease but you need to download a zip file from greensock.com. Place the file CustomEase.min.js in the "js" folder and then link it in HTML
+```
+<script src="js/CustomEase.min.js"></script>
+```
+
+You can also use cubic bezier for your animation: https://cubic-bezier.com/#.17,.67,.83,.67, but it only gives you 2 points to edit.  
+
+
 
 
 
