@@ -155,6 +155,8 @@ button1.addEventListener('click', () => {
 ```  
 Find out more about gsap properties here: https://greensock.com/docs/v3/GSAP/Tween
 
+
+## Ease
 "Ease" changes the timing of the tweens. https://greensock.com/docs/v3/Eases.  Use it in conjuction with "duration".  
 
 You can also customize ease but you need to download a zip file from greensock.com. Place the file CustomEase.min.js in the "js" folder and then link it in HTML
@@ -164,7 +166,133 @@ You can also customize ease but you need to download a zip file from greensock.c
 
 You can also use cubic bezier for your animation: https://cubic-bezier.com/#.17,.67,.83,.67, but it only gives you 2 points to edit.  
 
+## Stagger
+Stagger allows you to time the start of the animation. 
+```
+stagger: 1,
+```
+This will make an animation wait 1 second before it starts.  
 
+```
+<div id="container">
+   <div class="box"></div>
+   <div class="box"></div>
+   <div class="box"></div>
+   <div class="box"></div>
+   <div class="box"></div>
+
+</div>
+<div class="button1">Run</div>
+<div class="button2">Play</div>
+<div class="button3">Pause</div>
+<div class="button4">Reverse</div>
+
+<script src="js/gsap.min.js"></script>
+<script>
+
+let button1 = document.querySelector('.button1');
+let button2 = document.querySelector('.button2');
+let button3 = document.querySelector('.button3');
+let button4 = document.querySelector('.button4');
+let tween1;    
+button1.addEventListener('click', () => {
+   tween1 = gsap.fromTo('.box', 
+   {
+         x: 0, y: 0, background: 'red', width: '100px', height: '100',
+         borderRadius: "50%",
+         opacity: 0
+   }, 
+   {
+         background: 'yellow',
+         x: 400,
+         y: 0,
+         borderRadius: "50%",
+         duration: 1,
+         stagger: 1,
+         ease: 'bounce.out',
+         opacity: 1,
+         onStart: () => {
+            console.log('Started')
+   },
+```
+Targeting all the elements with the class "box". Stagger will make each element take 1 second before they start. 
+
+## Timelines
+Allows you to structure how your animation goes.
+
+Animations start one after the other and you can use all the methods.
+```
+<body>
+   <div id="container">
+      <div class="box1"></div>
+      <div class="box2"></div>
+      <div class="box3"></div>
+      <div class="box4"></div>
+      <div class="box5"></div>
+
+   </div>
+   <div class="button1">Run</div>
+   <div class="button2">Play</div>
+   <div class="button3">Pause</div>
+   <div class="button4">Reverse</div>
+
+   <script src="js/gsap.min.js"></script>
+   <script>
+
+   let button1 = document.querySelector('.button1');
+   let button2 = document.querySelector('.button2');
+   let button3 = document.querySelector('.button3');
+   let button4 = document.querySelector('.button4');
+   let tween1;    
+
+   let boxesT = gsap.timeline({repeat: -1}
+   );
+   boxesT.to('.box1', { 
+      x: 50
+   })
+   .to('.box2', { 
+      x: 100
+   })
+   .from('.box3', { 
+      x: 400,
+      y: 400
+   })
+   .fromTo('.box4', { 
+      x: 250,
+      y: 250
+   }, 
+   {
+      x: 0,
+      y: 400
+   })
+   .fromTo('.box5', {
+      x: 300,
+      y: 400
+   }, 
+   {
+      x: 0,
+      y: 0,
+      scale: 2
+   })
+
+   button1.addEventListener('click', () => {
+
+   })
+   button2.addEventListener('click', () => {
+      tween1.play()
+   })
+   button3.addEventListener('click', () => {
+      tween1.pause()
+   })
+   button4.addEventListener('click', () => {
+      tween1.reverse()
+   })
+
+</script>
+
+
+</body>
+```
 
 
 
