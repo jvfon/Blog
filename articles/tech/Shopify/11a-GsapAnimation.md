@@ -239,61 +239,61 @@ Animations start one after the other and you can use all the methods.
    <script src="js/gsap.min.js"></script>
    <script>
 
-   let button1 = document.querySelector('.button1');
-   let button2 = document.querySelector('.button2');
-   let button3 = document.querySelector('.button3');
-   let button4 = document.querySelector('.button4');
-   let tween1;    
+      let button1 = document.querySelector('.button1');
+      let button2 = document.querySelector('.button2');
+      let button3 = document.querySelector('.button3');
+      let button4 = document.querySelector('.button4');
+      let tween1;    
 
-   let boxesT = gsap.timeline({repeat: -1}
-   );
-   boxesT.to('.box1', { 
-      x: 50
-   })
-   .to('.box2', { 
-      x: 100
-   })
-   .from('.box3', { 
-      x: 400,
-      y: 400
-   })
-   .fromTo('.box4', { 
-      x: 250,
-      y: 250
-   }, 
-   {
-      x: 0,
-      y: 400
-   })
-   .fromTo('.box5', {
-      x: 300,
-      y: 400
-   }, 
-   {
-      x: 0,
-      y: 0,
-      scale: 2
-   })
+      let boxesT = gsap.timeline({repeat: -1}
+      );
+      boxesT.to('.box1', { 
+         x: 50
+      })
+      .to('.box2', { 
+         x: 100
+      })
+      .from('.box3', { 
+         x: 400,
+         y: 400
+      })
+      .fromTo('.box4', { 
+         x: 250,
+         y: 250
+      }, 
+      {
+         x: 0,
+         y: 400
+      })
+      .fromTo('.box5', {
+         x: 300,
+         y: 400
+      }, 
+      {
+         x: 0,
+         y: 0,
+         scale: 2
+      })
 
-   button1.addEventListener('click', () => {
+      button1.addEventListener('click', () => {
 
-   })
-   button2.addEventListener('click', () => {
-      tween1.play()
-   })
-   button3.addEventListener('click', () => {
-      tween1.pause()
-   })
-   button4.addEventListener('click', () => {
-      tween1.reverse()
-   })
+      })
+      button2.addEventListener('click', () => {
+         boxesT.play()
+      })
+      button3.addEventListener('click', () => {
+         boxesT.pause()
+      })
+      button4.addEventListener('click', () => {
+         boxesT.reverse()
+      })
 
-</script>
-
+   </script>
 
 </body>
 ```
 
+CustomEase is a plugin you can download from greensock once you register. 
 
 
 
