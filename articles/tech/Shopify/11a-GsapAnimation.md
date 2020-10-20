@@ -295,6 +295,8 @@ Animations start one after the other and you can use all the methods.
 
 CustomEase is a plugin you can download from greensock once you register. 
 
+Labels allow you to control the time where an animation starts.
+
 
 
 
