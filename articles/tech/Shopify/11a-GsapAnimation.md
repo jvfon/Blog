@@ -295,7 +295,33 @@ Animations start one after the other and you can use all the methods.
 
 CustomEase is a plugin you can download from greensock once you register. 
 
-Labels allow you to control the time where an animation starts.
+Labels allow you to control where the animation appears in the timeline. Find the documentation here: https://greensock.com/docs/v3/GSAP/Timeline/addLabel().
+
+### Barba.js
+Barba.js a library that allows you to do smooth transitions between your webpages. You can find it here: https://barba.js.org/. 
+
+Use the npm install if you want to use it with your own websites. Otherwise use the CDN to test websites. 
+
+CDN: use the one that says "unpkg".
+```
+<!-- unpkg -->
+<script src="https://unpkg.com/@barba/core"></script>
+```
+Copy and paste it above gsap in the index.html file.  
+
+Check if everything is working by inspecting the page. Ctrl + shift + i to inspect, click on "network" and then press ctrl + r to do a test. 
+
+Barba.js has a wrapper and inside, has a container. Changes occur in the container.
+```
+< body data-barba="wrapper">
+   <header> </header>
+   <main data-barba="container" data-barba-namespace="home">
+      <section> </section>
+   </main>
+</>
+
+
+
 
 
 
