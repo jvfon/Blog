@@ -313,12 +313,50 @@ Check if everything is working by inspecting the page. Ctrl + shift + i to inspe
 
 Barba.js has a wrapper and inside, has a container. Changes occur in the container.
 ```
-< body data-barba="wrapper">
+<body body data-barba="wrapper">
    <header> </header>
    <main data-barba="container" data-barba-namespace="home">
       <section> </section>
    </main>
-</>
+</body>
+```
+
+### Test Barba
+Copy and paste the contents of index.html into about.html.
+
+Change the ```<title>``` tag content with "About". Change other tags if necessary to reflect the "About" page.
+
+### Implement barba.js
+
+Create a function in app.js and put all the js code inside the function. 
+```
+const initialPageAnimation = () => {
+   Code goes here
+}
+```
+
+Controlling how barba goes to the next page. 
+```
+barba.init({
+    sync: true,
+
+    // controlling when barba goes to the next page.
+    transitions: [   // an array
+        {           // passing an object
+            name: 'page-wipe',  // name of the transition
+            async leave(data){   // a function
+                const done = this.async();  // creating the varibale "done" and telling barba the action is complete.
+                console.log('Leaving Page Animation'); // the animation
+                await delay(2000); // await until the function finishes
+                done(); // calling the variable "done". Barba know animation is done
+            },
+            async enter(data){
+                console.log('Entering Page Animation');
+            }     
+        }
+    ]
+})
+```  
 
 
 
