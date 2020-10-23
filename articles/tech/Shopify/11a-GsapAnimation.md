@@ -298,7 +298,7 @@ CustomEase is a plugin you can download from greensock once you register.
 Labels allow you to control where the animation appears in the timeline. Find the documentation here: https://greensock.com/docs/v3/GSAP/Timeline/addLabel().
 
 ### Barba.js
-Barba.js a library that allows you to do smooth transitions between your webpages. You can find it here: https://barba.js.org/. 
+Barba.js a library that allows you to do smooth transitions between your webpages. You can find it here: https://barba.js.org/. It only load the content area of the page not the whole page every time you switch pages.  
 
 Use the npm install if you want to use it with your own websites. Otherwise use the CDN to test websites. 
 
@@ -328,13 +328,15 @@ Change the ```<title>``` tag content with "About". Change other tags if necessar
 
 ### Implement barba.js
 
-Create a function in app.js and put all the js code inside the function. 
+**1. Step 1:**  
+Create a function in the app.js file and put all the js animation code inside the function. 
 ```
 const initialPageAnimation = () => {
-   Code goes here
+   Animation code goes here
 }
 ```
 
+**2. Step 1:**
 Controlling how barba goes to the next page. 
 ```
 barba.init({
@@ -357,6 +359,167 @@ barba.init({
     ]
 })
 ```  
+
+The full code:
+```
+const initialPageAnimation = () => {
+    let tl = gsap.timeline()
+    tl.fromTo('.logo', { 
+        x: -200,
+        opacity: 0
+    },{
+        x: 0,
+        opacity: 1,
+        delay: .5,
+        duration: 1.3
+    })
+
+    .fromTo('.menu', { 
+        x: 200,
+        opacity: 0
+    },{
+        x: 0,
+        opacity: 1,
+        delay: 0.5,
+        duration: 1.3
+    },
+    ">-1.8"
+    )
+
+    .fromTo('.info-section h1', { 
+        x: 0,
+        y:100,
+        opacity: 0
+    },{
+        x: 0,
+        y: 0,
+        opacity: 1,
+        duration: 1.3
+    })
+
+    .addLabel("h1Show")
+
+    .fromTo('.girl', { 
+        height: 0,
+    },{
+        height: 600,
+        duration: 1.4,
+        ease: "power2.out"
+    },
+    ">-.5"
+    )
+    .fromTo('.boy', { 
+        height: 0,
+    },{
+        height: 600,
+        duration: 1.4,
+        ease: "power2.out"
+    },
+    ">-1"
+    )
+    .fromTo('.shape1', { 
+        scale: .1,
+        opacity: 0
+    },{
+        scale: 1,
+        opacity: 1,
+        ease: "power2.out"
+    },
+    ">-1"
+    )
+    .fromTo('.shape3', { 
+        opacity: 0
+    },{
+        opacity: .6,
+        ease: "power2.out",
+        duration: .3
+    },
+    ">-.1"
+    )
+    .fromTo('.shape3', { 
+        x: -50,
+        y: 500
+    },{
+        y: 465,
+        repeat: -1,
+        duration: 2.5,
+        ease: "sine.out",
+        yoyo: true
+    },
+    ">.009"
+    )
+    .fromTo('.shape2', { 
+        
+        opacity: 0
+    },{
+        opacity: .3,
+        ease: "power2.out",
+        duration: .5
+    },
+    ">-1.8"
+    )
+    .fromTo('.shape2', { 
+        x: 500,
+        y: -150
+    },{
+        y: -185,
+        repeat: -1,
+        duration: 1.5,
+        ease: "sine.out",
+        yoyo: true
+    },
+    ">-.1"
+    )
+    .fromTo('.info-section h4', { 
+        x: -50,
+        opacity: 0
+    },{
+        x: 0,
+        opacity: 1,
+        duration: .5
+    },
+    "h1Show"
+    )
+    .fromTo('.call-actions', { 
+        x: -50,
+        opacity: 0
+    },{
+        x: 0,
+        opacity: 1,
+        duration: .5
+    },
+    "h1Show+=1"
+    );    
+}
+
+const delay = (n) => {
+    return new Promise(() => {
+        setTimeout(() => {
+            done();  
+        }, n) // passing the "n", how long the setTimeout will run.  
+    })
+}
+barba.init({
+    sync: true,
+
+    // controlling when barba goes to the next page.
+    transitions: [   // an array
+        {           // passing an object
+            name: 'page-wipe',  // name of the transition
+            async leave(data){   // a function
+                const done = this.async();  // creating the varibale "done" and telling barba the action is complete.
+                console.log('Leaving Page Animation'); // the animation
+                await delay(2000); // await until the function finishes
+                done(); // calling the variable "done". Barba know animation is done
+            },
+            async enter(data){
+                console.log('Entering Page Animation');
+            }     
+        }
+    ]
+})
+```
+
 
 
 
