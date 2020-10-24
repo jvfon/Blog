@@ -337,6 +337,22 @@ const initialPageAnimation = () => {
 ```
 
 **2. Step 1:**
+Set up Barba. Start the code after the function you just created and put the animation inside.  
+```
+barba.init(
+      // passing an object.
+   {
+      //all the options for barba go here.
+   sync: true,
+   transition: [   // an array
+      //passing an object
+      {}
+   ]
+})
+```
+```
+
+
 Controlling how barba goes to the next page. 
 ```
 barba.init({
