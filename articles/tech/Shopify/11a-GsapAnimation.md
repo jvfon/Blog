@@ -330,7 +330,7 @@ Change the ```<title>``` tag content with "About". Change other tags if necessar
 
 **1. Step 1:**  
 Create a function in the app.js file and put all the js animation code inside the function. 
-```
+```js
 const initialPageAnimation = () => {
    Animation code goes here
 }
@@ -338,7 +338,7 @@ const initialPageAnimation = () => {
 
 **2. Step 1:**
 Set up Barba. Start the code after the function you just created and put the animation inside.  
-```
+```js
 barba.init(
       // passing an object.
    {
@@ -362,7 +362,46 @@ When you run the code, you will see that the transition goes too fast. Go to the
 
 Because an async function is used, a delay can also be employed.  
 
+```js
+const delay = (n) => {    // the delay function
+   return new Promise ((done) => {
+      setTimeout(() => {
+         done();
+      }, n)    // passing the n, how long we want the setTimeout to run
+   })
+}
+
+barba.init(
+      // passing an object.
+   {
+      //all the options for barba go here.
+   sync: true,
+   transitions: [   // an array
+      //passing an object
+      {
+         name: "page-wipe",  // the name of the transition
+         async leave(data){   // async function
+            console.log("Leaving Page Animation"); // passing in console.log
+            delay(2000);
+         }, 
+         async enter(data){
+            console.log("Entering Page Animation"); 
+         }
+      }
+   ]
+})
 ```
+Next you have to tell barba when the animation is done. Create a variable "done", tells that the animation is complete.
+
+```js
+const delay = (n) => {    // the delay function
+   return new Promise ((done) => {
+      setTimeout(() => {
+         done();
+      }, n)    // passing the n, how long we want the setTimeout to run
+   })
+}
+
 barba.init(
       // passing an object.
    {
@@ -373,7 +412,11 @@ barba.init(
       {
          name: "page-wipe",  // the name of the transition
          async leave(data){   // async function
+            const done = this.async(); // tells function that the animation is complete
             console.log("Leaving Page Animation"); // passing in console.log
+            await delay(2000); // 2 secs, await until the function "delay" finishes (Promise is resolved)
+            done(); // triggering done
+
          }, 
          async enter(data){
             console.log("Entering Page Animation"); 
@@ -383,8 +426,24 @@ barba.init(
 })
 ```
 
+## First page transitions
 
+Create a container to be used in the transition. 
 
-
-
+```html
+<body data-barba="wrapper">
+    <div class="loading-bg"></div>
+</body>
+```  
+CSS
+```css
+.loading-bg {
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+}
+```
 
