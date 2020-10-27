@@ -446,4 +446,67 @@ CSS
   width: 100vw;
 }
 ```
+Right now, the transition is covering the whole page. Initially you want the transition to start at a certain place.
+```css
+.loading-bg {
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  transition: translate(0, 100%);
+}
+```
 
+Now you need to work on the animation itself. Create a function for the animation.
+The "enter" animation.
+```js
+const loadingEnter = () => {
+    let timeline = gsap.timeline();
+    timeline.fromTo('.loading-bg' {
+        y: 0
+    }, {
+        y: "100%",
+        duration: 2
+    })
+}
+```
+
+```js
+const loadingLeave = () => {
+    let timeline = gsap.timeline();
+    timeline.fromTo('.loading-bg' {
+        y: "100%"
+    }, {
+        y: 0
+    })
+}
+``` 
+
+Trigger "loadingLeave" and "loadingEnter" events.
+```js
+barba.init(
+        // passing an object.
+    {
+        //all the options for barba go here.
+    sync: true,
+    transitions: [   // an array
+        //passing an object
+        {
+        name: 'page-wipe',  // the name of the transition
+        async leave(data){   // async function
+            const done = this.async(); // tells function that the animation is complete
+            console.log("Leaving Page Animation"); // passing in console.log
+            loadingLeave();
+            await delay(2000); // 2 seconds, await until the function "delay" finishes (Promise is resolved)
+            done(); // triggering done
+        }, 
+        async enter(data){
+            loadingEnter();
+            console.log("Entering Page Animation"); 
+        }
+        }
+    ]
+})
+```
