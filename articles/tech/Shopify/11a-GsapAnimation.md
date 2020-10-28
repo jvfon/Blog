@@ -455,7 +455,7 @@ Right now, the transition is covering the whole page. Initially you want the tra
   left: 0;
   height: 100vh;
   width: 100vw;
-  transition: translate(0, 100%);
+  transform: translate(0, 100%);
 }
 ```
 
@@ -510,3 +510,89 @@ barba.init(
     ]
 })
 ```
+Now run the initial animation once the page loads. 
+```js
+async once(data){
+      initialPageAnimation();
+}
+```
+
+```js
+const initialPageAnimation = () => {
+   // animation code goes here   
+}
+
+// (2)
+const delay = (n) => {    // the delay function
+    return new Promise((done) => {
+        setTimeout(() => {
+        done();
+       }, n)    // passing the n, how long we want the setTimeout to run
+    })
+}
+
+const loadingLeave = () => {
+    let timeline = gsap.timeline();
+    timeline.fromTo('.loading-bg', {
+        y: "100%"
+    }, {
+        y: 0
+    })
+}
+
+const loadingEnter = () => {
+    let timeline = gsap.timeline();
+    timeline.fromTo('.loading-bg', {
+        y: 0
+    }, {
+        y: "100%",
+        duration: 2
+    })
+}
+
+// Settin up barba (first)
+barba.init(
+        // passing an object.
+    {
+        //all the options for barba go here.
+    sync: true,
+    transitions: [   // an array
+        //passing an object
+        {
+        name: 'page-wipe',  // the name of the transition
+            async leave(data){   // async function
+                const done = this.async(); // tells function that the animation is complete
+                console.log("Leaving Page Animation"); // passing in console.log
+                loadingLeave();
+                await delay(1000); // 2 seconds, await until the function "delay" finishes (Promise is resolved)
+                done(); // triggering done
+            }, 
+            async enter(data){
+                loadingEnter();
+                initialPageAnimation();
+                console.log("Entering Page Animation"); 
+            },
+            async once(data){
+                initialPageAnimation();
+            }
+        }
+    ]
+})
+```
+### Create a gallery page
+
+gallery.html 
+
+Copy everything from the "about" page and put it in gallery.html.  
+
+Change the ```<title>``` tag to "Gallery Page".  Also change the ```<h1>``` tag to "Gallery".  
+
+Change:
+```html
+    <main data-barba="container" data-barba-namespace="about">
+```
+to "Gallery".
+```html
+    <main data-barba="container" data-barba-namespace="gallery">
+```
+
