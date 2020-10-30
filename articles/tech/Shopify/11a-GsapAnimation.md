@@ -596,3 +596,32 @@ to "Gallery".
     <main data-barba="container" data-barba-namespace="gallery">
 ```
 
+### Gallery animation
+
+Put this before barba.initia
+```js
+// gallery animation
+const galleryEnter = () => {
+    let timeline = gsap.timeline();
+    timeline.fromTo(
+        //first the elements we are targeting
+        // targeting everything inside so we target the parent
+        '.white-bg ul li',
+        {
+            // where is coming from
+            y: 50,
+            opacity: 0
+        },
+        {
+            // where is going
+            y: 0,
+            opacity: 1,
+            duration: .4,
+            stagger: .2,
+            ease: 'power1.inOut'
+        }
+    )
+}
+// calling galleryEnter, when the page loads the animation starts
+galleryEnter();
+```
