@@ -625,3 +625,54 @@ const galleryEnter = () => {
 // calling galleryEnter, when the page loads the animation starts
 galleryEnter();
 ```
+
+Because gsap looks for certain elements on every page like the white background fromthe gallery, it will show errors every time it doesn't find it. This
+
+To eliminate errors triggered by gsap, "views" from Barba.js will be used.
+
+Go here for an explanation and to copy the syntax: https://barba.js.org/docs/advanced/views/
+
+Copy the "views" syntax:
+```js
+  views: [{
+    namespace: 'index',
+    beforeLeave(data) {
+      // do something before leaving the current `index` namespace
+    }
+  }, {
+    namespace: 'contact',
+    beforeEnter(data) {
+      // do something before entering the `contact` namespace
+    }
+  }]
+  ```
+Place the code after: after
+```js
+barba.init(
+    {
+    sync: true,
+    transitions: [  
+      ...
+    ]
+```
+```js
+barba.init(
+    {
+    sync: true,
+    transitions: [  
+      ...
+    ],
+      views: [{
+    namespace: 'index',
+    beforeLeave(data) {
+      // do something before leaving the current `index` namespace
+    }
+  }, {
+    namespace: 'contact',
+    beforeEnter(data) {
+      // do something before entering the `contact` namespace
+    }
+  }]
+});
+```
+
