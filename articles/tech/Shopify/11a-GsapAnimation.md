@@ -676,3 +676,45 @@ barba.init(
 });
 ```
 
+### Animate the white background and images
+```js
+const galleryEnter = () => {
+    let timeline = gsap.timeline();
+    timeline
+    // animating the white background of gallery.
+    .fromTo(
+        ".white-bg",  // targeting only the white background
+        {
+            y: 50,
+            opacity: 0
+        },
+        {
+            y: 0,
+            opacity: 1,
+            duration: 0.8,
+            ease: 'power1.inOut'
+        }
+    )
+    // animating the images. first do this
+    .fromTo(
+        //first the elements we are targeting
+        // targeting all the images and hover effect inside so we target the parent
+        ".white-bg ul li",
+        {
+            // where is coming from
+            y: 50, // pushing 50px to the bottom
+            opacity: 0
+        },
+        {
+            // where is going
+            y: 0, // bring it back to the original location
+            opacity: 1, // fade-in
+            duration: .4,
+            stagger: .2,
+            ease: 'power1.inOut'
+        }
+    )
+}
+// calling galleryEnter, when the page loads the animation starts
+galleryEnter();
+```
