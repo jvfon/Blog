@@ -718,3 +718,38 @@ const galleryEnter = () => {
 // calling galleryEnter, when the page loads the animation starts
 galleryEnter();
 ```
+
+### Animating the views
+
+Place after ```Transitions: []```.   
+```js
+views: [
+   {
+      namespace: 'about',
+      afterEnter(data) {
+            // if someone shares the about address, the recipient will see the full animation. The about and home pages need to have the same code.
+            loadingEnter();
+      }
+   },
+   {
+      namespace: 'gallery',
+      afterEnter(data) {
+      // do something before entering the `contact` namespace
+            // if someone shares the gallery address, the recipient will see the full animation. The about and home pages need to have the same code.
+            loadingEnter();
+            galleryEnter();
+      }
+   }
+]
+```
+
+## Scroll magic
+Animation when you scroll.
+
+Go to http://scrollmagic.io/ and copy the CDN.   
+
+```js
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+```   
+
