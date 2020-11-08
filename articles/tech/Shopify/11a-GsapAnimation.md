@@ -753,3 +753,12 @@ Go to http://scrollmagic.io/ and copy the CDN.
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
 ```   
 
+or you can google it. You will need the minimum file, the animation and debug indicators plug in:
+```html
+https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js
+
+https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js
+
+https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js
+```
+
