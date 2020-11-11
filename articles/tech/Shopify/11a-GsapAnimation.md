@@ -762,3 +762,18 @@ https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.
 https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js
 ```
 
+Scroll Magic's documentation: https://scrollmagic.io/docs/index.html  
+
+Scroll Magics starts with a controller.  Think of each page as a controller and on each page there can be multiple scenes within a controller.  
+
+### Debugging
+For debugging purposes do this: 
+```js
+
+```
+
+But you can rund the code this way too:
+```js
+const tlServicesScroll = gsap.timeline ()
+```
+
