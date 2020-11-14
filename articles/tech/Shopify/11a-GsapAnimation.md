@@ -777,3 +777,56 @@ But you can rund the code this way too:
 const tlServicesScroll = gsap.timeline ()
 ```
 
+### Scrollmagic Steps
+
+Set up a timeline: timeline
+```js
+const tlServicesScroll = new gsap.timeline ({
+    onUpdate: debugPercentage // on update
+     run the function: deugPercentage
+})
+function debugPercentage() {
+    console.log(tlServicesScroll.progress())/* to see the progress */
+}
+```
+
+Set up the animation
+```js
+/* the animation */
+tlServicesScroll.fromTo('#main-services', {
+    x: '100%',   /* from */
+},{
+    x: 0        /* to */
+}) 
+```
+
+Target an element and put it into a variable
+```js
+/* putting it into its own element */
+const serviceElement = document.querySelector('#main-services');
+```
+
+Create a home controller for the homepage.
+```js
+let homeController = new ScrollMagic.Controller();
+```
+
+Attach a scene to the home controller.  
+```js
+let serviceScene = new ScrollMagic.Scene({
+    /* the element we scroll by */
+    /* once the id "main-services" and the triggerHook meet, the animation starts*/
+    triggerElement: '#main-services',
+    triggerHook: 1, /*puts the trigger at the end of the first section of the page, .5 will put it half way down the first section of the page */
+
+    /*ends the animation at 500px(if px are used) from the start of the animation*/
+    /*you can pass in an element to get the height of a container */
+    duration: serviceElement.offsetHeight
+})
+/* setting animation to the timeline */
+.setTween(tlServicesScroll)
+.addIndicators() /* for debuggin, it's optional */
+.addTo(homeController)  /* add to the controller of home controllers */
+```  
+
+
