@@ -819,7 +819,7 @@ let serviceScene = new ScrollMagic.Scene({
     triggerElement: '#main-services',
     triggerHook: 1, /*puts the trigger at the end of the first section of the page, .5 will put it half way down the first section of the page */
 
-    /*ends the animation at 500px(if px are used) from the start of the animation*/
+    /*ends the animation at Npx(if px are used) from the start of the animation*/
     /*you can pass in an element to get the height of a container */
     duration: serviceElement.offsetHeight
 })
