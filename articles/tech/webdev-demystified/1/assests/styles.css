@@ -1,6 +1,11 @@
-header {
-    
-}
+/* fonts */
+/* 
+   font-family: 'Cinzel', serif;
+   font-family: 'PT Serif', serif;
+*/
+
+/* step 1: select the body */
+body {}
 
 .container {
    width: 90%;
