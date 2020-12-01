@@ -105,7 +105,16 @@ text color is inherited, font-size is not inherited. The browser's default font 
 
 The "user agent styles sheet" is the browser default for text and layout. It will overide anything that's inherited from a parent.  
 
+To override the browser default, inspect the element y see if the css you put was crossed off. If it was crossed off you can include css at the element level to override the browser default.
 
-
-
+Here the font-size was overriden so css at the h1 tag was added.  
+```css
+body {
+    color: steelblue;
+    font-size: 2rem;
+}
+h1 {
+   font-size: 6rem;
+}
+```
 
