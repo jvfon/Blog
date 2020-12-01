@@ -101,7 +101,11 @@ body {
 
 If you are not sure what something happened, hit ctrl + shift + i and inspect the element.  
 
-text color is inherited, font-size is not inherited. The browser's standard font size takes presedence over the body tag font size.  
+text color is inherited, font-size is not inherited. The browser's default font size takes presedence over the body tag font size.  
+
+The "user agent styles sheet" is the browser default for text and layout. It will overide anything that's inherited from a parent.  
+
+
 
 
 
