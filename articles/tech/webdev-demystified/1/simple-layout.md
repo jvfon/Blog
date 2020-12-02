@@ -118,3 +118,13 @@ h1 {
 }
 ```
 
+Added the line height and the font-size was changed to 1.125 to increase the font size of the text inside <p> to 18 (16 * 1.125). 
+```css
+body {
+    font-size: 1.125rem;
+    line-height: 1.6;
+}
+h1 {
+   font-size: 6rem;
+}
+```
