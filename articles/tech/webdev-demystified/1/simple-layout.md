@@ -128,3 +128,21 @@ h1 {
    font-size: 6rem;
 }
 ```
+
+Think about how many styles you can put on the body so you won't have to repeat the same styling somewhere else. 
+
+```css
+body {
+   margin: 0;
+   font-size: 1.125rem;
+   line-height: 1.6;
+   color: #414141;
+}
+h1 {
+   font-size: 6rem;
+}
+```
+Color is a layout rule so it will affect the whole page and margin: 0 to get rid of the browser margin default.  
+
+
+
