@@ -13,6 +13,10 @@ color: = property
 
 property + value = a declaration  
 
+### CSS is for?
+
+CSS agnostic. It's based on the Open Standard Principle
+
 ### Starting Document
 
 Anything related to text is inherited, anything related to layout is not inherited.  
