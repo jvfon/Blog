@@ -1,5 +1,18 @@
 # Simple Layout
 
+### A CSS rule  
+
+```css
+p {
+   color: #414141;
+}
+```
+P = selector  
+color: = property  
+#414141; = value  
+
+property + value = a declaration  
+
 ### Starting Document
 
 Anything related to text is inherited, anything related to layout is not inherited.  
@@ -142,7 +155,11 @@ h1 {
    font-size: 6rem;
 }
 ```
-Color is a layout rule so it will affect the whole page and margin: 0 to get rid of the browser margin default.  
+Color is inherited and is a layout rule so it will affect the whole page. Margin: 0 to get rid of the browser margin default frame. Margin is layout related and is not inherited.  
+
+
+
+
 
 
 
