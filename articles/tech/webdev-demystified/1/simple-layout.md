@@ -15,7 +15,13 @@ property + value = a declaration
 
 ### CSS is for?
 
-CSS agnostic. It's based on the Open Standard Principle
+CSS agnostic. It's based on the Open Standard Principle. In order for CSS and HTML to work in many browsers they were designed to be simple.  
+
+The client control the display the content. People can choose settings, devices choose what they can handle and creators don't know all the variables. 
+
+Designing for an unknown infinete canvas. Design for change, movement, adaptation. 
+
+
 
 ### Starting Document
 
