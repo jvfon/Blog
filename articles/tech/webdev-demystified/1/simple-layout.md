@@ -19,7 +19,33 @@ CSS agnostic. It's based on the Open Standard Principle. In order for CSS and HT
 
 The client control the display the content. People can choose settings, devices choose what they can handle and creators don't know all the variables. 
 
-Designing for an unknown infinete canvas. Design for change, movement, adaptation. 
+Designing for an unknown infinite canvas. Design for change, movement, adaptation. 
+
+The cascade takes all the rules, put them together and how they will override each other. Then the browser puts everything together.
+
+Creators have no control, they only suggest how a document should look like. The intent of the outcome, what they are pushing for.  
+
+Devices are very important to CSS, CSS adapts itself to screen size, type of device, etc. CSS adapts to context.   
+
+CSS works best when height are not defined at the same time and the font size chosen is going to respect the content around.  
+
+CSS is design to not loose content so overflow visible is the default.  
+
+### CSS global scope
+
+The global scope is not a bug, it's a feature. The different pieces need to be available to reuse them.
+
+### The box model
+
+Declaring the width is for the content itself. The real width is equal to margin + border + padding + width + padding + border + margin.  
+
+To simply things box-sizing can be used. So:
+```css
+box-sizing: border-box;
+``` 
+will make the width be determined only by the border-box.  
+
+If we set width = 200px with the border-box, the real width will include the actual width of the content, the padding and the border. The margin will not be included in the width.  
 
 
 
