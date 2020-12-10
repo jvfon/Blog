@@ -43,11 +43,19 @@ To simply things box-sizing can be used. So:
 ```css
 box-sizing: border-box;
 ``` 
-will make the width be determined only by the border-box.  
+will make the width and height be determined only by the border-box.  
 
-If we set width = 200px with the border-box, the real width will include the actual width of the content, the padding and the border. The margin will not be included in the width.  
+If we set the width (or height) = 200px with the border-box, the real width will include the actual width of the content, the padding and the border. The margin will not be included in the width.  
 
+Margin is the space between elements. Border-box only includes the visual parts of our elements. 
 
+A typical way to set up box-sizing:
+```css
+*, *::before, *::after {
+   box-sizing: border-box;
+}
+```
+The "*" is used to affect all the elements is CSS.  
 
 ### Starting Document
 
