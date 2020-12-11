@@ -57,6 +57,10 @@ A typical way to set up box-sizing:
 ```
 The "*" is used to affect all the elements is CSS.  
 
+### Block level elements
+
+Block level elements will take up the whole width of the page.
+
 ### Starting Document
 
 Anything related to text is inherited, anything related to layout is not inherited.  
