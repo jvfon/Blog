@@ -59,7 +59,17 @@ The "*" is used to affect all the elements is CSS.
 
 ### Block level elements
 
-Block level elements will take up the whole width of the page.
+Block level elements will take up the whole width of the page and they adapt when the width of the page changes. Adding padding and margin won't change this attribute.  
+
+When the width is set for ex:
+```css
+width: 100%;
+```
+the width is 100% of the parent.  
+
+When the width is left out. The content will take as much room as it has available. 
+
+
 
 ### Starting Document
 
