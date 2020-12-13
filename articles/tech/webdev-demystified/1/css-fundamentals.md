@@ -74,3 +74,11 @@ width: 100%;
 the width is 100% of the parent.  
 
 The problem comes when padding and border width is added because the total width increases. So if the content width is set to 100%, the total width is equal to the width of the content plus padding and plus the border width. 
+
+## Height
+
+Avoid setting heights. Every element has an intrinsic height by default. Height is determined by the content inside of it. 
+
+If you need to set a height, use "min-height". Content will always retain a minimum height no matter the size of the content but the height will automatically increase when the content increases too.  
+
+If you need to increase the background, use padding. 
