@@ -29,13 +29,13 @@ Devices are very important to CSS, CSS adapts itself to screen size, type of dev
 
 CSS works best when height are not defined at the same time and the font size chosen is going to respect the content around.  
 
-CSS is design to not loose content so overflow visible is the default.  
+CSS is designed to not loose content so "overflow: visible" is the default.  
 
 ### CSS global scope
 
 The global scope is not a bug, it's a feature. The different pieces need to be available to reuse them.
 
-### The box model
+### The box model - width
 
 Declaring the width is for the content itself. The real width is equal to margin + border + padding + width + padding + border + margin.  
 
@@ -82,3 +82,7 @@ Avoid setting heights. Every element has an intrinsic height by default. Height 
 If you need to set a height, use "min-height". Content will always retain a minimum height no matter the size of the content but the height will automatically increase when the content increases too.  
 
 If you need to increase the background, use padding. 
+
+## Inheritance
+
+When you declare something on a element and it also applies to the element's descendants. 
