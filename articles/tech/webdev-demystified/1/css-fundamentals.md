@@ -85,4 +85,32 @@ If you need to increase the background, use padding.
 
 ## Inheritance
 
-When you declare something on a element and it also applies to the element's descendants. 
+When you declare something on a element and it also applies to the element's descendants.
+
+General rule:  
+**Anything related to typography will be inherited. ex: font-size, font-family, font-decoration, color, etc.**  
+
+Put most of the rules on html or body elements but if the browswer has a default value, these properties won't be inherited.  
+
+**Nothing related to layout is inherited. ex: margin, padding, height, etc.**  
+
+Because of the browser defaults, the following do not inherit things like you'd expect them to: ```<button>, <input>, <optgroup>, <select>, <textarea>```. In short elements you would find inside a form have browser defaults.  
+
+At first they don't inherit text properties but you can make them inherit them if you want.  
+
+While reseting browser default properties you can include form elements so they will inherit properties.  
+```css
+button, input, optgroup, select, textarea {
+   font-family: inherit;
+}
+
+a {
+   color: inherit;
+}
+
+h2, h3, h4 {
+   font-weight: inherit;
+}
+```
+
+
