@@ -2,6 +2,10 @@
 
 ### Starting Document
 
+**Start from the outside and then work your way in. From broad to narrow, from parent element to child element.**
+
+Think about the changes you can do at the parent level that will affect the child so you won't have to style each child to get the same effect. Think about the small changes you can do that will give you the greatest effect.  
+
 Anything related to text is inherited, anything related to layout is not inherited.  
 
 ```html
@@ -118,7 +122,7 @@ h1 {
 }
 ```
 
-Added the line height and the font-size was changed to 1.125 to increase the font size of the text inside <p> to 18 (16 * 1.125). 
+Added the line height and the font-size was changed to 1.125 to increase the font size of the text inside ```<p>``` to 18 (16 * 1.125).  
 ```css
 body {
     font-size: 1.125rem;
