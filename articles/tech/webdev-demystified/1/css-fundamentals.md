@@ -59,7 +59,7 @@ The "*" is used to affect all the elements is CSS.
 
 With box-sizing: border-box is like having the width set to 100%. Even if you add padding and border, the container will never overflow and will adjust to window resizing. 
 
-When you change the padding and border the content width will change to accomodate the changing padding and border.  
+When you increase/decrease the padding and border the total content width will change to accomodate the changing padding and border.  
 
 ### Block level elements
 

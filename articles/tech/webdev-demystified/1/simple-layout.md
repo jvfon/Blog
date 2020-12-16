@@ -149,6 +149,51 @@ h1 {
 Color is inherited and is a layout rule so it will affect the whole page. Margin: 0 to get rid of the browser margin default frame. Margin is layout related and is not inherited.  
 
 
+### Focus on the body
+
+```css
+body {
+    font-family: 'PT Serif', serif;
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: #414141;
+}
+```
+
+Think about how many changes you can do inside the body selector that will get inherited by the children elements so you won't have to make the same changes on every child element.
+
+General rule:  
+**Anything related to typography will be inherited. ex: font-size, font-family, font-decoration, color, etc.**  
+
+**Nothing related to layout is inherited. ex: margin, padding, height, etc.**  
+
+```css
+    box-sizing: border-box;
+```
+Box-sizing makes padding, border and content width work as one measurement. When the first 2 are increased/decreased, the total width of the container increase/decrease. These prevents overflow, the content will be kept within the container. 
+
+When padding and border increase, the content width decreases by the amount the first 2 increasae. 
+
+```css
+    margin: 0;
+```
+Resets the default margin of the browser. It's easier to calculate how much margin you want to see between your elements when you start from 0.
+
+```css
+    font-size: 1.125rem;
+```
+The units used to calculate the size of the font take into account the default font size set by the browser which is 16px. To calculate the font size multiply 16 * 1.125 = 18.  
+
+```css
+    line-height: 1.6;
+```
+The line-height takes into account the size of the font. So 1.6 of the size of the font is 1.6 * 18 = 28.8px. 
+
+
+
+
 
 
 
