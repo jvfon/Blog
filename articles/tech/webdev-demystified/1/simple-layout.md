@@ -1,5 +1,8 @@
 # Simple Layout
 
+## Contents
+
+
 ### Starting Document
 
 **Start from the outside and then work your way in. From broad to narrow, from parent element to child element.**
@@ -149,7 +152,7 @@ h1 {
 Color is inherited and is a layout rule so it will affect the whole page. Margin: 0 to get rid of the browser margin default frame. Margin is layout related and is not inherited.  
 
 
-### Focus on the body
+### "body" selector explained
 
 ```css
 body {
@@ -190,6 +193,37 @@ The units used to calculate the size of the font take into account the default f
     line-height: 1.6;
 ```
 The line-height takes into account the size of the font. So 1.6 of the size of the font is 1.6 * 18 = 28.8px. 
+
+
+### "a" selector explained
+
+```css
+a {
+    text-decoration: none;
+    color: #ca5e10;
+}
+```
+The color property is not inherited therefore it needs to be included with the "a" selector.  
+
+### "header" selector explained
+
+```css
+header {
+    text-align: center;
+    margin: 6rem auto;
+    max-width: 75rem;
+    padding: 0 2rem;
+}
+```
+
+Text-align: center; will make the child containers center text.  
+
+Margin: 6rem auto; 6rem = 6 * 16, that's the space margin will be. So 6rem for top and bottom and "auto" makes the child containers stay on the center.  
+
+Max-width: 75rem; the child containers will stretch a maximum of 75 times the default browser font size.  
+
+Padding: 0 2rem; padding top and bottom is 0 and left and right twice the size of the default browser font size. The 2rem is set so the right and left edge of the text doesn't touch the right and left borders.  
+
 
 
 
