@@ -113,4 +113,15 @@ h2, h3, h4 {
 }
 ```
 
+### Font size
+
+The font size of a browser is usually 16px. When you use the rem unit, this unit will look to the browser default that is controlled from the html selector. It is better if you change the font size from the body selector so the original default font size is unchanged and stays consistent when you create a webpage.  
+
+### The cascade
+
+**Embrace the cascade**
+
+1- Origin of importance  
+2- Specificity  
+3- Order of appearance  
 

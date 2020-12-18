@@ -187,7 +187,11 @@ Resets the default margin of the browser. It's easier to calculate how much marg
 ```css
     font-size: 1.125rem;
 ```
-The units used to calculate the size of the font take into account the default font size set by the browser which is 16px. To calculate the font size multiply 16 * 1.125 = 18.  
+The units used to calculate the size of the font take into account the default font size set by the browser which is 16px. To calculate the font size multiply 16 * 1.125 = 18. 
+
+The em unit looks at the parent to calculate the font size. so 2em = 2 * parent font height. 
+
+The rem unit meas "root em" and it looks at the browser default font size which usually is 16px. 2rem = 2 * 16.
 
 ```css
     line-height: 1.6;
@@ -223,6 +227,47 @@ Margin: 6rem auto; 6rem = 6 * 16, that's the space margin will be. So 6rem for t
 Max-width: 75rem; the child containers will stretch a maximum of 75 times the default browser font size.  
 
 Padding: 0 2rem; padding top and bottom is 0 and left and right twice the size of the default browser font size. The 2rem is set so the right and left edge of the text doesn't touch the right and left borders.  
+
+### h1 explained
+
+```css
+h1 {
+    font-family: 'Cinzel', serif;
+    font-weight: 900;
+    font-size: 6rem;
+    line-height: 0.9;
+    margin: 0;
+}
+```
+
+Font-weight: 900; stating the font weight explicitely although the default h1 font weight could already be 900.  
+
+Margin: 0; getting rid of the default browser margin.  
+
+### .subtitle explained
+
+```css
+.subtitle {
+    font-size: 2.25rem;
+    color: #7d7d7d;
+    line-height: 1.2;
+}
+```
+
+Font-size and line-height set here override the default and parent values.  
+
+### .container explained
+
+```css
+.container {
+    width: 50%;
+    margin: 0 auto;
+}
+```
+
+Width: 50%; makes the width of .container to be 50% of its parent's width.  
+
+margin: 0 auto; centers .container.  
 
 
 
