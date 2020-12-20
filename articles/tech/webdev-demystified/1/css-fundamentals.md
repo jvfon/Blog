@@ -125,3 +125,10 @@ The font size of a browser is usually 16px. When you use the rem unit, this unit
 2- Specificity  
 3- Order of appearance  
 
+### Oringin of importance
+
+All based on "author declarations" webdevs have control over the cascade.  
+
+
+
+
