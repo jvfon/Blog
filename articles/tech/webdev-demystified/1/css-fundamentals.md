@@ -125,9 +125,13 @@ The font size of a browser is usually 16px. When you use the rem unit, this unit
 2- Specificity  
 3- Order of appearance  
 
-### Oringin of importance
+### Order of appearance
 
 All based on "author declarations" webdevs have control over the cascade.  
+
+1 - Linked style sheets.  
+2 - Embedded styles (the ```<style>``` attribute).  
+3 - Inline styles.  
 
 
 
