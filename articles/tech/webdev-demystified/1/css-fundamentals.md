@@ -151,9 +151,39 @@ Consideration:
 Avoid setting font size in px from html selector (CSS) because the user might have set their own default and we are overriding the font size and changing the way the browser looks.  
 
 Another level of importance:  
+
+When !important comes into play.  
+
 1 - Important user declarations.  
 2 - Important author declarations.  
 3 - Author declarations.   
 4 - User declarations.   
 5 - User agent declarations.    
+
+### Changing font size from html selector  
+
+Using pixels (absolute unit) to set the font size can cause potential problems because the user can set their own preference and you will be overriding it.   
+
+The user has final say about font size and don't want to strip that away.  
+
+### Transitions and animations
+
+Contrary to what the spec says in Firefox and Chrome browsers, the order of importance is the following:  
+
+1 - Important user declarations.  
+2 - Important author declarations.  
+3 - Animations
+4 - Transitions 
+5 - Author declarations.   
+6 - User declarations.   
+7 - User agent declarations.  
+
+
+
+
+
+
+
+
+
 
