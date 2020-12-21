@@ -133,6 +133,27 @@ All based on "author declarations" webdevs have control over the cascade.
 2 - Embedded styles (the ```<style>``` attribute).  
 3 - Inline styles.  
 
+### Origin of importance
 
+Include:  
+Author declarations - what we control.  
 
+"User agent declarations" - Browser defaults.  
+
+"User declarations" - the styles the user imposes.  
+
+Order of importance:  
+1 - Author declarations. 
+2 - User declarations.  
+3 - User agent declarations.    
+
+Consideration:  
+Avoid setting font size in px from html selector (CSS) because the user might have set their own default and we are overriding the font size and changing the way the browser looks.  
+
+Another level of importance:  
+1 - Important user declarations.  
+2 - Important author declarations.  
+3 - Author declarations.   
+4 - User declarations.   
+5 - User agent declarations.    
 
