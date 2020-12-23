@@ -178,7 +178,9 @@ Contrary to what the spec says in Firefox and Chrome browsers, the order of impo
 6 - User declarations.   
 7 - User agent declarations.  
 
+### Specificity 
 
+One way the browser chooses which style to use on an element. It is also used by the browser to choose which style has priority when there are two ore more conflicting styles.  
 
 
 
