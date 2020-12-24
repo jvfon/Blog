@@ -182,6 +182,16 @@ Contrary to what the spec says in Firefox and Chrome browsers, the order of impo
 
 One way the browser chooses which style to use on an element. It is also used by the browser to choose which style has priority when there are two ore more conflicting styles.  
 
+The browser chooses the more specific selector.
+
+If two selector have the same specificity the selector that appears last wins.  
+
+### Keep spcificity flat
+
+Avoid having nested and double selectors to save yourself from frustration when you try to change CSS later.
+
+
+
 
 
 
