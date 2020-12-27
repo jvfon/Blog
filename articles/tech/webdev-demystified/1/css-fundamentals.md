@@ -190,6 +190,15 @@ If two selector have the same specificity the selector that appears last wins.
 
 Avoid having nested and double selectors to save yourself from frustration when you try to change CSS later.
 
+Nested and double selector become more specific but also become harder to work on.  
+
+After getting rid of specificity you only have to worry about:
+
+1 - Origin and importance.  
+2 - Order of  Appearance.  
+
+
+
 
 
 
