@@ -87,6 +87,15 @@ video {
     vertical-align: baseline;
 }
 
-body {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
+}
+
+body {}
+
+header {
+    background-color: lightblue;
+    width: 100%;
 }
