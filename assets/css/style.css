@@ -98,4 +98,18 @@ body {}
 header {
     background-color: lightblue;
     width: 100%;
+    display: flex;
+    /* align-items: center; */
+    /* align-content: center; */
+    justify-content: center;
+}
+
+ul.header {
+    /* align-items: center; */
+}
+
+ul.header li {
+    /* margin: 0 auto; */
+    display: inline;
+    /* flex-grow: 1; */
 }
