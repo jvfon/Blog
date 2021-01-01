@@ -101,7 +101,7 @@ header {
     display: flex;
     /* align-items: center; */
     /* align-content: center; */
-    justify-content: center;
+    justify-content: space-around;
 }
 
 ul.header {
@@ -109,7 +109,7 @@ ul.header {
 }
 
 ul.header li {
-    /* margin: 0 auto; */
+    margin: auto;
     display: inline;
     /* flex-grow: 1; */
 }
