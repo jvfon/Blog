@@ -184,6 +184,8 @@ One way the browser chooses which style to use on an element. It is also used by
 
 The browser chooses the more specific selector.
 
+The selector with higher specificity is the one who wins.  
+
 If two selector have the same specificity the selector that appears last wins.  
 
 ### Keep spcificity flat
@@ -196,6 +198,8 @@ After getting rid of specificity you only have to worry about:
 
 1 - Origin and importance.  
 2 - Order of  Appearance.  
+
+
 
 
 
