@@ -192,9 +192,9 @@ If two selector have the same specificity, the selector that appears last wins.
 2 - Specificity.  
 3 - Order of  Appearance.  
 
-### Keep spcificity flat
+### Keep specificity flat
 
-Avoid having nested and double selectors to save yourself from frustration when you try to change CSS later.
+Avoid having nested and double selectors becuase it raises specificity and to save yourself from frustration when you try to override the selectors later.
 
 Try to keep everything as a single class selector.
 
@@ -202,10 +202,22 @@ Try to not use id's as selectors unless you have a very good reason to use them.
 
 Nested and double selector become more specific but also become harder to work on.  
 
-After getting rid of specificity you only have to worry about:
+Keeping specificity flat eleminates specificity. After getting rid of specificity you only have to worry about:
 
 1 - Origin and importance.  
-2 - Order of  Appearance.  
+2 - Order of Appearance.  
+
+Without specificity wars, there is no need to use "!important" because there wouldn't be a need to override something. This leaves:
+
+1 - Order of Appearance.  
+
+The one issue that comes up with keeping CSS flat is that the rules are available on the glogal scope. This can create other issues.  
+
+Eliminating the origin and importnace and specificity is like putting training wheels. Focus on one thing first and then add the rest once you have a solid understanding of the basics.   
+
+
+
+
 
 
 
