@@ -215,6 +215,15 @@ The one issue that comes up with keeping CSS flat is that the rules are availabl
 
 Eliminating the origin and importnace and specificity is like putting training wheels. Focus on one thing first and then add the rest once you have a solid understanding of the basics.   
 
+### Levels of specificity
+
+1 - ID's. -- highest level  
+2 - Classes, attributes and pseudo-classes.  
+3 - Elements and pseudo-elements. -- lowest level  
+
+
+
+
 
 
 
