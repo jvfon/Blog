@@ -186,11 +186,19 @@ The browser chooses the more specific selector.
 
 The selector with higher specificity is the one who wins.  
 
-If two selector have the same specificity the selector that appears last wins.  
+If two selector have the same specificity, the selector that appears last wins.  
+
+1 - Origin and importance.  
+2 - Specificity.  
+3 - Order of  Appearance.  
 
 ### Keep spcificity flat
 
 Avoid having nested and double selectors to save yourself from frustration when you try to change CSS later.
+
+Try to keep everything as a single class selector.
+
+Try to not use id's as selectors unless you have a very good reason to use them.  
 
 Nested and double selector become more specific but also become harder to work on.  
 
@@ -198,6 +206,8 @@ After getting rid of specificity you only have to worry about:
 
 1 - Origin and importance.  
 2 - Order of  Appearance.  
+
+
 
 
 
