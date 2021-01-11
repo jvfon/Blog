@@ -124,3 +124,182 @@ h1 {
 Change the HTML and CSS so the first and third pricing cards appear plain and the middle card is highlighted in blue.  
 
 ### Procedure
+Because there are different background colors for the cards, change the parent class for each card.
+
+From:
+```html
+    <div class="plan">
+      <h2 class="plan__title">basic</h2>
+   ...
+```
+
+To:
+```html
+   <div class="plan plan--light">
+      <h2 class="plan__title">basic</h2> ...
+
+   <div class="plan plan--accent">
+      <h2 class="plan__title">basic</h2> ...
+
+    <div class="plan plan--light">
+      <h2 class="plan__title">basic</h2> ...
+```
+
+The class "plan" is setting the structure and "plan--light" is modifies the base version of the class.  
+
+On CSS change the "plan" selector:
+
+From:
+```CSS
+.plan {
+  color: #fff;
+  background: linear-gradient(-45deg, #00a1ab, #3741a0);
+  width: 200px;
+  padding: 2em;
+  border-radius: 1em;
+  margin: 0 0.5em;
+}
+```
+
+To:
+```CSS
+.plan {
+  width: 200px;
+  padding: 2em;
+  border-radius: 1em;
+  margin: 0 0.5em;
+}
+```
+Now, this selector only sets the structure.  
+
+Add additional selectors to change the cards background.  
+
+```CSS
+.plan--light {
+   color: #4e4e4e;
+     background: linear-gradient(-45deg, #e5e3e8, #fafafa);
+}
+
+.plan--accent {
+  color: #fff;
+  background: linear-gradient(-45deg, #00a1ab, #3741a0);
+}
+```
+
+Since the selector "plan" doesn't have color, it doesn't override anything. You can put the selectors "plan--light" and "plan--accent" at any place and they will still work. So,order of appereance is removed.  
+
+For the buttons:
+```css
+.plan__button {
+  background: white;
+  color: #4e4e4e;
+  text-decoration: none;
+  padding: 0.5em 0.75em;
+  border-radius: 0.25em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+```
+Reduce the selector name to "button".  
+
+```css
+.button {
+  background: white;
+  color: #4e4e4e;
+  text-decoration: none;
+  padding: 0.5em 0.75em;
+  border-radius: 0.25em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+```  
+
+Then, remove background and color
+
+```css
+.button {
+  text-decoration: none;
+  padding: 0.5em 0.75em;
+  border-radius: 0.25em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+```
+
+Create "button--light" and "button--dark" rules and add the background and color rules.  
+
+```css
+.button--light {
+   background: white;
+   color: #4e4e4e;
+}
+
+.button--dark {
+   background: #4e4e4e;
+   color: white;
+}
+```
+
+Update the "plan__button" class to "button button--dark" and "button button--light" in the HTML file.  
+
+From:  
+```html
+      <a href="#" class="plan__button">Join Now</a>
+```
+
+To:  
+```html
+      <a href="#" class="button">Join Now</a>
+```
+
+Change the first and third cards class to "text--accent" 
+
+```css
+.text--accent {
+   color: #00a1ab;
+}
+```  
+
+Remove "color" from the h1 selector in CSS.  
+
+```css
+h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #00a1ab;
+  font-weight: 900;
+  margin-top: 3em;
+  margin-bottom: 0;
+}
+```
+
+To: 
+```css
+h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-top: 3em;
+  margin-bottom: 0;
+}
+```
+
+Add the class "text--accent" where is needed.  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
