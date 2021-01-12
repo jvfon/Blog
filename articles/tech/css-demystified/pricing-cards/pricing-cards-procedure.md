@@ -284,11 +284,17 @@ h1 {
 }
 ```
 
-Add the class "text--accent" where is needed.  
+Add the class "text--accent" where is needed in the HTML file.
 
+Ex from:
+```html
+<p class="plan__price">
+``` 
 
-
-
+To:
+```html
+<p class="plan__price text--accent">
+``` 
 
 
 
