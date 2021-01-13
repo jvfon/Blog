@@ -147,7 +147,7 @@ To:
 
 The class "plan" is setting the structure and "plan--light" is modifies the base version of the class.  
 
-On CSS change the "plan" selector:
+On CSS remove the color and background from the "plan" selector:
 
 From:
 ```CSS
@@ -177,12 +177,12 @@ Add additional selectors to change the cards background.
 ```CSS
 .plan--light {
    color: #4e4e4e;
-     background: linear-gradient(-45deg, #e5e3e8, #fafafa);
+   background: linear-gradient(-45deg, #e5e3e8, #fafafa);
 }
 
 .plan--accent {
-  color: #fff;
-  background: linear-gradient(-45deg, #00a1ab, #3741a0);
+   color: #fff;
+   background: linear-gradient(-45deg, #00a1ab, #3741a0);
 }
 ```
 
