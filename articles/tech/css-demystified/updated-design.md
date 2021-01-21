@@ -307,7 +307,7 @@ Now, the 45% includes the padding.
 
 Also, when the window browser becomes a certain sizes it switches from showing the pictures top to bottom to a grid format and viceversa.  
 
-
+min. 3:36
 
 
 
