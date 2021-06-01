@@ -1,115 +1,40 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-
 *,
-*::before,
-*::after {
+::before,
+::after {
     box-sizing: border-box;
 }
 
-body {}
+/* custom properties */
+:root {
+    --ff-primary: 'Source Sans Pro', sans-serif; /* ff = font family */
+    --ff-secondary: 'Source Code Pro', monospace;
 
-header {
-    background-color: lightblue;
-    width: 100%;
-    display: flex;
-    /* align-items: center; */
-    /* align-content: center; */
-    justify-content: space-around;
+    --fw-reg: 300; /* fw = font weight, reg = regular */
+    --fw-bold: 900;
+
+    --clr-light: #fff; /* clr = color */
+    --clr-dark: #303030;
+    --clr-accent: #16b8e0;
+
+    --fs-h1: 3rem; /* fs = font size */
+    --fs-h2: 2.25rem; 
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
 }
 
-ul.header {
-    /* align-items: center; */
+@media (min-width: 800px) {
+    :root  {
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-h4: 1.125rem;
+    }
 }
 
-ul.header li {
-    margin: auto;
-    display: inline;
-    /* flex-grow: 1; */
+/* general styles */
+
+body {
+    background: var(--clr-light);  
+    color: var(--clr-dark);
 }
+
