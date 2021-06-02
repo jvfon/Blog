@@ -36,5 +36,96 @@
 body {
     background: var(--clr-light);  
     color: var(--clr-dark);
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
 }
+
+section {
+    padding: 5em 2em;
+}
+
+img {
+    display: block;
+    max-width: 100%; /* so images won't grow bigger */
+}
+
+strong {
+    font-weight: var(--fw-bold);
+}
+
+/* typography */
+h1, h2, h3 {
+    line-height: 1;
+    margin: 0; /* resetting the margin */
+}
+
+h1 {font-size: var(--fs-h1)}
+h2 {font-size: var(--fs-h2)}
+h3 {font-size: var(--fs-h3)}
+
+.section__title {
+    margin: .25em;
+}
+
+.section__title--intro {
+    font-weight: var(--fw-regular);
+}
+
+.section__title--intro strong {
+    display: block; /* moves the text inside <strong> to the next line */ 
+}
+
+.section__subtitle {
+    margin: 0;
+    font-size: var(--fs-h3);
+}
+
+.section__subtitle--intro,
+.section__subtitle--about {
+    background: var(--clr-accent);
+    font-family: var(--ff-secondary);
+    margin-bottom: 1em; 
+}
+
+/* header */
+nav { display: none; }
+
+.logo {
+
+}
+
+/* Intro section */
+.intro {
+    position: relative;
+}
+
+@media (min-width: 600px) {
+    .intro {
+        display: grid;
+        grid-column-gap: 1em;
+        grid-template-areas: 
+            "img title"
+            "img subtitle";
+        grid-template-columns: min-content max-content; /* will try to shrink an image as small as it can, and make text as big as possible */
+    }
+
+    .intro__img {
+        grid-area: img;
+        min-width: 250px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
