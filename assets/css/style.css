@@ -104,6 +104,8 @@ nav { display: none; }
 @media (min-width: 600px) {
     .intro {
         display: grid;
+        width: min-content; /* shrink the image down */
+        margin: 0 auto;
         grid-column-gap: 1em;
         grid-template-areas: 
             "img title"
@@ -114,6 +116,17 @@ nav { display: none; }
     .intro__img {
         grid-area: img;
         min-width: 250px;
+    }
+
+    /* this related to text but since we are doing the layout, this section stays here */
+    .section__subtitle--intro {
+        align-self: start; /* stops the text from streching out and stay in place */
+        grid-column: -1 / 1; /* makes the area stretch out and moves one space down for this */
+        grid-row: 2; /* so the area doesn't move down to stretch all the way */
+        text-align: right;
+        position: relative; /* the rectangle space will overlap the photo */
+        left: -1.5em;
+        width: calc(100% + 1.5em);
     }
 }
 
